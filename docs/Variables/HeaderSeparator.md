@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # HeaderSeparator
 
 **Defined at:** `Common.ui:697`

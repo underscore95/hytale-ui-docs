@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # PopupTitleStyle
 
 **Defined at:** `Common.ui:539`

@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # SmallButtonLabelStyle
 
 **Defined at:** `Common.ui:70`

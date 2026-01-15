@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # InputBoxSelectedBackground
 
 **Defined at:** `Common.ui:419`

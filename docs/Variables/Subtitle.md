@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # Subtitle
 
 **Defined at:** `Common.ui:578`

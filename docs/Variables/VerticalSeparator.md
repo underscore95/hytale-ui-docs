@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # VerticalSeparator
 
 **Defined at:** `Common.ui:720`

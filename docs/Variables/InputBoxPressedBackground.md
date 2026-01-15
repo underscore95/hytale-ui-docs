@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # InputBoxPressedBackground
 
 **Defined at:** `Common.ui:418`

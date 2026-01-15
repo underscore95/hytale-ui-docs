@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # ContentSeparator
 
 **Defined at:** `Common.ui:548`

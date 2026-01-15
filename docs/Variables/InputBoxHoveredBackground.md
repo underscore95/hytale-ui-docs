@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # InputBoxHoveredBackground
 
 **Defined at:** `Common.ui:417`

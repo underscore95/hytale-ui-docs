@@ -1,3 +1,5 @@
+[← Back](../Types.md)
+
 # SliderStyle
 
 **First used at:** `Common.ui:822`

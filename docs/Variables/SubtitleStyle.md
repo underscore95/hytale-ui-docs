@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # SubtitleStyle
 
 **Defined at:** `Common.ui:576`

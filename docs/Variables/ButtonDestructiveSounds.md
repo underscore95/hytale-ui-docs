@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # ButtonDestructiveSounds
 
 **Defined at:** `Common.ui:17`

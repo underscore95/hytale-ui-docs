@@ -1,3 +1,5 @@
+[← Back](Index.md)
+
 # Types
 
 - [Anchor](Types/Anchor.md)

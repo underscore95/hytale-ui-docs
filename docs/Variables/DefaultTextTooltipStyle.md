@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # DefaultTextTooltipStyle
 
 **Defined at:** `Common.ui:839`

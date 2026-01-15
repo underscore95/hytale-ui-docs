@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # PanelTitle
 
 **Defined at:** `Common.ui:702`

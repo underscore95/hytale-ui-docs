@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # TopTabsStyle
 
 **Defined at:** `Common.ui:620`

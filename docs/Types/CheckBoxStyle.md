@@ -1,3 +1,5 @@
+[← Back](../Types.md)
+
 # CheckBoxStyle
 
 **First used at:** `Common.ui:374`

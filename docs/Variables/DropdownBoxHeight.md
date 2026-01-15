@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # DropdownBoxHeight
 
 **Defined at:** `Common.ui:477`

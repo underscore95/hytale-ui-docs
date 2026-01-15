@@ -1,3 +1,5 @@
+[← Back](../Types.md)
+
 # Anchor
 
 **First used at:** `Common.ui:168`

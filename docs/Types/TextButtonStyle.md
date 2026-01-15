@@ -1,3 +1,5 @@
+[← Back](../Types.md)
+
 # TextButtonStyle
 
 **First used at:** `Common.ui:98`

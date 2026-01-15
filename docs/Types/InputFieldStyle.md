@@ -1,3 +1,5 @@
+[← Back](../Types.md)
+
 # InputFieldStyle
 
 **First used at:** `Common.ui:421`

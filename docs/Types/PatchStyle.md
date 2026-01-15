@@ -1,3 +1,5 @@
+[← Back](../Types.md)
+
 # PatchStyle
 
 **First used at:** `Common.ui:30`

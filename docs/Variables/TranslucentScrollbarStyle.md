@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # TranslucentScrollbarStyle
 
 **Defined at:** `Common.ui:362`

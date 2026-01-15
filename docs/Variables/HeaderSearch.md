@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # HeaderSearch
 
 **Defined at:** `Common.ui:662`

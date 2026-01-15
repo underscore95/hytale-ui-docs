@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # DefaultPlaceholderScrollbarStyle
 
 **Defined at:** `Common.ui:369`

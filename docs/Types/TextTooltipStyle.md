@@ -1,3 +1,5 @@
+[← Back](../Types.md)
+
 # TextTooltipStyle
 
 **First used at:** `Common.ui:839`

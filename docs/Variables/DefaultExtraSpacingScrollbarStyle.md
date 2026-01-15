@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # DefaultExtraSpacingScrollbarStyle
 
 **Defined at:** `Common.ui:357`

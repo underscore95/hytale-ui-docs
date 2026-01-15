@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # TitleStyle
 
 **Defined at:** `Common.ui:584`

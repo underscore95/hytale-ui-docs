@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # InnerPaddingValue
 
 **Defined at:** `Common.ui:747`

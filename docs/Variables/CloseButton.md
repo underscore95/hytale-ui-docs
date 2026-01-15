@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # CloseButton
 
 **Defined at:** `Common.ui:338`

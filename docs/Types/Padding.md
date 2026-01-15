@@ -1,3 +1,5 @@
+[← Back](../Types.md)
+
 # Padding
 
 **First used at:** `Common.ui:610`

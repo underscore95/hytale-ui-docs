@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # HeaderTabStyle
 
 **Defined at:** `Common.ui:635`

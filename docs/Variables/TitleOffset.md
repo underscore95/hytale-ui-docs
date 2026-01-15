@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # TitleOffset
 
 **Defined at:** `Common.ui:607`

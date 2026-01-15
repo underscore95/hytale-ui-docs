@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # DefaultLabelStyle
 
 **Defined at:** `Common.ui:12`

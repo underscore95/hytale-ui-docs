@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # Panel
 
 **Defined at:** `Common.ui:4`

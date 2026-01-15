@@ -1,3 +1,5 @@
+[← Back](../Types.md)
+
 # TabNavigationStyle
 
 **First used at:** `Common.ui:620`

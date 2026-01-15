@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # DefaultDropdownBoxEntryLabelStyle
 
 **Defined at:** `Common.ui:445`

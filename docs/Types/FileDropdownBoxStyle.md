@@ -1,3 +1,5 @@
+[← Back](../Types.md)
+
 # FileDropdownBoxStyle
 
 **First used at:** `Common.ui:506`

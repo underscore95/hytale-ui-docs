@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # PanelSeparatorFancy
 
 **Defined at:** `Common.ui:725`

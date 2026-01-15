@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # DefaultSliderStyle
 
 **Defined at:** `Common.ui:822`

@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # CheckBox
 
 **Defined at:** `Common.ui:390`

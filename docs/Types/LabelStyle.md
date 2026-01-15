@@ -1,3 +1,5 @@
+[← Back](../Types.md)
+
 # LabelStyle
 
 **First used at:** `Common.ui:42`

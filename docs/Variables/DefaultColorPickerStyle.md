@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # DefaultColorPickerStyle
 
 **Defined at:** `Common.ui:314`

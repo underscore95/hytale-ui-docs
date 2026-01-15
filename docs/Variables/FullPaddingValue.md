@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # FullPaddingValue
 
 **Defined at:** `Common.ui:748`

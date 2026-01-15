@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # ContentPaddingFull
 
 **Defined at:** `Common.ui:609`

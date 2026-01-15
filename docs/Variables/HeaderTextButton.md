@@ -1,3 +1,5 @@
+[← Back](../Variables.md)
+
 # HeaderTextButton
 
 **Defined at:** `Common.ui:692`
