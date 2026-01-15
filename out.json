@@ -1,0 +1,835 @@
+{
+    "ImportedFiles": [
+        {
+            "File": "Common.ui",
+            "LineNumber": 1,
+            "Alias": "Sounds",
+            "ImportedFile": "\"Sounds.ui\""
+        }
+    ],
+    "Variables": [
+        {
+            "Name": "Panel",
+            "Value": "Group {\n  Background: (TexturePath: \"Common/ContainerFullPatch.png\", Border: 20);\n}",
+            "File": "Common.ui",
+            "LineNumber": 4
+        },
+        {
+            "Name": "TitleLabel",
+            "Value": "Label = Label {\n  Style: (FontSize: 40, Alignment: Center);\n}",
+            "File": "Common.ui",
+            "LineNumber": 8
+        },
+        {
+            "Name": "DefaultLabelStyle",
+            "Value": "(FontSize: 16, TextColor: #96a9be)",
+            "File": "Common.ui",
+            "LineNumber": 12
+        },
+        {
+            "Name": "ButtonSounds",
+            "Value": "$Sounds.@ButtonsLight",
+            "File": "Common.ui",
+            "LineNumber": 15
+        },
+        {
+            "Name": "ButtonsCancel",
+            "Value": "$Sounds.@ButtonsCancel",
+            "File": "Common.ui",
+            "LineNumber": 16
+        },
+        {
+            "Name": "ButtonDestructiveSounds",
+            "Value": "$Sounds.@ButtonsDestructive",
+            "File": "Common.ui",
+            "LineNumber": 17
+        },
+        {
+            "Name": "ButtonBorder",
+            "Value": "12",
+            "File": "Common.ui",
+            "LineNumber": 19
+        },
+        {
+            "Name": "PrimaryButtonHeight",
+            "Value": "44",
+            "File": "Common.ui",
+            "LineNumber": 20
+        },
+        {
+            "Name": "SmallButtonHeight",
+            "Value": "32",
+            "File": "Common.ui",
+            "LineNumber": 21
+        },
+        {
+            "Name": "BigButtonHeight",
+            "Value": "48",
+            "File": "Common.ui",
+            "LineNumber": 22
+        },
+        {
+            "Name": "ButtonPadding",
+            "Value": "24",
+            "File": "Common.ui",
+            "LineNumber": 23
+        },
+        {
+            "Name": "DefaultButtonMinWidth",
+            "Value": "172",
+            "File": "Common.ui",
+            "LineNumber": 24
+        },
+        {
+            "Name": "DefaultButtonHeight",
+            "Value": "@PrimaryButtonHeight",
+            "File": "Common.ui",
+            "LineNumber": 27
+        },
+        {
+            "Name": "DefaultButtonPadding",
+            "Value": "@ButtonPadding",
+            "File": "Common.ui",
+            "LineNumber": 28
+        },
+        {
+            "Name": "DefaultButtonDefaultBackground",
+            "Value": "PatchStyle(TexturePath: \"Common/Buttons/Primary.png\", VerticalBorder: @ButtonBorder, HorizontalBorder: 80)",
+            "File": "Common.ui",
+            "LineNumber": 30
+        },
+        {
+            "Name": "DefaultButtonHoveredBackground",
+            "Value": "PatchStyle(TexturePath: \"Common/Buttons/Primary_Hovered.png\", VerticalBorder: @ButtonBorder, HorizontalBorder: 80)",
+            "File": "Common.ui",
+            "LineNumber": 31
+        },
+        {
+            "Name": "DefaultButtonPressedBackground",
+            "Value": "PatchStyle(TexturePath: \"Common/Buttons/Primary_Pressed.png\", VerticalBorder: @ButtonBorder, HorizontalBorder: 80)",
+            "File": "Common.ui",
+            "LineNumber": 32
+        },
+        {
+            "Name": "DefaultButtonDisabledBackground",
+            "Value": "PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", VerticalBorder: @ButtonBorder, HorizontalBorder: 80)",
+            "File": "Common.ui",
+            "LineNumber": 33
+        },
+        {
+            "Name": "DefaultSquareButtonDefaultBackground",
+            "Value": "PatchStyle(TexturePath: \"Common/Buttons/Primary_Square.png\", Border: @ButtonBorder)",
+            "File": "Common.ui",
+            "LineNumber": 35
+        },
+        {
+            "Name": "DefaultSquareButtonHoveredBackground",
+            "Value": "PatchStyle(TexturePath: \"Common/Buttons/Primary_Square_Hovered.png\", Border: @ButtonBorder)",
+            "File": "Common.ui",
+            "LineNumber": 36
+        },
+        {
+            "Name": "DefaultSquareButtonPressedBackground",
+            "Value": "PatchStyle(TexturePath: \"Common/Buttons/Primary_Square_Pressed.png\", Border: @ButtonBorder)",
+            "File": "Common.ui",
+            "LineNumber": 37
+        },
+        {
+            "Name": "DefaultSquareButtonDisabledBackground",
+            "Value": "PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder)",
+            "File": "Common.ui",
+            "LineNumber": 38
+        },
+        {
+            "Name": "DisabledColor",
+            "Value": "#797b7c",
+            "File": "Common.ui",
+            "LineNumber": 40
+        },
+        {
+            "Name": "DefaultButtonLabelStyle",
+            "Value": "LabelStyle(\n  FontSize: 17,\n  TextColor: #bfcdd5,\n  RenderBold: true,\n  RenderUppercase: true,\n  HorizontalAlignment: Center,\n  VerticalAlignment: Center\n)",
+            "File": "Common.ui",
+            "LineNumber": 42
+        },
+        {
+            "Name": "DefaultButtonDisabledLabelStyle",
+            "Value": "LabelStyle(\n  ...@DefaultButtonLabelStyle,\n  TextColor: @DisabledColor\n)",
+            "File": "Common.ui",
+            "LineNumber": 51
+        },
+        {
+            "Name": "PrimaryButtonLabelStyle",
+            "Value": "@DefaultButtonLabelStyle",
+            "File": "Common.ui",
+            "LineNumber": 57
+        },
+        {
+            "Name": "PrimaryButtonDisabledLabelStyle",
+            "Value": "@DefaultButtonDisabledLabelStyle",
+            "File": "Common.ui",
+            "LineNumber": 58
+        },
+        {
+            "Name": "SecondaryButtonLabelStyle",
+            "Value": "LabelStyle(\n  ...@DefaultButtonLabelStyle,\n  TextColor: #bdcbd3\n)",
+            "File": "Common.ui",
+            "LineNumber": 60
+        },
+        {
+            "Name": "SecondaryButtonDisabledLabelStyle",
+            "Value": "LabelStyle(\n  ...@SecondaryButtonLabelStyle,\n  TextColor: @DisabledColor\n)",
+            "File": "Common.ui",
+            "LineNumber": 65
+        },
+        {
+            "Name": "SmallButtonLabelStyle",
+            "Value": "LabelStyle(\n  ...@DefaultButtonLabelStyle,\n  FontSize: 14\n)",
+            "File": "Common.ui",
+            "LineNumber": 70
+        },
+        {
+            "Name": "SmallButtonDisabledLabelStyle",
+            "Value": "LabelStyle(\n  ...@SmallButtonLabelStyle,\n  TextColor: @DisabledColor\n)",
+            "File": "Common.ui",
+            "LineNumber": 75
+        },
+        {
+            "Name": "SmallSecondaryButtonLabelStyle",
+            "Value": "LabelStyle(\n  ...@SecondaryButtonLabelStyle,\n  FontSize: 14\n)",
+            "File": "Common.ui",
+            "LineNumber": 80
+        },
+        {
+            "Name": "SmallSecondaryButtonDisabledLabelStyle",
+            "Value": "LabelStyle(\n  ...@SmallSecondaryButtonLabelStyle,\n  TextColor: @DisabledColor\n)",
+            "File": "Common.ui",
+            "LineNumber": 85
+        },
+        {
+            "Name": "DefaultButtonStyle",
+            "Value": "ButtonStyle(\n  Default: (Background: @DefaultButtonDefaultBackground),\n  Hovered: (Background: @DefaultButtonHoveredBackground),\n  Pressed: (Background: @DefaultButtonPressedBackground),\n  Disabled: (Background: @DefaultButtonDisabledBackground),\n  Sounds: @ButtonSounds,\n)",
+            "File": "Common.ui",
+            "LineNumber": 90
+        },
+        {
+            "Name": "DefaultTextButtonStyle",
+            "Value": "TextButtonStyle(\n  Default: (Background: @DefaultButtonDefaultBackground, LabelStyle: @DefaultButtonLabelStyle),\n  Hovered: (Background: @DefaultButtonHoveredBackground, LabelStyle: @DefaultButtonLabelStyle),\n  Pressed: (Background: @DefaultButtonPressedBackground, LabelStyle: @DefaultButtonLabelStyle),\n  Disabled: (Background: @DefaultButtonDisabledBackground, LabelStyle: @DefaultButtonDisabledLabelStyle),\n  Sounds: @ButtonSounds,\n)",
+            "File": "Common.ui",
+            "LineNumber": 98
+        },
+        {
+            "Name": "SmallDefaultTextButtonStyle",
+            "Value": "TextButtonStyle(\n  Default: (Background: (TexturePath: \"Common/ButtonSmall.png\", Border: 6), LabelStyle: @SmallButtonLabelStyle),\n  Hovered: (Background: (TexturePath: \"Common/ButtonSmallHovered.png\", Border: 6), LabelStyle: @SmallButtonLabelStyle),\n  Pressed: (Background: (TexturePath: \"Common/ButtonSmallPressed.png\", Border: 6), LabelStyle: @SmallButtonLabelStyle),\n  Disabled: (Background: @DefaultButtonDisabledBackground, LabelStyle: @SmallButtonDisabledLabelStyle),\n  Sounds: @ButtonSounds,\n)",
+            "File": "Common.ui",
+            "LineNumber": 106
+        },
+        {
+            "Name": "CancelTextButtonStyle",
+            "Value": "TextButtonStyle(\n  Default: (Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle),\n  Hovered: (Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle),\n  Pressed: (Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Pressed.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle),\n  Disabled: (Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle),\n  Sounds: @ButtonsCancel,\n)",
+            "File": "Common.ui",
+            "LineNumber": 114
+        },
+        {
+            "Name": "CancelButtonStyle",
+            "Value": "ButtonStyle(\n  Default: (Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder)),\n  Hovered: (Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder)),\n  Pressed: (Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Pressed.png\", Border: @ButtonBorder)),\n  Disabled: (Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder)),\n  Sounds: @ButtonSounds,\n)",
+            "File": "Common.ui",
+            "LineNumber": 122
+        },
+        {
+            "Name": "SecondaryButtonStyle",
+            "Value": "ButtonStyle(\n  Default: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder)),\n  Hovered: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder)),\n  Pressed: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder)),\n  Disabled: (Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder)),\n  Sounds: @ButtonSounds,\n)",
+            "File": "Common.ui",
+            "LineNumber": 130
+        },
+        {
+            "Name": "SecondaryTextButtonStyle",
+            "Value": "TextButtonStyle(\n  Default: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle),\n  Hovered: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle),\n  Pressed: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle),\n  Disabled: (Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)\n)",
+            "File": "Common.ui",
+            "LineNumber": 138
+        },
+        {
+            "Name": "TertiaryButtonStyle",
+            "Value": "ButtonStyle(\n  Default: (Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary.png\", Border: @ButtonBorder)),\n  Hovered: (Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Hovered.png\", Border: @ButtonBorder)),\n  Pressed: (Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Pressed.png\", Border: @ButtonBorder)),\n  Disabled: (Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder)),\n  Sounds: @ButtonSounds,\n)",
+            "File": "Common.ui",
+            "LineNumber": 145
+        },
+        {
+            "Name": "SmallSecondaryTextButtonStyle",
+            "Value": "TextButtonStyle(\n  Default: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle),\n  Hovered: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle),\n  Pressed: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle),\n  Disabled: (Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)\n)",
+            "File": "Common.ui",
+            "LineNumber": 153
+        },
+        {
+            "Name": "TertiaryTextButtonStyle",
+            "Value": "TextButtonStyle(\n  Default: (Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle),\n  Hovered: (Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle),\n  Pressed: (Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle),\n  Disabled: (Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)\n)",
+            "File": "Common.ui",
+            "LineNumber": 160
+        },
+        {
+            "Name": "TextButton",
+            "Value": "TextButton = TextButton {\n  @Anchor = Anchor();\n  @Sounds = ();\n  Style: (\n    ...@DefaultTextButtonStyle,\n    Sounds: (\n      ...$Sounds.@ButtonsLight,\n      ...@Sounds\n    )\n  );\n  Anchor: (...@Anchor, Height: @DefaultButtonHeight);\n  Padding: (Horizontal: @DefaultButtonPadding);\n  Text: @Text;\n}",
+            "File": "Common.ui",
+            "LineNumber": 167
+        },
+        {
+            "Name": "Button",
+            "Value": "Button = Button {\n  @Anchor = Anchor();\n  @Sounds = ();\n  Style: (\n    ...@DefaultSquareButtonStyle,\n    Sounds: (\n      ...$Sounds.@ButtonsLight,\n      ...@Sounds\n    )\n  );\n  Anchor: (...@Anchor, Height: @DefaultButtonHeight, Width: @DefaultButtonHeight);\n  Padding: (Horizontal: @DefaultButtonPadding);\n}",
+            "File": "Common.ui",
+            "LineNumber": 182
+        },
+        {
+            "Name": "CancelTextButton",
+            "Value": "TextButton = TextButton {\n  @Anchor = Anchor();\n  @Sounds = ();\n  Style: (\n    ...@CancelTextButtonStyle,\n    Sounds: (\n      ...$Sounds.@ButtonsCancel,\n      ...@Sounds\n    )\n  );\n  Anchor: (...@Anchor, Height: @DefaultButtonHeight);\n  Padding: (Horizontal: @DefaultButtonPadding);\n  Text: @Text;\n}",
+            "File": "Common.ui",
+            "LineNumber": 196
+        },
+        {
+            "Name": "CancelButton",
+            "Value": "Button = Button {\n  @Anchor = Anchor();\n  @Sounds = ();\n  @Width = @DefaultButtonHeight;\n  Style: (\n    ...@CancelButtonStyle,\n    Sounds: (\n      ...$Sounds.@ButtonsLight,\n      ...@Sounds\n    )\n  );\n  Anchor: (...@Anchor, Height: @DefaultButtonHeight, Width: @Width);\n}",
+            "File": "Common.ui",
+            "LineNumber": 211
+        },
+        {
+            "Name": "SmallSecondaryTextButton",
+            "Value": "TextButton = TextButton {\n  @Anchor = Anchor();\n  @Sounds = ();\n  Style: (\n    ...@SmallSecondaryTextButtonStyle,\n    Sounds: (\n      ...$Sounds.@ButtonsLight,\n      ...@Sounds\n    )\n  );\n  Anchor: (...@Anchor, Height: @SmallButtonHeight);\n  Padding: (Horizontal: 16);\n  Text: @Text;\n}",
+            "File": "Common.ui",
+            "LineNumber": 225
+        },
+        {
+            "Name": "SmallTertiaryTextButton",
+            "Value": "TextButton = TextButton {\n  @Anchor = Anchor();\n  @Sounds = ();\n  Style: (\n    ...@TertiaryTextButtonStyle,\n    Sounds: (\n      ...$Sounds.@ButtonsLight,\n      ...@Sounds\n    )\n  );\n  Anchor: (...@Anchor, Height: @SmallButtonHeight);\n  Padding: (Horizontal: 16);\n  Text: @Text;\n}",
+            "File": "Common.ui",
+            "LineNumber": 240
+        },
+        {
+            "Name": "SecondaryTextButton",
+            "Value": "TextButton = TextButton {\n  @Anchor = Anchor();\n  @Sounds = ();\n  Style: (\n    ...@SecondaryTextButtonStyle,\n    Sounds: (\n      ...$Sounds.@ButtonsLight,\n      ...@Sounds\n    )\n  );\n  Anchor: (...@Anchor, Height: @DefaultButtonHeight);\n  Padding: (Horizontal: @DefaultButtonPadding);\n  Text: @Text;\n}",
+            "File": "Common.ui",
+            "LineNumber": 255
+        },
+        {
+            "Name": "SecondaryButton",
+            "Value": "Button = Button {\n  @Anchor = Anchor();\n  @Sounds = ();\n  @Width = @DefaultButtonHeight;\n  Style: (\n    ...@SecondaryButtonStyle,\n    Sounds: (\n      ...$Sounds.@ButtonsLight,\n      ...@Sounds\n    )\n  );\n  Anchor: (...@Anchor, Height: @DefaultButtonHeight, Width: @Width);\n}",
+            "File": "Common.ui",
+            "LineNumber": 270
+        },
+        {
+            "Name": "TertiaryTextButton",
+            "Value": "TextButton = TextButton {\n  @Anchor = Anchor();\n  @Sounds = ();\n  Style: (\n    ...@TertiaryTextButtonStyle,\n    Sounds: (\n      ...$Sounds.@ButtonsLight,\n      ...@Sounds\n    )\n  );\n  Anchor: (...@Anchor, Height: @DefaultButtonHeight);\n  Padding: (Horizontal: @DefaultButtonPadding);\n  Text: @Text;\n}",
+            "File": "Common.ui",
+            "LineNumber": 284
+        },
+        {
+            "Name": "TertiaryButton",
+            "Value": "Button = Button {\n  @Anchor = Anchor();\n  @Sounds = ();\n  @Width = @DefaultButtonHeight;\n  Style: (\n    ...@TertiaryButtonStyle,\n    Sounds: (\n      ...$Sounds.@ButtonsLight,\n      ...@Sounds\n    )\n  );\n  Anchor: (...@Anchor, Height: @DefaultButtonHeight, Width: @Width);\n}",
+            "File": "Common.ui",
+            "LineNumber": 299
+        },
+        {
+            "Name": "DefaultColorPickerStyle",
+            "Value": "ColorPickerStyle(\n  OpacitySelectorBackground: \"Common/ColorPickerOpacitySelectorBackground.png\",\n  ButtonBackground: \"Common/ColorPickerButton.png\",\n  ButtonFill: \"Common/ColorPickerFill.png\",\n  TextFieldDecoration: (\n    Default: (\n      Background: #000000(0.5)\n    )\n  ),\n  TextFieldPadding: (Left: 7),\n  TextFieldHeight: 32\n)",
+            "File": "Common.ui",
+            "LineNumber": 314
+        },
+        {
+            "Name": "DefaultColorPickerDropdownBoxStyle",
+            "Value": "ColorPickerDropdownBoxStyle(\n  ColorPickerStyle: @DefaultColorPickerStyle,\n  Background: (Default: \"Common/ColorPickerDropdownBoxBackground.png\"),\n  ArrowBackground: (Default: \"Common/ColorPickerDropdownBoxArrow.png\"),\n  Overlay: (Default: \"Common/ColorPickerDropdownBoxOverlay.png\"),\n  PanelBackground: (TexturePath: \"Common/DropdownBox.png\", Border: 16),\n  PanelPadding: (Full: 15),\n  PanelOffset: 10,\n  ArrowAnchor: (Width: 11, Height: 7, Right: 3, Bottom: 3)\n)",
+            "File": "Common.ui",
+            "LineNumber": 327
+        },
+        {
+            "Name": "CloseButton",
+            "Value": "Button = Button {\n  Anchor: (Top: -16, Right: -16, Width: 32, Height: 32);\n\n  Style: (\n    Default: (Background: \"Common/ContainerCloseButton.png\"),\n    Hovered: (Background: \"Common/ContainerCloseButtonHovered.png\"),\n    Pressed: (Background: \"Common/ContainerCloseButtonPressed.png\"),\n  );\n}",
+            "File": "Common.ui",
+            "LineNumber": 338
+        },
+        {
+            "Name": "DefaultScrollbarStyle",
+            "Value": "ScrollbarStyle(\n  Spacing: 6,\n  Size: 6,\n  Background: (TexturePath: \"Common/Scrollbar.png\", Border: 3),\n  Handle: (TexturePath: \"Common/ScrollbarHandle.png\", Border: 3),\n  HoveredHandle: (TexturePath: \"Common/ScrollbarHandleHovered.png\", Border: 3),\n  DraggedHandle: (TexturePath: \"Common/ScrollbarHandleDragged.png\", Border: 3)\n)",
+            "File": "Common.ui",
+            "LineNumber": 348
+        },
+        {
+            "Name": "DefaultExtraSpacingScrollbarStyle",
+            "Value": "ScrollbarStyle(\n  ...@DefaultScrollbarStyle,\n  Spacing: 12\n)",
+            "File": "Common.ui",
+            "LineNumber": 357
+        },
+        {
+            "Name": "TranslucentScrollbarStyle",
+            "Value": "ScrollbarStyle(\n  Spacing: 6,\n  Size: 6,\n  OnlyVisibleWhenHovered: true,\n  Handle: (TexturePath: \"Common/ScrollbarHandle.png\", Border: 3)\n)",
+            "File": "Common.ui",
+            "LineNumber": 362
+        },
+        {
+            "Name": "DefaultPlaceholderScrollbarStyle",
+            "Value": "ScrollbarStyle(\n  Spacing: 12,\n  Size: 10\n)",
+            "File": "Common.ui",
+            "LineNumber": 369
+        },
+        {
+            "Name": "DefaultCheckBoxStyle",
+            "Value": "CheckBoxStyle(\n  Unchecked: (\n    DefaultBackground: (Color: #00000000),\n    HoveredBackground: (Color: #00000000),\n    PressedBackground: (Color: #00000000),\n    DisabledBackground: (Color: #424242),\n    ChangedSound: (SoundPath: $Sounds.@Untick, Volume: 6)\n  ),\n  Checked: (\n    DefaultBackground: (TexturePath: \"Common/Checkmark.png\"),\n    HoveredBackground: (TexturePath: \"Common/Checkmark.png\"),\n    PressedBackground: (TexturePath: \"Common/Checkmark.png\"),\n    ChangedSound: (SoundPath: $Sounds.@Tick, Volume: 6)\n  )\n)",
+            "File": "Common.ui",
+            "LineNumber": 374
+        },
+        {
+            "Name": "CheckBox",
+            "Value": "CheckBox = CheckBox {\n  Anchor: (Width: 22, Height: 22);\n  Background: (TexturePath: \"Common/CheckBoxFrame.png\", Border: 7);\n  Padding: (Full: 4);\n  Style: @DefaultCheckBoxStyle;\n}",
+            "File": "Common.ui",
+            "LineNumber": 390
+        },
+        {
+            "Name": "CheckBoxWithLabel",
+            "Value": "Group {\n  @Checked = false;\n\n  LayoutMode: Left;\n\n  @CheckBox #CheckBox {\n    Value: @Checked;\n  }\n\n  Label {\n    Text: @Text;\n    Anchor: (Right: 30, Left: 11);\n    Style: (\n      ...@DefaultLabelStyle,\n      VerticalAlignment: Center\n    );\n  }\n}",
+            "File": "Common.ui",
+            "LineNumber": 397
+        },
+        {
+            "Name": "InputBoxBackground",
+            "Value": "PatchStyle(TexturePath: \"Common/InputBox.png\", Border: 16)",
+            "File": "Common.ui",
+            "LineNumber": 416
+        },
+        {
+            "Name": "InputBoxHoveredBackground",
+            "Value": "PatchStyle(TexturePath: \"Common/InputBoxHovered.png\", Border: 16)",
+            "File": "Common.ui",
+            "LineNumber": 417
+        },
+        {
+            "Name": "InputBoxPressedBackground",
+            "Value": "PatchStyle(TexturePath: \"Common/InputBoxPressed.png\", Border: 16)",
+            "File": "Common.ui",
+            "LineNumber": 418
+        },
+        {
+            "Name": "InputBoxSelectedBackground",
+            "Value": "PatchStyle(TexturePath: \"Common/InputBoxSelected.png\", Border: 16)",
+            "File": "Common.ui",
+            "LineNumber": 419
+        },
+        {
+            "Name": "DefaultInputFieldStyle",
+            "Value": "InputFieldStyle()",
+            "File": "Common.ui",
+            "LineNumber": 421
+        },
+        {
+            "Name": "DefaultInputFieldPlaceholderStyle",
+            "Value": "InputFieldStyle(TextColor: #6e7da1)",
+            "File": "Common.ui",
+            "LineNumber": 422
+        },
+        {
+            "Name": "TextField",
+            "Value": "TextField = TextField {\n  @Anchor = ();\n\n  Style: @DefaultInputFieldStyle;\n  PlaceholderStyle: @DefaultInputFieldPlaceholderStyle;\n  Background: @InputBoxBackground;\n  Anchor: (...@Anchor, Height: 38);\n  Padding: (Horizontal: 10);\n}",
+            "File": "Common.ui",
+            "LineNumber": 424
+        },
+        {
+            "Name": "NumberField",
+            "Value": "NumberField = NumberField {\n  @Anchor = ();\n\n  Style: @DefaultInputFieldStyle;\n  PlaceholderStyle: @DefaultInputFieldPlaceholderStyle;\n  Background: @InputBoxBackground;\n  Anchor: (...@Anchor, Height: 38);\n  Padding: (Horizontal: 10);\n}",
+            "File": "Common.ui",
+            "LineNumber": 434
+        },
+        {
+            "Name": "DefaultDropdownBoxLabelStyle",
+            "Value": "LabelStyle(TextColor: #96a9be, RenderUppercase: true, VerticalAlignment: Center, FontSize: 13)",
+            "File": "Common.ui",
+            "LineNumber": 444
+        },
+        {
+            "Name": "DefaultDropdownBoxEntryLabelStyle",
+            "Value": "LabelStyle(...@DefaultDropdownBoxLabelStyle, TextColor: #b7cedd)",
+            "File": "Common.ui",
+            "LineNumber": 445
+        },
+        {
+            "Name": "DefaultDropdownBoxStyle",
+            "Value": "DropdownBoxStyle(\n  DefaultBackground: (TexturePath: \"Common/Dropdown.png\", Border: 16),\n  HoveredBackground: (TexturePath: \"Common/DropdownHovered.png\", Border: 16),\n  PressedBackground: (TexturePath: \"Common/DropdownPressed.png\", Border: 16),\n  DefaultArrowTexturePath: \"Common/DropdownCaret.png\",\n  HoveredArrowTexturePath: \"Common/DropdownCaret.png\",\n  PressedArrowTexturePath: \"Common/DropdownPressedCaret.png\",\n  ArrowWidth: 13,\n  ArrowHeight: 18,\n  LabelStyle: @DefaultDropdownBoxLabelStyle,\n  EntryLabelStyle: @DefaultDropdownBoxEntryLabelStyle,\n  NoItemsLabelStyle: (...@DefaultDropdownBoxEntryLabelStyle, TextColor: #b7cedd(0.5)),\n  SelectedEntryLabelStyle: (...@DefaultDropdownBoxEntryLabelStyle, RenderBold: true),\n  HorizontalPadding: 8,\n  PanelScrollbarStyle: @DefaultScrollbarStyle,\n  PanelBackground: (TexturePath: \"Common/DropdownBox.png\", Border: 16),\n  PanelPadding: 6,\n  PanelAlign: Right,\n  PanelOffset: 7,\n  EntryHeight: 31,\n  EntriesInViewport: 10,\n  HorizontalEntryPadding: 7,\n  HoveredEntryBackground: (Color: #0a0f17),\n  PressedEntryBackground: (Color: #0f1621),\n  Sounds: $Sounds.@DropdownBox,\n  EntrySounds: $Sounds.@ButtonsLight,\n  FocusOutlineSize: 1,\n  FocusOutlineColor: #ffffff(0.4)\n)",
+            "File": "Common.ui",
+            "LineNumber": 447
+        },
+        {
+            "Name": "DropdownBoxHeight",
+            "Value": "32",
+            "File": "Common.ui",
+            "LineNumber": 477
+        },
+        {
+            "Name": "DropdownBox",
+            "Value": "DropdownBox = DropdownBox {\n  @Anchor = ();\n\n  Anchor: (...@Anchor, Width: 330, Height: @DropdownBoxHeight);\n  Style: @DefaultDropdownBoxStyle;\n}",
+            "File": "Common.ui",
+            "LineNumber": 479
+        },
+        {
+            "Name": "DefaultFileDropdownBoxStyle",
+            "Value": "FileDropdownBoxStyle(\n  DefaultBackground: (TexturePath: \"Common/Dropdown.png\", Border: 16),\n  HoveredBackground: (TexturePath: \"Common/DropdownHovered.png\", Border: 16),\n  PressedBackground: (TexturePath: \"Common/DropdownPressed.png\", Border: 16),\n  DefaultArrowTexturePath: \"Common/DropdownCaret.png\",\n  HoveredArrowTexturePath: \"Common/DropdownCaret.png\",\n  PressedArrowTexturePath: \"Common/DropdownPressedCaret.png\",\n  ArrowWidth: 9,\n  ArrowHeight: 18,\n  LabelStyle: (TextColor: #96a9be, RenderBold: true, VerticalAlignment: Center, FontSize: 18),\n  HorizontalPadding: 14,\n  PanelAlign: Bottom,\n  PanelOffset: 7,\n  Sounds: $Sounds.@DropdownBox\n)",
+            "File": "Common.ui",
+            "LineNumber": 506
+        },
+        {
+            "Name": "DefaultPopupMenuLayerStyle",
+            "Value": "PopupMenuLayerStyle(\n  Background: (TexturePath: \"Common/Popup.png\", Border: 16),\n  Padding: 2,\n  BaseHeight: 5,\n  MaxWidth: 200,\n  TitleStyle: (RenderBold: true, RenderUppercase: true, FontSize: 13, TextColor: #ccb588),\n  TitleBackground: (TexturePath: \"Common/PopupTitle.png\"),\n  RowHeight: 25,\n  ItemLabelStyle: (RenderBold: true, RenderUppercase: true, FontSize: 11, TextColor: #96a9be(0.8)),\n  ItemPadding: (Vertical: 5, Horizontal: 8),\n  ItemBackground: (TexturePath: \"Common/PopupItem.png\"),\n  ItemIconSize: 16,\n  HoveredItemBackground: (TexturePath: \"Common/HoveredPopupItem.png\"),\n  PressedItemBackground: (TexturePath: \"Common/PressedPopupItem.png\"),\n  ItemSounds: $Sounds.@ButtonsLight\n)",
+            "File": "Common.ui",
+            "LineNumber": 522
+        },
+        {
+            "Name": "PopupTitleStyle",
+            "Value": "LabelStyle(\n  FontSize: 38,\n  LetterSpacing: 2,\n  RenderUppercase: true,\n  RenderBold: true,\n  HorizontalAlignment: Center,\n  VerticalAlignment: Center\n)",
+            "File": "Common.ui",
+            "LineNumber": 539
+        },
+        {
+            "Name": "ContentSeparator",
+            "Value": "Group {\n  @Anchor = Anchor();\n\n  Anchor: (...@Anchor, Height: 1);\n  Background: (Color: #2b3542);\n}",
+            "File": "Common.ui",
+            "LineNumber": 548
+        },
+        {
+            "Name": "DefaultSpinner",
+            "Value": "Sprite {\n  @Anchor = ();\n  Anchor: (...@Anchor, Width: 32, Height: 32);\n  TexturePath: \"Common/Spinner.png\";\n  Frame: (Width: 32, Height: 32, PerRow: 8, Count: 72);\n  FramesPerSecond: 30;\n}",
+            "File": "Common.ui",
+            "LineNumber": 555
+        },
+        {
+            "Name": "ActionButtonContainer",
+            "Value": "Group {\n  LayoutMode: Right;\n  Anchor: (Right: 50, Bottom: 50, Height: 27);\n}",
+            "File": "Common.ui",
+            "LineNumber": 563
+        },
+        {
+            "Name": "ActionButtonSeparator",
+            "Value": "Group {\n  Anchor: (Width: 35);\n}",
+            "File": "Common.ui",
+            "LineNumber": 568
+        },
+        {
+            "Name": "VerticalActionButtonSeparator",
+            "Value": "Group {\n  Anchor: (Height: 20);\n}",
+            "File": "Common.ui",
+            "LineNumber": 572
+        },
+        {
+            "Name": "SubtitleStyle",
+            "Value": "LabelStyle(FontSize: 15, RenderUppercase: true, TextColor: #96a9be)",
+            "File": "Common.ui",
+            "LineNumber": 576
+        },
+        {
+            "Name": "Subtitle",
+            "Value": "Label {\n  Style: @SubtitleStyle;\n  Text: @Text;\n  Anchor: (Bottom: 10);\n}",
+            "File": "Common.ui",
+            "LineNumber": 578
+        },
+        {
+            "Name": "TitleStyle",
+            "Value": "LabelStyle(\n  FontSize: 15,\n  VerticalAlignment: Center,\n  RenderUppercase: true,\n  TextColor: #b4c8c9,\n  FontName: \"Secondary\",\n  RenderBold: true,\n  LetterSpacing: 0\n)",
+            "File": "Common.ui",
+            "LineNumber": 584
+        },
+        {
+            "Name": "Title",
+            "Value": "Label {\n  @Alignment = Center;\n  @Text = \"\";\n\n  Style: (\n    ...@TitleStyle,\n    HorizontalAlignment: @Alignment\n  );\n  Padding: (Horizontal: 19);\n  Text: @Text;\n}",
+            "File": "Common.ui",
+            "LineNumber": 594
+        },
+        {
+            "Name": "TitleHeight",
+            "Value": "38",
+            "File": "Common.ui",
+            "LineNumber": 606
+        },
+        {
+            "Name": "TitleOffset",
+            "Value": "4",
+            "File": "Common.ui",
+            "LineNumber": 607
+        },
+        {
+            "Name": "ContentPaddingFull",
+            "Value": "9 + 8",
+            "File": "Common.ui",
+            "LineNumber": 609
+        },
+        {
+            "Name": "ContentPadding",
+            "Value": "Padding(Full: @ContentPaddingFull, Top: 8)",
+            "File": "Common.ui",
+            "LineNumber": 610
+        },
+        {
+            "Name": "TopTabAnchor",
+            "Value": "Anchor(Width: 82, Height: 62, Right: 5, Bottom: -14)",
+            "File": "Common.ui",
+            "LineNumber": 612
+        },
+        {
+            "Name": "TopTabStyle",
+            "Value": "TabStateStyle(\n  Background: \"Common/Tab.png\",\n  Overlay: \"Common/TabOverlay.png\",\n  IconAnchor: (Width: 44, Height: 44),\n  Anchor: (Width: 82, Height: 62, Right: 5, Bottom: -14))",
+            "File": "Common.ui",
+            "LineNumber": 614
+        },
+        {
+            "Name": "TopTabsStyle",
+            "Value": "TabNavigationStyle(\n  TabStyle: (\n    Default: @TopTabStyle,\n    Hovered: (...@TopTabStyle, Anchor: (...@TopTabAnchor, Bottom: -5)),\n    Pressed: (...@TopTabStyle, Anchor: (...@TopTabAnchor, Bottom: -8))\n  ),\n  SelectedTabStyle: (\n    Default: (\n      ...@TopTabStyle,\n      Anchor: (...@TopTabAnchor, Bottom: 4),\n      IconAnchor: (Width: 44, Height: 44),\n      Overlay: \"Common/TabSelectedOverlay.png\"\n    )\n  ))",
+            "File": "Common.ui",
+            "LineNumber": 620
+        },
+        {
+            "Name": "HeaderTabStyle",
+            "Value": "TabStateStyle(\n  Anchor: (Width: 34, Height: 34),\n  IconOpacity: 0.25)",
+            "File": "Common.ui",
+            "LineNumber": 635
+        },
+        {
+            "Name": "HeaderTabsStyle",
+            "Value": "TabNavigationStyle(\n  TabStyle: (\n    Default: @HeaderTabStyle\n  ),\n  SelectedTabStyle: (\n    Default: (\n      ...@HeaderTabStyle,\n      IconOpacity: 1\n    )\n  ),\n  SeparatorAnchor: (Width: 5, Height: 34),\n  SeparatorBackground: \"Common/HeaderTabSeparator.png\")",
+            "File": "Common.ui",
+            "LineNumber": 639
+        },
+        {
+            "Name": "ClearButtonStyle",
+            "Value": "(\n  Texture: (TexturePath: \"Common/ClearInputIcon.png\", Color: #ffffff(0.3)),\n  HoveredTexture: (TexturePath: \"Common/ClearInputIcon.png\", Color: #ffffff(0.5)),\n  PressedTexture: (TexturePath: \"Common/ClearInputIcon.png\", Color: #ffffff(0.4)),\n  Width: 16,\n  Height: 16,\n  Side: Right,\n  Offset: 10\n)",
+            "File": "Common.ui",
+            "LineNumber": 652
+        },
+        {
+            "Name": "HeaderSearch",
+            "Value": "Group {\n  @MarginRight = 10;\n\n  Anchor: (Width: 200, Right: 0);\n\n  CompactTextField #SearchInput {\n    Anchor: (Height: 30, Right: @MarginRight);\n    CollapsedWidth: 34;\n    ExpandedWidth: 200;\n    PlaceholderText: %server.customUI.searchPlaceholder;\n    Style: (FontSize: 16);\n    PlaceholderStyle: (TextColor: #3d5a85, RenderUppercase: true, FontSize: 14);\n    Padding: (Horizontal: 12, Left: 34);\n    Decoration: (\n      Default: (\n        Icon: (Texture: \"Common/SearchIcon.png\", Width: 16, Height: 16, Offset: 9),\n        ClearButtonStyle: @ClearButtonStyle\n      )\n    );\n  }\n}",
+            "File": "Common.ui",
+            "LineNumber": 662
+        },
+        {
+            "Name": "HeaderTextButtonLabelStyle",
+            "Value": "(...@TitleStyle, VerticalAlignment: Center, TextColor: #d3d6db, FontName: \"Default\", RenderBold: true, LetterSpacing: 1)",
+            "File": "Common.ui",
+            "LineNumber": 684
+        },
+        {
+            "Name": "HeaderTextButtonStyle",
+            "Value": "TextButtonStyle(\n  Default: (LabelStyle: @HeaderTextButtonLabelStyle),\n  Hovered: (LabelStyle: (...@HeaderTextButtonLabelStyle, TextColor: #eaebee)),\n  Pressed: (LabelStyle: (...@HeaderTextButtonLabelStyle, TextColor: #b6bbc2)),\n)",
+            "File": "Common.ui",
+            "LineNumber": 686
+        },
+        {
+            "Name": "HeaderTextButton",
+            "Value": "TextButton = TextButton {\n  Style: @HeaderTextButtonStyle;\n  Padding: (Right: 22, Left: 15, Bottom: 1);\n}",
+            "File": "Common.ui",
+            "LineNumber": 692
+        },
+        {
+            "Name": "HeaderSeparator",
+            "Value": "Group {\n  Anchor: (Width: 5, Height: 34);\n  Background: \"Common/HeaderTabSeparator.png\";\n}",
+            "File": "Common.ui",
+            "LineNumber": 697
+        },
+        {
+            "Name": "PanelTitle",
+            "Value": "Group {\n  @Alignment = Start;\n  @Text = \"\";\n\n  LayoutMode: Top;\n\n  Label #PanelTitle {\n    Style: (RenderBold: true, VerticalAlignment: Center, FontSize: 15, TextColor: #afc2c3, HorizontalAlignment: @Alignment);\n    Anchor: (Height: 35, Horizontal: 8);\n    Text: @Text;\n  }\n\n  Group {\n    Background: #393426(0.5);\n    Anchor: (Height: 1);\n  }\n}",
+            "File": "Common.ui",
+            "LineNumber": 702
+        },
+        {
+            "Name": "VerticalSeparator",
+            "Value": "Group {\n  Background: (TexturePath: \"Common/ContainerVerticalSeparator.png\");\n  Anchor: (Width: 6, Top: -2);\n}",
+            "File": "Common.ui",
+            "LineNumber": 720
+        },
+        {
+            "Name": "PanelSeparatorFancy",
+            "Value": "Group {\n  @Anchor = ();\n\n  LayoutMode: Left;\n  Anchor: (...@Anchor, Height: 8);\n\n  Group {\n    FlexWeight: 1;\n    Background: \"Common/ContainerPanelSeparatorFancyLine.png\";\n  }\n\n  Group {\n    Anchor: (Width: 11);\n    Background: \"Common/ContainerPanelSeparatorFancyDecoration.png\";\n  }\n\n  Group {\n    FlexWeight: 1;\n    Background: \"Common/ContainerPanelSeparatorFancyLine.png\";\n  }\n}",
+            "File": "Common.ui",
+            "LineNumber": 725
+        },
+        {
+            "Name": "InnerPaddingValue",
+            "Value": "8",
+            "File": "Common.ui",
+            "LineNumber": 747
+        },
+        {
+            "Name": "FullPaddingValue",
+            "Value": "@InnerPaddingValue + 9",
+            "File": "Common.ui",
+            "LineNumber": 748
+        },
+        {
+            "Name": "Container",
+            "Value": "Group {\n  @ContentPadding = Padding(Full: @FullPaddingValue);\n  @CloseButton = false;\n\n  Group #Title {\n    Anchor: (Height: @TitleHeight, Top: 0);\n    Padding: (Top: 7);\n    Background: (TexturePath: \"Common/ContainerHeaderNoRunes.png\", HorizontalBorder: 35, VerticalBorder: 0);\n  }\n\n  Group #Content {\n    LayoutMode: Top;\n    Padding: @ContentPadding;\n    Anchor: (Top: @TitleHeight);\n    Background: (TexturePath: \"Common/ContainerPatch.png\", Border: 23);\n  }\n\n  Button #CloseButton {\n    Anchor: (Width: 32, Height: 32, Top: -8, Right: -8);\n    Style: (\n      Default: (Background: \"Common/ContainerCloseButton.png\"),\n      Hovered: (Background: \"Common/ContainerCloseButtonHovered.png\"),\n      Pressed: (Background: \"Common/ContainerCloseButtonPressed.png\"),\n      Sounds: @ButtonsCancel\n    );\n    Visible: @CloseButton;\n  }\n}",
+            "File": "Common.ui",
+            "LineNumber": 750
+        },
+        {
+            "Name": "DecoratedContainer",
+            "Value": "Group {\n  @ContentPadding = Padding(Full: 9 + 8);\n  @CloseButton = false;\n\n  Group #Title {\n    Anchor: (Height: @TitleHeight, Top: 0);\n    Background: (TexturePath: \"Common/ContainerHeader.png\", HorizontalBorder: 50, VerticalBorder: 0);\n    Padding: (Top: 7);\n\n    Group #ContainerDecorationTop {\n      Anchor: (Width: 236, Height: 11, Top: -12);\n      Background: \"Common/ContainerDecorationTop.png\";\n    }\n  }\n\n  Group #Content {\n    LayoutMode: Top;\n    Anchor: (Top: @TitleHeight);\n    Padding: @ContentPadding;\n    Background: (TexturePath: \"Common/ContainerPatch.png\", Border: 23);\n  }\n\n  Group #ContainerDecorationBottom {\n    Anchor: (Width: 236, Height: 11, Bottom: -6);\n    Background: \"Common/ContainerDecorationBottom.png\";\n  }\n\n  Button #CloseButton {\n    Anchor: (Width: 32, Height: 32, Top: -8, Right: -8);\n    Style: (\n      Default: (Background: \"Common/ContainerCloseButton.png\"),\n      Hovered: (Background: \"Common/ContainerCloseButtonHovered.png\"),\n      Pressed: (Background: \"Common/ContainerCloseButtonPressed.png\"),\n      Sounds: @ButtonsCancel\n    );\n    Visible: @CloseButton;\n  }\n}",
+            "File": "Common.ui",
+            "LineNumber": 779
+        },
+        {
+            "Name": "PageOverlay",
+            "Value": "Group {\n  Background: #000000(0.45);\n}",
+            "File": "Common.ui",
+            "LineNumber": 818
+        },
+        {
+            "Name": "DefaultSliderStyle",
+            "Value": "SliderStyle(\n  Background: (TexturePath: \"Common/SliderBackground.png\", Border: 2),\n  Handle: \"Common/SliderHandle.png\",\n  HandleWidth: 16,\n  HandleHeight: 16,\n  Sounds: (\n    MouseHover: (SoundPath: $Sounds.@ButtonsLightHover, Volume: 6)\n  )\n)",
+            "File": "Common.ui",
+            "LineNumber": 822
+        },
+        {
+            "Name": "BackButton",
+            "Value": "Group {\n  LayoutMode: Left;\n  Anchor: (Left: 50, Bottom: 50, Width: 110, Height: 27);\n\n  BackButton {}\n}",
+            "File": "Common.ui",
+            "LineNumber": 832
+        },
+        {
+            "Name": "DefaultTextTooltipStyle",
+            "Value": "TextTooltipStyle(\n  Background: (TexturePath: \"Common/TooltipDefaultBackground.png\", Border: 24),\n  MaxWidth: 400,\n  LabelStyle: (Wrap: true, FontSize: 16),\n  Padding: 24\n)",
+            "File": "Common.ui",
+            "LineNumber": 839
+        }
+    ],
+    "Types": [
+        {
+            "File": "Common.ui",
+            "LineNumber": 30,
+            "Name": "PatchStyle"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 42,
+            "Name": "LabelStyle"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 90,
+            "Name": "ButtonStyle"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 98,
+            "Name": "TextButtonStyle"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 168,
+            "Name": "Anchor"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 314,
+            "Name": "ColorPickerStyle"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 327,
+            "Name": "ColorPickerDropdownBoxStyle"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 348,
+            "Name": "ScrollbarStyle"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 374,
+            "Name": "CheckBoxStyle"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 421,
+            "Name": "InputFieldStyle"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 447,
+            "Name": "DropdownBoxStyle"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 506,
+            "Name": "FileDropdownBoxStyle"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 522,
+            "Name": "PopupMenuLayerStyle"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 610,
+            "Name": "Padding"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 614,
+            "Name": "TabStateStyle"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 620,
+            "Name": "TabNavigationStyle"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 822,
+            "Name": "SliderStyle"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 839,
+            "Name": "TextTooltipStyle"
+        }
+    ],
+    "UIElements": [
+        {
+            "File": "Common.ui",
+            "LineNumber": 4,
+            "Name": "Group"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 8,
+            "Name": "Label"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 167,
+            "Name": "TextButton"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 182,
+            "Name": "Button"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 390,
+            "Name": "CheckBox"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 424,
+            "Name": "TextField"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 434,
+            "Name": "NumberField"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 479,
+            "Name": "DropdownBox"
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 555,
+            "Name": "Sprite"
+        }
+    ]
+}
