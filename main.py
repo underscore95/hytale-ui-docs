@@ -238,13 +238,22 @@ def parse_file(path: str):
             parse_ui_elements(path, lines, line_index)
 
             parse_var(path, lines, tokens, line_index)
-        
-    convert_field_sets_to_lists()
-                
 
+def parse_all_ui_files():
+    for root, _, files in os.walk(ASSETS_DIR):
+        for file in files:
+            if not file.endswith(".ui"):
+                continue
+            full_path = os.path.join(root, file)
+            rel_path = os.path.relpath(full_path, ASSETS_DIR)
+            parse_file(rel_path)
 
-parse_file("Common.ui")
+#parse_file("Common.ui")
 
+parse_all_ui_files()
+
+convert_field_sets_to_lists()
 with open("out.json", "w") as file:
     file.write(json.dumps(data, indent=4))
 
+import gen_docs

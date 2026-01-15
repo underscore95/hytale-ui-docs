@@ -8,21 +8,29 @@
 
 ### FontSize
 
-- `17`
 - `18),
   HorizontalPadding: 14,
   PanelAlign: Bottom,
   PanelOffset: 7,
   Sounds: $Sounds.@DropdownBox`
-- `13`
 - `15`
 - `38`
+- `32`
+- `17`
+- `25`
+- `10`
+- `16`
+- `18`
+- `13`
 
 ### TextColor
 
-- `#bfcdd5`
-- `#96a9be`
+- `#dee2ef`
 - `#b4c8c9`
+- `#96a9be`
+- `#ffffff`
+- `#bfcdd5`
+- `#778292`
 
 ### RenderBold
 
@@ -35,15 +43,17 @@
 ### HorizontalAlignment
 
 - `Center`
+- `End`
 
 ### VerticalAlignment
 
 - `Center`
+- `End`
 
 ### ...@DefaultButtonLabelStyle,  TextColor
 
-- `#bdcbd3`
 - `[DisabledColor](Variables/DisabledColor.md)`
+- `#bdcbd3`
 
 ### ...@SecondaryButtonLabelStyle,  TextColor
 
@@ -81,10 +91,19 @@
 
 ### LetterSpacing
 
+- `0.5`
 - `0`
 - `2`
 
 ### FontName
 
 - `"Secondary"`
+
+### Wrap
+
+- `true`
+
+### 
+
+- ``
 

@@ -5,6 +5,444 @@
             "LineNumber": 1,
             "Alias": "Sounds",
             "ImportedFile": "\"Sounds.ui\""
+        },
+        {
+            "File": "Test.ui",
+            "LineNumber": 1,
+            "Alias": "Sounds",
+            "ImportedFile": "\"Sounds.ui\""
+        },
+        {
+            "File": "Common\\TextButton.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Common\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\BarterPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\BarterTradeRow.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\ChangeModelPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\CommandListPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\ConfigureInstanceBlockPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\EntitySpawnPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\ImageImportPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\ImageImportPage.ui",
+            "LineNumber": 2,
+            "Alias": "Sounds",
+            "ImportedFile": "Pages\\\"..\\Sounds.ui\""
+        },
+        {
+            "File": "Pages\\ImageImportPage.ui",
+            "LineNumber": 4,
+            "Alias": "C.@PageOverlay",
+            "ImportedFile": "Pages\\{"
+        },
+        {
+            "File": "Pages\\ImageImportPage.ui",
+            "LineNumber": 135,
+            "Alias": "C.@PageOverlay",
+            "ImportedFile": "Pages\\{"
+        },
+        {
+            "File": "Pages\\InstanceListPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\ItemRepairPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\LaunchPadSettingsPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\NameRespawnPointPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\NameRespawnPointPage.ui",
+            "LineNumber": 2,
+            "Alias": "Sounds",
+            "ImportedFile": "Pages\\\"..\\Sounds.ui\""
+        },
+        {
+            "File": "Pages\\ObjectiveAdminPanelPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\ObjImportPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\ObjImportPage.ui",
+            "LineNumber": 2,
+            "Alias": "Sounds",
+            "ImportedFile": "Pages\\\"..\\Sounds.ui\""
+        },
+        {
+            "File": "Pages\\ObjImportPage.ui",
+            "LineNumber": 4,
+            "Alias": "C.@PageOverlay",
+            "ImportedFile": "Pages\\{"
+        },
+        {
+            "File": "Pages\\ObjImportPage.ui",
+            "LineNumber": 220,
+            "Alias": "C.@PageOverlay",
+            "ImportedFile": "Pages\\{"
+        },
+        {
+            "File": "Pages\\OverrideNearbyRespawnPointPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\OverrideNearbyRespawnPointPage.ui",
+            "LineNumber": 2,
+            "Alias": "Sounds",
+            "ImportedFile": "Pages\\\"..\\Sounds.ui\""
+        },
+        {
+            "File": "Pages\\OverrideRespawnPointButton.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\OverrideRespawnPointButton.ui",
+            "LineNumber": 2,
+            "Alias": "Sounds",
+            "ImportedFile": "Pages\\\"..\\Sounds.ui\""
+        },
+        {
+            "File": "Pages\\ParticleSpawnPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\PlaySoundPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\PluginListButton.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\PluginListPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\PortalDeviceActive.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\PortalDeviceError.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\PortalDeviceSummon.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\PortalDeviceSummon.ui",
+            "LineNumber": 2,
+            "Alias": "Portals",
+            "ImportedFile": "Pages\\\"Portals\\Portals.ui\""
+        },
+        {
+            "File": "Pages\\PrefabBrowser.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\PrefabEditorExitConfirm.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\PrefabEditorExitConfirm.ui",
+            "LineNumber": 2,
+            "Alias": "Sounds",
+            "ImportedFile": "Pages\\\"..\\Sounds.ui\""
+        },
+        {
+            "File": "Pages\\PrefabEditorSaveSettings.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\PrefabEditorSaveSettings.ui",
+            "LineNumber": 2,
+            "Alias": "Sounds",
+            "ImportedFile": "Pages\\\"..\\Sounds.ui\""
+        },
+        {
+            "File": "Pages\\PrefabEditorSaveSettings.ui",
+            "LineNumber": 18,
+            "Alias": "C.@PageOverlay",
+            "ImportedFile": "Pages\\{"
+        },
+        {
+            "File": "Pages\\PrefabEditorSaveSettings.ui",
+            "LineNumber": 140,
+            "Alias": "C.@PageOverlay",
+            "ImportedFile": "Pages\\{"
+        },
+        {
+            "File": "Pages\\PrefabEditorSaveSettings.ui",
+            "LineNumber": 203,
+            "Alias": "C.@PageOverlay",
+            "ImportedFile": "Pages\\{"
+        },
+        {
+            "File": "Pages\\PrefabEditorSettings.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\PrefabEditorSettings.ui",
+            "LineNumber": 2,
+            "Alias": "Sounds",
+            "ImportedFile": "Pages\\\"..\\Sounds.ui\""
+        },
+        {
+            "File": "Pages\\PrefabEditorSettings.ui",
+            "LineNumber": 3,
+            "Alias": "Browser",
+            "ImportedFile": "Pages\\\"PrefabBrowser.ui\""
+        },
+        {
+            "File": "Pages\\PrefabEditorSettings.ui",
+            "LineNumber": 39,
+            "Alias": "C.@PageOverlay",
+            "ImportedFile": "Pages\\{"
+        },
+        {
+            "File": "Pages\\PrefabEditorSettings.ui",
+            "LineNumber": 293,
+            "Alias": "C.@PageOverlay",
+            "ImportedFile": "Pages\\{"
+        },
+        {
+            "File": "Pages\\PrefabEditorSettings.ui",
+            "LineNumber": 351,
+            "Alias": "C.@PageOverlay",
+            "ImportedFile": "Pages\\{"
+        },
+        {
+            "File": "Pages\\PrefabEditorSettings.ui",
+            "LineNumber": 408,
+            "Alias": "C.@PageOverlay",
+            "ImportedFile": "Pages\\{"
+        },
+        {
+            "File": "Pages\\PrefabListPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\PrefabListPage.ui",
+            "LineNumber": 2,
+            "Alias": "Browser",
+            "ImportedFile": "Pages\\\"PrefabBrowser.ui\""
+        },
+        {
+            "File": "Pages\\PrefabSavePage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\PrefabSavePage.ui",
+            "LineNumber": 2,
+            "Alias": "Sounds",
+            "ImportedFile": "Pages\\\"..\\Sounds.ui\""
+        },
+        {
+            "File": "Pages\\PrefabSpawnerSettingsPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\PrefabTeleportPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\PrefabTeleportPage.ui",
+            "LineNumber": 2,
+            "Alias": "Browser",
+            "ImportedFile": "Pages\\\"PrefabBrowser.ui\""
+        },
+        {
+            "File": "Pages\\RespawnPage.ui",
+            "LineNumber": 1,
+            "Alias": "Common",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\RespawnPage.ui",
+            "LineNumber": 2,
+            "Alias": "Sounds",
+            "ImportedFile": "Pages\\\"..\\Sounds.ui\""
+        },
+        {
+            "File": "Pages\\ScriptedBrushListPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\ScriptedBrushListPage.ui",
+            "LineNumber": 2,
+            "Alias": "Browser",
+            "ImportedFile": "Pages\\\"PrefabBrowser.ui\""
+        },
+        {
+            "File": "Pages\\SelectOverrideRespawnPointPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\ShopPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\Teleporter.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\TintChunkPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\WarpListPage.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\\"..\\Common.ui\""
+        },
+        {
+            "File": "Pages\\Memories\\ChestMarker.ui",
+            "LineNumber": 1,
+            "Alias": "Common",
+            "ImportedFile": "Pages\\Memories\\Common.ui\""
+        },
+        {
+            "File": "Pages\\Memories\\MemoriesCategory.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\Memories\\Common.ui\""
+        },
+        {
+            "File": "Pages\\Memories\\MemoriesCategory.ui",
+            "LineNumber": 2,
+            "Alias": "Sounds",
+            "ImportedFile": "Pages\\Memories\\Sounds.ui\""
+        },
+        {
+            "File": "Pages\\Memories\\MemoriesCategoryPanel.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\Memories\\Common.ui\""
+        },
+        {
+            "File": "Pages\\Memories\\MemoriesCategoryPanel.ui",
+            "LineNumber": 2,
+            "Alias": "Sounds",
+            "ImportedFile": "Pages\\Memories\\Sounds.ui\""
+        },
+        {
+            "File": "Pages\\Memories\\MemoriesPanel.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\Memories\\Common.ui\""
+        },
+        {
+            "File": "Pages\\Memories\\Memory.ui",
+            "LineNumber": 1,
+            "Alias": "C",
+            "ImportedFile": "Pages\\Memories\\Common.ui\""
+        },
+        {
+            "File": "Pages\\Memories\\Memory.ui",
+            "LineNumber": 2,
+            "Alias": "Sounds",
+            "ImportedFile": "Pages\\Memories\\Sounds.ui\""
         }
     ],
     "Variables": [
@@ -691,6 +1129,522 @@
             "Value": "TextTooltipStyle(\n  Background: (TexturePath: \"Common/TooltipDefaultBackground.png\", Border: 24),\n  MaxWidth: 400,\n  LabelStyle: (Wrap: true, FontSize: 16),\n  Padding: 24\n)",
             "File": "Common.ui",
             "LineNumber": 839
+        },
+        {
+            "Name": "ButtonsMainActivate",
+            "Value": "\"Sounds/ButtonsMainActivate.ogg\"",
+            "File": "Sounds.ui",
+            "LineNumber": 1
+        },
+        {
+            "Name": "ButtonsMainHover",
+            "Value": "\"Sounds/ButtonsMainHover.ogg\"",
+            "File": "Sounds.ui",
+            "LineNumber": 2
+        },
+        {
+            "Name": "ButtonsMain",
+            "Value": "(\n  Activate: (\n    SoundPath: @ButtonsMainActivate,\n    Volume: 6\n  ),\n  MouseHover: (\n    SoundPath: @ButtonsMainHover,\n    MinPitch: -0.1,\n    MaxPitch: 0.1,\n    Volume: 2\n  )\n)",
+            "File": "Sounds.ui",
+            "LineNumber": 4
+        },
+        {
+            "Name": "ButtonsLightActivate",
+            "Value": "\"Sounds/ButtonsLightActivate.ogg\"",
+            "File": "Sounds.ui",
+            "LineNumber": 17
+        },
+        {
+            "Name": "ButtonsLightHover",
+            "Value": "\"Sounds/ButtonsLightHover.ogg\"",
+            "File": "Sounds.ui",
+            "LineNumber": 18
+        },
+        {
+            "Name": "ButtonsLight",
+            "Value": "(\n  Activate: (\n    SoundPath: @ButtonsLightActivate,\n    MinPitch: -0.4,\n    MaxPitch: 0.4,\n    Volume: 4\n  ),\n  MouseHover: (\n    SoundPath: @ButtonsLightHover,\n    Volume: 6\n  )\n)",
+            "File": "Sounds.ui",
+            "LineNumber": 20
+        },
+        {
+            "Name": "ButtonsCancelActivate",
+            "Value": "\"Sounds/ButtonsCancelActivate.ogg\"",
+            "File": "Sounds.ui",
+            "LineNumber": 33
+        },
+        {
+            "Name": "ButtonsCancel",
+            "Value": "(\n  Activate: (\n    SoundPath: @ButtonsCancelActivate,\n    MinPitch: -0.4,\n    MaxPitch: 0.4,\n    Volume: 6\n  ),\n  MouseHover: (\n    SoundPath: @ButtonsLightHover,\n    Volume: 6\n  )\n)",
+            "File": "Sounds.ui",
+            "LineNumber": 35
+        },
+        {
+            "Name": "CosmeticsTilesActivate",
+            "Value": "\"Sounds/CosmeticsTilesActivate.ogg\"",
+            "File": "Sounds.ui",
+            "LineNumber": 48
+        },
+        {
+            "Name": "CosmeticsTiles",
+            "Value": "(\n  Activate: (\n    SoundPath: @CosmeticsTilesActivate,\n    MinPitch: -0.4,\n    MaxPitch: 0.4,\n    Volume: 6\n  ),\n  MouseHover: (\n    SoundPath: @ButtonsLightHover,\n    Volume: 6\n  )\n)",
+            "File": "Sounds.ui",
+            "LineNumber": 50
+        },
+        {
+            "Name": "DropdownBox",
+            "Value": "DropdownBoxSounds(\n  Activate: (\n    SoundPath: @Tick,\n    Volume: 6\n  ),\n  MouseHover: (\n    SoundPath: @ButtonsLightHover,\n    Volume: 6\n  ),\n  Close: (\n    SoundPath: @ButtonsCancelActivate,\n    Volume: 6\n  )\n)",
+            "File": "Sounds.ui",
+            "LineNumber": 63
+        },
+        {
+            "Name": "EnterWorldActivate",
+            "Value": "\"Sounds/EnterWorldActivate.ogg\"",
+            "File": "Sounds.ui",
+            "LineNumber": 78
+        },
+        {
+            "Name": "EnterWorld",
+            "Value": "(\n  Activate: (\n    SoundPath: @EnterWorldActivate,\n    Volume: 6\n  ),\n  MouseHover: (\n    SoundPath: @ButtonsLightHover,\n    Volume: 6\n  ),\n  Context: (\n    SoundPath: @ButtonsLightActivate,\n    Volume: 6\n  )\n)",
+            "File": "Sounds.ui",
+            "LineNumber": 80
+        },
+        {
+            "Name": "FriendsList",
+            "Value": "()",
+            "File": "Sounds.ui",
+            "LineNumber": 95
+        },
+        {
+            "Name": "HButtonHover",
+            "Value": "\"Sounds/HButtonHover.ogg\"",
+            "File": "Sounds.ui",
+            "LineNumber": 97
+        },
+        {
+            "Name": "Lock",
+            "Value": "(\n  Activate: (\n    SoundPath: \"Sounds/LockActivate.ogg\",\n    Volume: 6\n  )\n)",
+            "File": "Sounds.ui",
+            "LineNumber": 99
+        },
+        {
+            "Name": "Unlock",
+            "Value": "(\n  Activate: (\n    SoundPath: \"Sounds/UnlockActivate.ogg\",\n    Volume: 6\n  )\n)",
+            "File": "Sounds.ui",
+            "LineNumber": 106
+        },
+        {
+            "Name": "SaveActivate",
+            "Value": "\"Sounds/SaveActivate.ogg\"",
+            "File": "Sounds.ui",
+            "LineNumber": 113
+        },
+        {
+            "Name": "SaveSettings",
+            "Value": "(\n  Activate: (\n    SoundPath: @SaveActivate,\n    Volume: 6\n  ),\n  MouseHover: (\n    SoundPath: @ButtonsLightHover,\n    Volume: 6\n  )\n)",
+            "File": "Sounds.ui",
+            "LineNumber": 115
+        },
+        {
+            "Name": "Respawn",
+            "Value": "\"Sounds/Respawn_Stereo.ogg\"",
+            "File": "Sounds.ui",
+            "LineNumber": 126
+        },
+        {
+            "Name": "RespawnActivate",
+            "Value": "(\n  Activate: (\n    SoundPath: @Respawn,\n    Volume: -6\n  )\n)",
+            "File": "Sounds.ui",
+            "LineNumber": 128
+        },
+        {
+            "Name": "ServerList",
+            "Value": "(\n  Activate: (\n    SoundPath: @EnterWorldActivate,\n    Volume: 6\n  ),\n  MouseHover: (\n    SoundPath: @ButtonsLightHover,\n    Volume: 6\n  )\n)",
+            "File": "Sounds.ui",
+            "LineNumber": 135
+        },
+        {
+            "Name": "ShuffleActivate",
+            "Value": "\"Sounds/ShuffleActivate.ogg\"",
+            "File": "Sounds.ui",
+            "LineNumber": 146
+        },
+        {
+            "Name": "Shuffle",
+            "Value": "(\n  Activate: (\n    SoundPath: @ShuffleActivate,\n    MinPitch: -0.4,\n    MaxPitch: 0.4,\n    Volume: 1\n  )\n)",
+            "File": "Sounds.ui",
+            "LineNumber": 148
+        },
+        {
+            "Name": "Tick",
+            "Value": "\"Sounds/TickActivate.ogg\"",
+            "File": "Sounds.ui",
+            "LineNumber": 157
+        },
+        {
+            "Name": "Untick",
+            "Value": "\"Sounds/UntickActivate.ogg\"",
+            "File": "Sounds.ui",
+            "LineNumber": 159
+        },
+        {
+            "Name": "TopBarActivate",
+            "Value": "\"Sounds/TopBarActivate.ogg\"",
+            "File": "Sounds.ui",
+            "LineNumber": 161
+        },
+        {
+            "Name": "TopBar",
+            "Value": "(\n  Activate: (\n    SoundPath: @TopBarActivate,\n    Volume: 6\n  ),\n  MouseHover: (\n    SoundPath: @ButtonsMainHover,\n    Volume: 2\n  )\n)",
+            "File": "Sounds.ui",
+            "LineNumber": 163
+        },
+        {
+            "Name": "Panel",
+            "Value": "Group {\n  Background: (TexturePath: \"Common/ContainerFullPatch.png\", Border: 20);\n}",
+            "File": "Test.ui",
+            "LineNumber": 4
+        },
+        {
+            "Name": "TitleLabel",
+            "Value": "Label = Label {\n  Style: (FontSize: 40, Alignment: Center);\n}",
+            "File": "Test.ui",
+            "LineNumber": 8
+        },
+        {
+            "Name": "DefaultLabelStyle",
+            "Value": "(FontSize: 16, TextColor: #96a9be)",
+            "File": "Test.ui",
+            "LineNumber": 12
+        },
+        {
+            "Name": "ButtonSounds",
+            "Value": "$Sounds.@ButtonsLight",
+            "File": "Test.ui",
+            "LineNumber": 15
+        },
+        {
+            "Name": "ButtonsCancel",
+            "Value": "$Sounds.@ButtonsCancel",
+            "File": "Test.ui",
+            "LineNumber": 16
+        },
+        {
+            "Name": "ButtonDestructiveSounds",
+            "Value": "$Sounds.@ButtonsDestructive",
+            "File": "Test.ui",
+            "LineNumber": 17
+        },
+        {
+            "Name": "DefaultColorPickerStyle",
+            "Value": "ColorPickerStyle(\n  OpacitySelectorBackground: \"Common/ColorPickerOpacitySelectorBackground.png\",\n  ButtonBackground: \"Common/ColorPickerButton.png\",\n  ButtonFill: \"Common/ColorPickerFill.png\",\n  TextFieldDecoration: (\n    Default: (\n      Background: #000000(0.5)\n    )\n  ),\n  TextFieldPadding: (Left: 7),\n  TextFieldHeight: 32\n)",
+            "File": "Test.ui",
+            "LineNumber": 19
+        },
+        {
+            "Name": "DefaultColorPickerStyle2",
+            "Value": "ColorPickerStyle(\n  OpacitySelectorBackground: \"Common/ColorPickerOpacitySelectorBackground.png\",\n  ButtonBackground: \"Common/ColorPickerButton2.png\",\n)",
+            "File": "Test.ui",
+            "LineNumber": 32
+        },
+        {
+            "Name": "LabelStyle",
+            "Value": "(\n  Alignment: Center,\n  FontSize: 15,\n  RenderBold: true,\n  TextColor: #ffffff(0.8),\n  OutlineColor: #000000(0.2)\n)",
+            "File": "Common\\ActionButton.ui",
+            "LineNumber": 1
+        },
+        {
+            "Name": "HoveredLabelStyle",
+            "Value": "(...@LabelStyle, TextColor: #ffffff)",
+            "File": "Common\\ActionButton.ui",
+            "LineNumber": 9
+        },
+        {
+            "Name": "PressedLabelStyle",
+            "Value": "(...@LabelStyle, TextColor: #ffffff)",
+            "File": "Common\\ActionButton.ui",
+            "LineNumber": 10
+        },
+        {
+            "Name": "UnavailableLabelStyle",
+            "Value": "(...@LabelStyle, TextColor: #ffffff(0.4))",
+            "File": "Common\\ActionButton.ui",
+            "LineNumber": 11
+        },
+        {
+            "Name": "BindingLabelStyle",
+            "Value": "(...@LabelStyle, RenderUppercase: true, FontName: \"Secondary\", TextColor: #ccd8e8, OutlineColor: #000000(0), FontSize: 14)",
+            "File": "Common\\ActionButton.ui",
+            "LineNumber": 13
+        },
+        {
+            "Name": "BindingButtonBackground",
+            "Value": "PatchStyle(TexturePath: \"InputBinding.png\", Border: 6)",
+            "File": "Common\\ActionButton.ui",
+            "LineNumber": 15
+        },
+        {
+            "Name": "BindingButtonBackgroundHovered",
+            "Value": "PatchStyle(TexturePath: \"InputBinding.png\", Border: 6)",
+            "File": "Common\\ActionButton.ui",
+            "LineNumber": 16
+        },
+        {
+            "Name": "BindingButtonBackgroundPressed",
+            "Value": "PatchStyle(TexturePath: \"InputBinding.png\", Border: 6)",
+            "File": "Common\\ActionButton.ui",
+            "LineNumber": 17
+        },
+        {
+            "Name": "IconMouseLeftClick",
+            "Value": "PatchStyle(TexturePath: \"InputIconMouseLeftClick.png\")",
+            "File": "Common\\ActionButton.ui",
+            "LineNumber": 19
+        },
+        {
+            "Name": "IconMouseMiddleClick",
+            "Value": "PatchStyle(TexturePath: \"InputIconMouseMiddleClick.png\")",
+            "File": "Common\\ActionButton.ui",
+            "LineNumber": 20
+        },
+        {
+            "Name": "IconMouseRightClick",
+            "Value": "PatchStyle(TexturePath: \"InputIconMouseRightClick.png\")",
+            "File": "Common\\ActionButton.ui",
+            "LineNumber": 21
+        },
+        {
+            "Name": "LabelStyle",
+            "Value": "(\n  Hovered: (\n    Background: #000000(0.2),\n  )\n)",
+            "File": "Common\\TextButton.ui",
+            "LineNumber": 3
+        },
+        {
+            "Name": "SelectedLabelStyle",
+            "Value": "(\n  Default: (\n    LabelStyle: (RenderBold: true)\n  ),\n  Hovered: (\n    LabelStyle: (RenderBold: true),\n    Background: #000000(0.2)\n  )\n)",
+            "File": "Common\\TextButton.ui",
+            "LineNumber": 9
+        },
+        {
+            "Name": "LabelStyle",
+            "Value": "(\n  Hovered: (\n    Background: #000000(0.2),\n  )\n)",
+            "File": "Pages\\BasicTextButton.ui",
+            "LineNumber": 1
+        },
+        {
+            "Name": "SelectedLabelStyle",
+            "Value": "(\n  Default: (\n    LabelStyle: (RenderBold: true)\n  ),\n  Hovered: (\n    LabelStyle: (RenderBold: true),\n    Background: #000000(0.2)\n  )\n)",
+            "File": "Pages\\BasicTextButton.ui",
+            "LineNumber": 7
+        },
+        {
+            "Name": "ContainerHeight",
+            "Value": "730",
+            "File": "Pages\\ChangeModelPage.ui",
+            "LineNumber": 3
+        },
+        {
+            "Name": "NumberInput",
+            "Value": "Group {\n  @Visible = false;\n  @Left = 32;\n  LayoutMode: Left;\n  Anchor: (Left: @Left, Top: 6);\n  Visible: @Visible;\n\n  Label {\n    Text: @Label;\n    Anchor: (Top: 6, Left: 6, Right: 16);\n    Style: $C.@DefaultLabelStyle;\n  }\n\n  $C.@NumberField #Input {\n    @Anchor = (Width: 60, Left: 0, Right: 16);\n\n    Format: (\n      MaxDecimalPlaces: 2,\n      Step: 0.5\n    );\n  }\n}",
+            "File": "Pages\\ConfigureInstanceBlockPage.ui",
+            "LineNumber": 3
+        },
+        {
+            "Name": "ContainerHeight",
+            "Value": "730",
+            "File": "Pages\\EntitySpawnPage.ui",
+            "LineNumber": 3
+        },
+        {
+            "Name": "MaterialSlotSize",
+            "Value": "46",
+            "File": "Pages\\EntitySpawnPage.ui",
+            "LineNumber": 4
+        },
+        {
+            "Name": "DefaultRespawnButtonStyle",
+            "Value": "ButtonStyle(\n  Default: (Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16)),\n  Hovered: (Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16, Color: #ffffff(0.7))),\n  Pressed: (Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16, Color: #ffffff(0.85))),\n  Disabled: (Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16))\n)",
+            "File": "Pages\\OverrideRespawnPointButton.ui",
+            "LineNumber": 28
+        },
+        {
+            "Name": "SelectedRespawnButtonStyle",
+            "Value": "ButtonStyle(\n  Default: (Background: (TexturePath: \"../Common/InputBoxSelected.png\", Border: 16))\n)",
+            "File": "Pages\\OverrideRespawnPointButton.ui",
+            "LineNumber": 35
+        },
+        {
+            "Name": "ContainerHeight",
+            "Value": "730",
+            "File": "Pages\\ParticleSpawnPage.ui",
+            "LineNumber": 3
+        },
+        {
+            "Name": "LabelStyle",
+            "Value": "(\n  Hovered: (\n    Background: #000000(0.2),\n  )\n)",
+            "File": "Pages\\PluginListButton.ui",
+            "LineNumber": 3
+        },
+        {
+            "Name": "SelectedLabelStyle",
+            "Value": "(\n  Default: (\n    LabelStyle: (RenderBold: true)\n  ),\n  Hovered: (\n    LabelStyle: (RenderBold: true),\n    Background: #000000(0.2)\n  )\n)",
+            "File": "Pages\\PluginListButton.ui",
+            "LineNumber": 9
+        },
+        {
+            "Name": "GoldFrameShort",
+            "Value": "4",
+            "File": "Pages\\PortalDeviceSummon.ui",
+            "LineNumber": 4
+        },
+        {
+            "Name": "GoldFrameLong",
+            "Value": "88",
+            "File": "Pages\\PortalDeviceSummon.ui",
+            "LineNumber": 5
+        },
+        {
+            "Name": "LeftPaneWidth",
+            "Value": "345",
+            "File": "Pages\\PortalDeviceSummon.ui",
+            "LineNumber": 7
+        },
+        {
+            "Name": "LeftPaneHeight",
+            "Value": "629",
+            "File": "Pages\\PortalDeviceSummon.ui",
+            "LineNumber": 8
+        },
+        {
+            "Name": "RightPaneWidth",
+            "Value": "640",
+            "File": "Pages\\PortalDeviceSummon.ui",
+            "LineNumber": 10
+        },
+        {
+            "Name": "RightPaneHeight",
+            "Value": "694",
+            "File": "Pages\\PortalDeviceSummon.ui",
+            "LineNumber": 11
+        },
+        {
+            "Name": "PillStyle",
+            "Value": "LabelStyle(FontSize: 10, HorizontalAlignment: Center, FontName: \"Secondary\", RenderUppercase: true, TextColor: #ffffff)",
+            "File": "Pages\\PortalDeviceSummon.ui",
+            "LineNumber": 13
+        },
+        {
+            "Name": "TimeLimitStyle",
+            "Value": "LabelStyle(FontSize: 32, FontName: \"Secondary\")",
+            "File": "Pages\\PortalDeviceSummon.ui",
+            "LineNumber": 14
+        },
+        {
+            "Name": "SeparatorOnRight",
+            "Value": "Group {\n  LayoutMode: Top;\n  Padding: (Left: 24, Right: 20, Top: 4, Bottom: 4);\n  Anchor: (Width: @RightPaneWidth / 2);\n  $C.@PanelSeparatorFancy {}\n}",
+            "File": "Pages\\PortalDeviceSummon.ui",
+            "LineNumber": 16
+        },
+        {
+            "Name": "PrefabBrowserContent",
+            "Value": "Group {\n  LayoutMode: Top;\n\n  Group {\n    LayoutMode: Left;\n    Anchor: (Bottom: 10, Height: $C.@DropdownBoxHeight);\n\n    $C.@DropdownBox #RootSelector {\n      Anchor: (Width: 120, Right: 10, Height: $C.@DropdownBoxHeight);\n    }\n\n    $C.@TextField #SearchInput {\n      @Anchor = (Left: 0);\n      FlexWeight: 1;\n      PlaceholderText: %server.customUI.prefabBrowser.searchPlaceholder;\n    }\n  }\n\n  Group #FileList {\n    FlexWeight: 1;\n    LayoutMode: TopScrolling;\n    ScrollbarStyle: $C.@DefaultScrollbarStyle;\n  }\n}",
+            "File": "Pages\\PrefabBrowser.ui",
+            "LineNumber": 3
+        },
+        {
+            "Name": "InputLabel",
+            "Value": "Label = Label {\n  Anchor: (Left: 6, Right: 16, Width: 200);\n  Style: (...$C.@DefaultLabelStyle, VerticalAlignment: Center, Wrap: true);\n}",
+            "File": "Pages\\PrefabEditorSaveSettings.ui",
+            "LineNumber": 4
+        },
+        {
+            "Name": "MultilineTextField",
+            "Value": "MultilineTextField = MultilineTextField {\n  Style: $C.@DefaultInputFieldStyle;\n  PlaceholderStyle: $C.@DefaultInputFieldPlaceholderStyle;\n  Background: $C.@InputBoxBackground;\n  AutoGrow: false;\n  Padding: (Horizontal: 10, Vertical: 8);\n  ScrollbarStyle: $C.@DefaultScrollbarStyle;\n}",
+            "File": "Pages\\PrefabEditorSaveSettings.ui",
+            "LineNumber": 9
+        },
+        {
+            "Name": "InputLabel",
+            "Value": "Label = Label {\n  Anchor: (Left: 6, Right: 16, Width: 250);\n  Style: (...$C.@DefaultLabelStyle, VerticalAlignment: Center, Wrap: true);\n}",
+            "File": "Pages\\PrefabEditorSettings.ui",
+            "LineNumber": 5
+        },
+        {
+            "Name": "NumberInput",
+            "Value": "Group {\n  @Visible = false;\n  @Left = 32;\n  LayoutMode: Left;\n  Anchor: (Left: @Left, Top: 6);\n  Visible: @Visible;\n\n  @InputLabel {\n    Text: @Label;\n  }\n\n  $C.@NumberField #Input {\n    @Anchor = (Width: 60, Left: 0, Right: 16);\n\n    Format: (\n      MaxDecimalPlaces: 0,\n      Step: 1\n    );\n  }\n}",
+            "File": "Pages\\PrefabEditorSettings.ui",
+            "LineNumber": 10
+        },
+        {
+            "Name": "MultilineTextField",
+            "Value": "MultilineTextField = MultilineTextField {\n    Style: $C.@DefaultInputFieldStyle;\n    PlaceholderStyle: $C.@DefaultInputFieldPlaceholderStyle;\n    Background: $C.@InputBoxBackground;\n    AutoGrow: false;\n    Padding: (Horizontal: 10, Vertical: 8);\n}",
+            "File": "Pages\\PrefabEditorSettings.ui",
+            "LineNumber": 31
+        },
+        {
+            "Name": "InputLabel",
+            "Value": "Label = Label {\n  Anchor: (Left: 6, Right: 16, Width: 180);\n  Style: (...$C.@DefaultLabelStyle, VerticalAlignment: Center);\n}",
+            "File": "Pages\\PrefabSavePage.ui",
+            "LineNumber": 4
+        },
+        {
+            "Name": "ChestGroup",
+            "Value": "Group = Group {\n  Anchor: (Left: 0, Bottom: 0, Width: 40, Height: 40);\n  Visible: false;\n\n  TextTooltipShowDelay: 0.1;\n  LayoutMode: Bottom;\n  TextTooltipStyle: $Common.@DefaultTextTooltipStyle;\n}",
+            "File": "Pages\\Memories\\ChestMarker.ui",
+            "LineNumber": 3
+        },
+        {
+            "Name": "CategoryButtonLabelStyle",
+            "Value": "LabelStyle(\n  Wrap: true,\n  HorizontalAlignment: Center,\n  VerticalAlignment: End,\n  TextColor: #b4c8c9,\n  FontName: \"Secondary\",\n  RenderBold: true,\n  RenderUppercase: true,\n  FontSize: 15,\n)",
+            "File": "Pages\\Memories\\MemoriesCategory.ui",
+            "LineNumber": 4
+        },
+        {
+            "Name": "MemoryCounterStyle",
+            "Value": "LabelStyle(\n  TextColor: #b4c8c9,\n  FontName: \"Secondary\",\n  RenderBold: true,\n  RenderUppercase: true,\n  FontSize: 13,\n  HorizontalAlignment: End,\n)",
+            "File": "Pages\\Memories\\MemoriesCategory.ui",
+            "LineNumber": 15
+        },
+        {
+            "Name": "TitleStyle",
+            "Value": "LabelStyle(\n  FontSize: 15,\n  VerticalAlignment: Center,\n  RenderUppercase: true,\n  TextColor: #b4c8c9,\n  FontName: \"Secondary\",\n  RenderBold: true,\n  LetterSpacing: 0\n)",
+            "File": "Pages\\Memories\\MemoriesCategoryPanel.ui",
+            "LineNumber": 4
+        },
+        {
+            "Name": "progressBarWidth",
+            "Value": "1018",
+            "File": "Pages\\Memories\\MemoriesCategoryPanel.ui",
+            "LineNumber": 14
+        },
+        {
+            "Name": "TitleStyle",
+            "Value": "LabelStyle(\n  FontSize: 15,\n  VerticalAlignment: Center,\n  RenderUppercase: true,\n  TextColor: #b4c8c9,\n  FontName: \"Secondary\",\n  RenderBold: true,\n  LetterSpacing: 0.5\n)",
+            "File": "Pages\\Memories\\MemoriesPanel.ui",
+            "LineNumber": 3
+        },
+        {
+            "Name": "MemoryTitleStyle",
+            "Value": "LabelStyle(\n  FontSize: 25,\n  VerticalAlignment: Center,\n  RenderUppercase: true,\n  TextColor: #b4c8c9,\n  FontName: \"Secondary\",\n  RenderBold: true,\n  LetterSpacing: 0.5\n)",
+            "File": "Pages\\Memories\\MemoriesPanel.ui",
+            "LineNumber": 13
+        },
+        {
+            "Name": "FontSize",
+            "Value": "15",
+            "File": "Pages\\Portals\\BulletPoint.ui",
+            "LineNumber": 1
+        },
+        {
+            "Name": "PillStyle",
+            "Value": "LabelStyle(FontSize: 10, HorizontalAlignment: Center, FontName: \"Secondary\", RenderUppercase: true, TextColor: #ffffff)",
+            "File": "Pages\\Portals\\Pill.ui",
+            "LineNumber": 1
+        },
+        {
+            "Name": "FourFrame",
+            "Value": "Group {\n  @FrameShort = 1;\n  @FrameLong = 88;\n\n  Group {\n    Anchor: (Left: @FrameShort, Top: 0, Width: @BoxWidth - @FrameShort * 2, Height: @FrameShort);\n    Background: (TexturePath: \"FrameTop.png\");\n  }\n\n  Group {\n    Anchor: (Right: 0, Top: 0, Width: @FrameShort, Height: @BoxHeight);\n    Background: (TexturePath: \"FrameRight.png\");\n  }\n\n  Group {\n    Anchor: (Left: @FrameShort, Bottom: 0, Width: @BoxWidth - @FrameShort * 2, Height: @FrameShort);\n    Background: (TexturePath: \"FrameBottom.png\");\n  }\n\n  Group {\n    Anchor: (Left: 0, Top: 0, Width: @FrameShort, Height: @BoxHeight);\n    Background: (TexturePath: \"FrameLeft.png\");\n  }\n}",
+            "File": "Pages\\Portals\\Portals.ui",
+            "LineNumber": 1
         }
     ],
     "Types": [
@@ -701,17 +1655,21 @@
             "Fields": {
                 "TexturePath": {
                     "ExampleValues": [
-                        "\"Common/Buttons/Primary_Square_Pressed.png\"",
-                        "\"Common/Buttons/Primary.png\"",
-                        "\"Common/Buttons/Primary_Square_Hovered.png\"",
                         "\"Common/InputBox.png\"",
-                        "\"Common/Buttons/Primary_Pressed.png\"",
-                        "\"Common/Buttons/Primary_Hovered.png\"",
-                        "\"Common/Buttons/Disabled.png\"",
-                        "\"Common/InputBoxHovered.png\"",
-                        "\"Common/InputBoxPressed.png\"",
+                        "\"InputIconMouseMiddleClick.png\"",
+                        "\"InputBinding.png\"",
                         "\"Common/InputBoxSelected.png\"",
-                        "\"Common/Buttons/Primary_Square.png\""
+                        "\"Common/Buttons/Primary_Square.png\"",
+                        "\"Common/Buttons/Primary_Square_Hovered.png\"",
+                        "\"Common/InputBoxPressed.png\"",
+                        "\"Common/Buttons/Primary.png\"",
+                        "\"Common/Buttons/Primary_Pressed.png\"",
+                        "\"Common/Buttons/Disabled.png\"",
+                        "\"Common/Buttons/Primary_Square_Pressed.png\"",
+                        "\"InputIconMouseRightClick.png\"",
+                        "\"InputIconMouseLeftClick.png\"",
+                        "\"Common/InputBoxHovered.png\"",
+                        "\"Common/Buttons/Primary_Hovered.png\""
                     ]
                 },
                 "VerticalBorder": {
@@ -726,8 +1684,9 @@
                 },
                 "Border": {
                     "ExampleValues": [
-                        "16",
-                        "@ButtonBorder"
+                        "@ButtonBorder",
+                        "6",
+                        "16"
                     ]
                 },
                 "(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder), LabelStyle": {
@@ -796,8 +1755,8 @@
                 },
                 "(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder), LabelStyle": {
                     "ExampleValues": [
-                        "@SmallSecondaryButtonLabelStyle),\n  Hovered: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder)",
-                        "@SecondaryButtonLabelStyle),\n  Hovered: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder)"
+                        "@SecondaryButtonLabelStyle),\n  Hovered: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder)",
+                        "@SmallSecondaryButtonLabelStyle),\n  Hovered: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder)"
                     ]
                 },
                 "(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder), LabelStyle": {
@@ -808,8 +1767,8 @@
                 },
                 "(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder), LabelStyle": {
                     "ExampleValues": [
-                        "@SecondaryButtonLabelStyle),\n  Disabled: (Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder)",
-                        "@SmallSecondaryButtonLabelStyle),\n  Disabled: (Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder)"
+                        "@SmallSecondaryButtonLabelStyle),\n  Disabled: (Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder)",
+                        "@SecondaryButtonLabelStyle),\n  Disabled: (Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder)"
                     ]
                 },
                 "(TexturePath: \"Common/Buttons/Tertiary.png\", Border: @ButtonBorder)),  Hovered: (Background": {
@@ -851,18 +1810,26 @@
             "Fields": {
                 "FontSize": {
                     "ExampleValues": [
-                        "17",
                         "18),\n  HorizontalPadding: 14,\n  PanelAlign: Bottom,\n  PanelOffset: 7,\n  Sounds: $Sounds.@DropdownBox",
-                        "13",
                         "15",
-                        "38"
+                        "38",
+                        "32",
+                        "17",
+                        "25",
+                        "10",
+                        "16",
+                        "18",
+                        "13"
                     ]
                 },
                 "TextColor": {
                     "ExampleValues": [
-                        "#bfcdd5",
+                        "#dee2ef",
+                        "#b4c8c9",
                         "#96a9be",
-                        "#b4c8c9"
+                        "#ffffff",
+                        "#bfcdd5",
+                        "#778292"
                     ]
                 },
                 "RenderBold": {
@@ -877,18 +1844,20 @@
                 },
                 "HorizontalAlignment": {
                     "ExampleValues": [
-                        "Center"
+                        "Center",
+                        "End"
                     ]
                 },
                 "VerticalAlignment": {
                     "ExampleValues": [
-                        "Center"
+                        "Center",
+                        "End"
                     ]
                 },
                 "...@DefaultButtonLabelStyle,  TextColor": {
                     "ExampleValues": [
-                        "#bdcbd3",
-                        "@DisabledColor"
+                        "@DisabledColor",
+                        "#bdcbd3"
                     ]
                 },
                 "...@SecondaryButtonLabelStyle,  TextColor": {
@@ -928,6 +1897,7 @@
                 },
                 "LetterSpacing": {
                     "ExampleValues": [
+                        "0.5",
                         "0",
                         "2"
                     ]
@@ -935,6 +1905,16 @@
                 "FontName": {
                     "ExampleValues": [
                         "\"Secondary\""
+                    ]
+                },
+                "Wrap": {
+                    "ExampleValues": [
+                        "true"
+                    ]
+                },
+                "": {
+                    "ExampleValues": [
+                        ""
                     ]
                 }
             }
@@ -947,31 +1927,36 @@
                 "Default": {
                     "ExampleValues": [
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary.png\", Border: @ButtonBorder))",
-                        "(Background: @DefaultButtonDefaultBackground)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder))",
+                        "(Background: @DefaultButtonDefaultBackground)",
+                        "(Background: (TexturePath: \"../Common/InputBoxSelected.png\", Border: 16))",
+                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16))",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder))"
                     ]
                 },
                 "Hovered": {
                     "ExampleValues": [
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder))",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder))",
+                        "(Background: @DefaultButtonHoveredBackground)",
+                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16, Color: #ffffff(0.7)))",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Hovered.png\", Border: @ButtonBorder))",
-                        "(Background: @DefaultButtonHoveredBackground)"
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder))"
                     ]
                 },
                 "Pressed": {
                     "ExampleValues": [
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Pressed.png\", Border: @ButtonBorder))",
+                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16, Color: #ffffff(0.85)))",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Pressed.png\", Border: @ButtonBorder))",
                         "(Background: @DefaultButtonPressedBackground)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Pressed.png\", Border: @ButtonBorder))",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder))"
                     ]
                 },
                 "Disabled": {
                     "ExampleValues": [
+                        "(Background: @DefaultButtonDisabledBackground)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder))",
-                        "(Background: @DefaultButtonDisabledBackground)"
+                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16))"
                     ]
                 },
                 "Sounds": {
@@ -993,44 +1978,44 @@
             "Fields": {
                 "Default": {
                     "ExampleValues": [
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
                         "(LabelStyle: @HeaderTextButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)",
+                        "(Background: (TexturePath: \"Common/ButtonSmall.png\", Border: 6), LabelStyle: @SmallButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
-                        "(Background: (TexturePath: \"Common/ButtonSmall.png\", Border: 6), LabelStyle: @SmallButtonLabelStyle)",
                         "(Background: @DefaultButtonDefaultBackground, LabelStyle: @DefaultButtonLabelStyle)"
                     ]
                 },
                 "Hovered": {
                     "ExampleValues": [
                         "(Background: (TexturePath: \"Common/ButtonSmallHovered.png\", Border: 6), LabelStyle: @SmallButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
                         "(Background: @DefaultButtonHoveredBackground, LabelStyle: @DefaultButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
-                        "(LabelStyle: (...@HeaderTextButtonLabelStyle, TextColor: #eaebee))",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)"
+                        "(LabelStyle: (...@HeaderTextButtonLabelStyle, TextColor: #eaebee))"
                     ]
                 },
                 "Pressed": {
                     "ExampleValues": [
                         "(LabelStyle: (...@HeaderTextButtonLabelStyle, TextColor: #b6bbc2))",
-                        "(Background: @DefaultButtonPressedBackground, LabelStyle: @DefaultButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Pressed.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
                         "(Background: (TexturePath: \"Common/ButtonSmallPressed.png\", Border: 6), LabelStyle: @SmallButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)"
+                        "(Background: @DefaultButtonPressedBackground, LabelStyle: @DefaultButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Pressed.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)"
                     ]
                 },
                 "Disabled": {
                     "ExampleValues": [
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
-                        "(Background: @DefaultButtonDisabledBackground, LabelStyle: @DefaultButtonDisabledLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
                         "(Background: @DefaultButtonDisabledBackground, LabelStyle: @SmallButtonDisabledLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)"
+                        "(Background: @DefaultButtonDisabledBackground, LabelStyle: @DefaultButtonDisabledLabelStyle)"
                     ]
                 },
                 "Sounds": {
@@ -1085,7 +2070,8 @@
                 },
                 "ButtonBackground": {
                     "ExampleValues": [
-                        "\"Common/ColorPickerButton.png\""
+                        "\"Common/ColorPickerButton.png\"",
+                        "\"Common/ColorPickerButton2.png\""
                     ]
                 },
                 "ButtonFill": {
@@ -1106,6 +2092,11 @@
                 "TextFieldHeight": {
                     "ExampleValues": [
                         "32"
+                    ]
+                },
+                "": {
+                    "ExampleValues": [
+                        ""
                     ]
                 }
             }
@@ -1170,8 +2161,8 @@
                 },
                 "Size": {
                     "ExampleValues": [
-                        "10",
-                        "6"
+                        "6",
+                        "10"
                     ]
                 },
                 "Background": {
@@ -1613,8 +2604,8 @@
                 "Full": {
                     "ExampleValues": [
                         "9 + 8",
-                        "@FullPaddingValue",
-                        "@ContentPaddingFull"
+                        "@ContentPaddingFull",
+                        "@FullPaddingValue"
                     ]
                 },
                 "Top": {
@@ -1670,8 +2661,8 @@
                 },
                 "SelectedTabStyle": {
                     "ExampleValues": [
-                        "(\n    Default: (\n      ...@TopTabStyle,\n      Anchor: (...@TopTabAnchor, Bottom: 4),\n      IconAnchor: (Width: 44, Height: 44),\n      Overlay: \"Common/TabSelectedOverlay.png\"\n    )\n  )",
-                        "(\n    Default: (\n      ...@HeaderTabStyle,\n      IconOpacity: 1\n    )\n  )"
+                        "(\n    Default: (\n      ...@HeaderTabStyle,\n      IconOpacity: 1\n    )\n  )",
+                        "(\n    Default: (\n      ...@TopTabStyle,\n      Anchor: (...@TopTabAnchor, Bottom: 4),\n      IconAnchor: (Width: 44, Height: 44),\n      Overlay: \"Common/TabSelectedOverlay.png\"\n    )\n  )"
                     ]
                 },
                 "SeparatorAnchor": {
@@ -1744,6 +2735,28 @@
                     ]
                 }
             }
+        },
+        {
+            "File": "Sounds.ui",
+            "LineNumber": 63,
+            "Name": "DropdownBoxSounds",
+            "Fields": {
+                "Activate": {
+                    "ExampleValues": [
+                        "(\n    SoundPath: @Tick,\n    Volume: 6\n  )"
+                    ]
+                },
+                "MouseHover": {
+                    "ExampleValues": [
+                        "(\n    SoundPath: @ButtonsLightHover,\n    Volume: 6\n  )"
+                    ]
+                },
+                "Close": {
+                    "ExampleValues": [
+                        "(\n    SoundPath: @ButtonsCancelActivate,\n    Volume: 6\n  )"
+                    ]
+                }
+            }
         }
     ],
     "UIElements": [
@@ -1791,6 +2804,36 @@
             "File": "Common.ui",
             "LineNumber": 555,
             "Name": "Sprite"
+        },
+        {
+            "File": "Pages\\ChangeModelPage.ui",
+            "LineNumber": 12,
+            "Name": "$C.@Title"
+        },
+        {
+            "File": "Pages\\ConfigureInstanceBlockPage.ui",
+            "LineNumber": 29,
+            "Name": "$C.@DecoratedContainer"
+        },
+        {
+            "File": "Pages\\PrefabEditorSaveSettings.ui",
+            "LineNumber": 9,
+            "Name": "MultilineTextField"
+        },
+        {
+            "File": "Pages\\PrefabEditorSaveSettings.ui",
+            "LineNumber": 42,
+            "Name": "@InputLabel"
+        },
+        {
+            "File": "Pages\\PrefabListPage.ui",
+            "LineNumber": 26,
+            "Name": "$Browser.@PrefabBrowserContent"
+        },
+        {
+            "File": "Pages\\Teleporter.ui",
+            "LineNumber": 67,
+            "Name": "$C.@CheckBoxWithLabel"
         }
     ]
 }

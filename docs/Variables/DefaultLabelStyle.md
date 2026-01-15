@@ -2,7 +2,7 @@
 
 # DefaultLabelStyle
 
-**Defined at:** `Common.ui:12`
+**Defined at:** `Test.ui:12`
 
 ## Value
 

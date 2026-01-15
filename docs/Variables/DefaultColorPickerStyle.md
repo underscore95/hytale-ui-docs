@@ -2,7 +2,7 @@
 
 # DefaultColorPickerStyle
 
-**Defined at:** `Common.ui:314`
+**Defined at:** `Test.ui:19`
 
 ## Value
 

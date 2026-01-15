@@ -2,7 +2,7 @@
 
 # ButtonsCancel
 
-**Defined at:** `Common.ui:16`
+**Defined at:** `Test.ui:16`
 
 ## Value
 

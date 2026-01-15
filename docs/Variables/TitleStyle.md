@@ -2,7 +2,7 @@
 
 # TitleStyle
 
-**Defined at:** `Common.ui:584`
+**Defined at:** `Pages\Memories\MemoriesPanel.ui:3`
 
 ## Value
 
@@ -14,6 +14,6 @@ LabelStyle(
   TextColor: #b4c8c9,
   FontName: "Secondary",
   RenderBold: true,
-  LetterSpacing: 0
+  LetterSpacing: 0.5
 )
 ```

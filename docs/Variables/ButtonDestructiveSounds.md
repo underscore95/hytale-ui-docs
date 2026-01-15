@@ -2,7 +2,7 @@
 
 # ButtonDestructiveSounds
 
-**Defined at:** `Common.ui:17`
+**Defined at:** `Test.ui:17`
 
 ## Value
 

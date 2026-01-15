@@ -7,6 +7,7 @@
 - [CheckBoxStyle](Types/CheckBoxStyle.md)
 - [ColorPickerDropdownBoxStyle](Types/ColorPickerDropdownBoxStyle.md)
 - [ColorPickerStyle](Types/ColorPickerStyle.md)
+- [DropdownBoxSounds](Types/DropdownBoxSounds.md)
 - [DropdownBoxStyle](Types/DropdownBoxStyle.md)
 - [FileDropdownBoxStyle](Types/FileDropdownBoxStyle.md)
 - [InputFieldStyle](Types/InputFieldStyle.md)

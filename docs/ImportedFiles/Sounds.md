@@ -2,6 +2,6 @@
 
 # Sounds
 
-**ImportedFile:** `"Sounds.ui"`
+**ImportedFile:** `Pages\Memories\Sounds.ui"`
 
-**First seen at:** `Common.ui:1`
+**First seen at:** `Pages\Memories\Memory.ui:2`

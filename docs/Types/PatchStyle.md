@@ -8,17 +8,21 @@
 
 ### TexturePath
 
-- `"Common/Buttons/Primary_Square_Pressed.png"`
-- `"Common/Buttons/Primary.png"`
-- `"Common/Buttons/Primary_Square_Hovered.png"`
 - `"Common/InputBox.png"`
-- `"Common/Buttons/Primary_Pressed.png"`
-- `"Common/Buttons/Primary_Hovered.png"`
-- `"Common/Buttons/Disabled.png"`
-- `"Common/InputBoxHovered.png"`
-- `"Common/InputBoxPressed.png"`
+- `"InputIconMouseMiddleClick.png"`
+- `"InputBinding.png"`
 - `"Common/InputBoxSelected.png"`
 - `"Common/Buttons/Primary_Square.png"`
+- `"Common/Buttons/Primary_Square_Hovered.png"`
+- `"Common/InputBoxPressed.png"`
+- `"Common/Buttons/Primary.png"`
+- `"Common/Buttons/Primary_Pressed.png"`
+- `"Common/Buttons/Disabled.png"`
+- `"Common/Buttons/Primary_Square_Pressed.png"`
+- `"InputIconMouseRightClick.png"`
+- `"InputIconMouseLeftClick.png"`
+- `"Common/InputBoxHovered.png"`
+- `"Common/Buttons/Primary_Hovered.png"`
 
 ### VerticalBorder
 
@@ -30,8 +34,9 @@
 
 ### Border
 
-- `16`
 - `[ButtonBorder](Variables/ButtonBorder.md)`
+- `6`
+- `16`
 
 ### (TexturePath: "Common/Buttons/Destructive.png", Border: @ButtonBorder), LabelStyle
 
@@ -104,10 +109,10 @@
 
 ### (TexturePath: "Common/Buttons/Secondary.png", Border: @ButtonBorder), LabelStyle
 
-- `[SmallSecondaryButtonLabelStyle),
-  Hovered: (Background: PatchStyle(TexturePath: "Common/Buttons/Secondary_Hovered.png", Border: @ButtonBorder)](Variables/SmallSecondaryButtonLabelStyle-----Hovered---Background--PatchStyle-TexturePath---Common-Buttons-Secondary_Hovered-png---Border---ButtonBorder-.md)`
 - `[SecondaryButtonLabelStyle),
   Hovered: (Background: PatchStyle(TexturePath: "Common/Buttons/Secondary_Hovered.png", Border: @ButtonBorder)](Variables/SecondaryButtonLabelStyle-----Hovered---Background--PatchStyle-TexturePath---Common-Buttons-Secondary_Hovered-png---Border---ButtonBorder-.md)`
+- `[SmallSecondaryButtonLabelStyle),
+  Hovered: (Background: PatchStyle(TexturePath: "Common/Buttons/Secondary_Hovered.png", Border: @ButtonBorder)](Variables/SmallSecondaryButtonLabelStyle-----Hovered---Background--PatchStyle-TexturePath---Common-Buttons-Secondary_Hovered-png---Border---ButtonBorder-.md)`
 
 ### (TexturePath: "Common/Buttons/Secondary_Hovered.png", Border: @ButtonBorder), LabelStyle
 
@@ -118,10 +123,10 @@
 
 ### (TexturePath: "Common/Buttons/Secondary_Pressed.png", Border: @ButtonBorder), LabelStyle
 
-- `[SecondaryButtonLabelStyle),
-  Disabled: (Background: PatchStyle(TexturePath: "Common/Buttons/Disabled.png", Border: @ButtonBorder)](Variables/SecondaryButtonLabelStyle-----Disabled---Background--PatchStyle-TexturePath---Common-Buttons-Disabled-png---Border---ButtonBorder-.md)`
 - `[SmallSecondaryButtonLabelStyle),
   Disabled: (Background: PatchStyle(TexturePath: "Common/Buttons/Disabled.png", Border: @ButtonBorder)](Variables/SmallSecondaryButtonLabelStyle-----Disabled---Background--PatchStyle-TexturePath---Common-Buttons-Disabled-png---Border---ButtonBorder-.md)`
+- `[SecondaryButtonLabelStyle),
+  Disabled: (Background: PatchStyle(TexturePath: "Common/Buttons/Disabled.png", Border: @ButtonBorder)](Variables/SecondaryButtonLabelStyle-----Disabled---Background--PatchStyle-TexturePath---Common-Buttons-Disabled-png---Border---ButtonBorder-.md)`
 
 ### (TexturePath: "Common/Buttons/Tertiary.png", Border: @ButtonBorder)),  Hovered: (Background
 

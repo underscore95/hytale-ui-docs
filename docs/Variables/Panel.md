@@ -2,7 +2,7 @@
 
 # Panel
 
-**Defined at:** `Common.ui:4`
+**Defined at:** `Test.ui:4`
 
 ## Value
 

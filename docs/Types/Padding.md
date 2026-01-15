@@ -9,8 +9,8 @@
 ### Full
 
 - `9 + 8`
-- `[FullPaddingValue](Variables/FullPaddingValue.md)`
 - `[ContentPaddingFull](Variables/ContentPaddingFull.md)`
+- `[FullPaddingValue](Variables/FullPaddingValue.md)`
 
 ### Top
 

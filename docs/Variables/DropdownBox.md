@@ -2,15 +2,23 @@
 
 # DropdownBox
 
-**Defined at:** `Common.ui:479`
+**Defined at:** `Sounds.ui:63`
 
 ## Value
 
 ```ui
-DropdownBox = DropdownBox {
-  @Anchor = ();
-
-  Anchor: (...@Anchor, Width: 330, Height: @DropdownBoxHeight);
-  Style: @DefaultDropdownBoxStyle;
-}
+DropdownBoxSounds(
+  Activate: (
+    SoundPath: @Tick,
+    Volume: 6
+  ),
+  MouseHover: (
+    SoundPath: @ButtonsLightHover,
+    Volume: 6
+  ),
+  Close: (
+    SoundPath: @ButtonsCancelActivate,
+    Volume: 6
+  )
+)
 ```

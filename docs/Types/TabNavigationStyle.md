@@ -21,16 +21,16 @@
 
 - `(
     Default: (
-      ...@TopTabStyle,
-      Anchor: (...@TopTabAnchor, Bottom: 4),
-      IconAnchor: (Width: 44, Height: 44),
-      Overlay: "Common/TabSelectedOverlay.png"
+      ...@HeaderTabStyle,
+      IconOpacity: 1
     )
   )`
 - `(
     Default: (
-      ...@HeaderTabStyle,
-      IconOpacity: 1
+      ...@TopTabStyle,
+      Anchor: (...@TopTabAnchor, Bottom: 4),
+      IconAnchor: (Width: 44, Height: 44),
+      Overlay: "Common/TabSelectedOverlay.png"
     )
   )`
 
