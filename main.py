@@ -15,6 +15,9 @@ ASSETS_DIR = "Assets/Common/UI/Custom/"
 
 # Types (some might be functions, idk, this is for things like LabelStyle)
 # - Name: Type name
+# ExampleFields:
+#   FieldName:
+#      ExampleValues: List of all found values
 
 # UIElements (this is for things like Button, Label)
 
@@ -25,8 +28,16 @@ data = {
     "UIElements": []
 }
 
-foundTypeNames = set()
+foundTypeNames = {}
 foundUIElements = set()
+
+# checks for ; which isn't commented
+def is_line_terminated(s):
+    i = s.find(";")
+    if i == -1:
+        return False
+    return "//" not in s[:i]
+
 
 def resolve_import(path, importedPath):
     return os.path.normpath(os.path.join(os.path.dirname(path), importedPath))
@@ -60,26 +71,92 @@ def add_common(d: dict, path: str, line_index: int):
     d["File"] = path
     d["LineNumber"] = line_index + 1
 
-#def get_type_fields(lines: list, line_index: int, typeEndIndex: int):
+def get_type_fields(lines: list, line_index: int, typeEndIndex: int):
+    line = lines[line_index][typeEndIndex:] # cut off everything before the type on the first line
+    params = ""
 
+    # extract params into a big string
+    for i in range(line_index, len(lines)):
+        if i != line_index:
+            line = lines[i]
+
+        params += line
+
+        if is_line_terminated(line):
+            break
+
+    params = params[:params.rfind(");")] # remove line terminator
+
+    # convert string to dict
+    currentKey = ""
+    currentVal = ""
+    isKey = True
+    nest = 0
+    fields = {}
+    for c in params:
+        if c == "(":
+            nest += 1
+        if c == ")":
+            nest -= 1
+        if nest == 0:
+            if isKey and c == ":":
+                isKey = False
+                continue
+            if not isKey and c == ",":
+                fields[currentKey] = currentVal
+                currentKey = ""
+                currentVal = ""
+                isKey = True
+                continue
+        if isKey:
+            currentKey += c
+        else:
+            currentVal += c
+
+    if currentKey != "":
+        fields[currentKey] = currentVal
+    
+    # clean up keys and values
+    cleanedFields = {}
+    for k, v in fields.items():
+        k = k.replace("\n", "").strip()
+        v = v.strip()
+
+        cleanedFields[k] = v
+
+    return cleanedFields
 
 def parse_types(path: str, lines: list, line_index: int):
     types = lines[line_index].split("(")
+    indexInLine = 0
     for i in range(len(types) - 1): # last type doesn't have a ( after so probably not a type
+        indexInLine += len(types[i])
         typeName = types[i].split(" ").pop() # get the thing after the last space
         if len(typeName) == 0 or typeName.isspace(): # Type is empty space
             continue
         if "#" in typeName:
             continue # Hex color code
-        if typeName in foundTypeNames:
-            continue
         
-        foundTypeNames.add(typeName)
         t = {}
-        add_common(t, path, line_index)
-        t["Name"] = typeName
-        #t["Fields"] = get_type_fields(lines, line_index, lines[line])
-        data["Types"].append(t)
+        if typeName not in foundTypeNames:
+            foundTypeNames[typeName] = t
+            add_common(t, path, line_index)
+            t["Name"] = typeName
+            t["Fields"] = {}
+            data["Types"].append(t)
+        else:
+            t = foundTypeNames[typeName]
+
+        for k, v in get_type_fields(lines, line_index,  indexInLine + 1).items():
+            if k not in t["Fields"]:
+                t["Fields"][k] = {"ExampleValues": set()}
+
+            t["Fields"][k]["ExampleValues"].add(v)
+
+def convert_field_sets_to_lists():
+    for foundType in data["Types"]:
+        for field in foundType["Fields"].values():
+            field["ExampleValues"] = list(field["ExampleValues"])
 
 def parse_ui_elements(path: str, lines: list, line_index: int):
     line = lines[line_index]
@@ -161,6 +238,8 @@ def parse_file(path: str):
             parse_ui_elements(path, lines, line_index)
 
             parse_var(path, lines, tokens, line_index)
+        
+    convert_field_sets_to_lists()
                 
 
 
