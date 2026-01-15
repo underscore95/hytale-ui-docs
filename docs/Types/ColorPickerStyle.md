@@ -12,8 +12,8 @@
 
 ### ButtonBackground
 
-- `"Common/ColorPickerButton.png"`
 - `"Common/ColorPickerButton2.png"`
+- `"Common/ColorPickerButton.png"`
 
 ### ButtonFill
 
@@ -34,8 +34,4 @@
 ### TextFieldHeight
 
 - `32`
-
-### 
-
-- ``
 

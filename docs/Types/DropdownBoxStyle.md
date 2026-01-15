@@ -32,8 +32,8 @@
 
 ### ArrowWidth
 
-- `9`
 - `13`
+- `9`
 
 ### ArrowHeight
 
@@ -41,8 +41,8 @@
 
 ### LabelStyle
 
-- `[DefaultDropdownBoxLabelStyle](Variables/DefaultDropdownBoxLabelStyle.md)`
 - `(TextColor: #96a9be, RenderBold: true, VerticalAlignment: Center, FontSize: 18)`
+- `[DefaultDropdownBoxLabelStyle](Variables/DefaultDropdownBoxLabelStyle.md)`
 
 ### EntryLabelStyle
 
@@ -58,8 +58,8 @@
 
 ### HorizontalPadding
 
-- `14`
 - `8`
+- `14`
 
 ### PanelScrollbarStyle
 
@@ -75,8 +75,8 @@
 
 ### PanelAlign
 
-- `Bottom`
 - `Right`
+- `Bottom`
 
 ### PanelOffset
 

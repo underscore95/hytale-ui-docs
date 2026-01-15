@@ -8,21 +8,21 @@
 
 ### TexturePath
 
-- `"Common/InputBox.png"`
 - `"InputIconMouseMiddleClick.png"`
-- `"InputBinding.png"`
+- `"Common/InputBoxHovered.png"`
 - `"Common/InputBoxSelected.png"`
 - `"Common/Buttons/Primary_Square.png"`
 - `"Common/Buttons/Primary_Square_Hovered.png"`
-- `"Common/InputBoxPressed.png"`
-- `"Common/Buttons/Primary.png"`
-- `"Common/Buttons/Primary_Pressed.png"`
+- `"Common/InputBox.png"`
 - `"Common/Buttons/Disabled.png"`
-- `"Common/Buttons/Primary_Square_Pressed.png"`
-- `"InputIconMouseRightClick.png"`
-- `"InputIconMouseLeftClick.png"`
-- `"Common/InputBoxHovered.png"`
 - `"Common/Buttons/Primary_Hovered.png"`
+- `"Common/InputBoxPressed.png"`
+- `"InputBinding.png"`
+- `"InputIconMouseLeftClick.png"`
+- `"InputIconMouseRightClick.png"`
+- `"Common/Buttons/Primary.png"`
+- `"Common/Buttons/Primary_Square_Pressed.png"`
+- `"Common/Buttons/Primary_Pressed.png"`
 
 ### VerticalBorder
 
@@ -34,9 +34,9 @@
 
 ### Border
 
+- `16`
 - `[ButtonBorder](Variables/ButtonBorder.md)`
 - `6`
-- `16`
 
 ### (TexturePath: "Common/Buttons/Destructive.png", Border: @ButtonBorder), LabelStyle
 
@@ -45,10 +45,10 @@
 
 ### LabelStyle
 
-- `[SecondaryButtonLabelStyle)](Variables/SecondaryButtonLabelStyle-.md)`
-- `[SmallSecondaryButtonLabelStyle)](Variables/SmallSecondaryButtonLabelStyle-.md)`
 - `[DefaultButtonLabelStyle),
   Sounds: @ButtonsCancel,](Variables/DefaultButtonLabelStyle-----Sounds---ButtonsCancel-.md)`
+- `[SmallSecondaryButtonLabelStyle)](Variables/SmallSecondaryButtonLabelStyle-.md)`
+- `[SecondaryButtonLabelStyle)](Variables/SecondaryButtonLabelStyle-.md)`
 
 ### (TexturePath: "Common/Buttons/Destructive_Hovered.png", Border: @ButtonBorder), LabelStyle
 
@@ -62,10 +62,10 @@
 
 ### (TexturePath: "Common/Buttons/Disabled.png", Border: @ButtonBorder), LabelStyle
 
-- `[SecondaryButtonLabelStyle)](Variables/SecondaryButtonLabelStyle-.md)`
-- `[SmallSecondaryButtonLabelStyle)](Variables/SmallSecondaryButtonLabelStyle-.md)`
 - `[DefaultButtonLabelStyle),
   Sounds: @ButtonsCancel,](Variables/DefaultButtonLabelStyle-----Sounds---ButtonsCancel-.md)`
+- `[SmallSecondaryButtonLabelStyle)](Variables/SmallSecondaryButtonLabelStyle-.md)`
+- `[SecondaryButtonLabelStyle)](Variables/SecondaryButtonLabelStyle-.md)`
 
 ### (TexturePath: "Common/Buttons/Destructive.png", Border: @ButtonBorder)),  Hovered: (Background
 

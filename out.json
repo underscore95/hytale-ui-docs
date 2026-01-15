@@ -1655,21 +1655,21 @@
             "Fields": {
                 "TexturePath": {
                     "ExampleValues": [
-                        "\"Common/InputBox.png\"",
                         "\"InputIconMouseMiddleClick.png\"",
-                        "\"InputBinding.png\"",
+                        "\"Common/InputBoxHovered.png\"",
                         "\"Common/InputBoxSelected.png\"",
                         "\"Common/Buttons/Primary_Square.png\"",
                         "\"Common/Buttons/Primary_Square_Hovered.png\"",
-                        "\"Common/InputBoxPressed.png\"",
-                        "\"Common/Buttons/Primary.png\"",
-                        "\"Common/Buttons/Primary_Pressed.png\"",
+                        "\"Common/InputBox.png\"",
                         "\"Common/Buttons/Disabled.png\"",
-                        "\"Common/Buttons/Primary_Square_Pressed.png\"",
-                        "\"InputIconMouseRightClick.png\"",
+                        "\"Common/Buttons/Primary_Hovered.png\"",
+                        "\"Common/InputBoxPressed.png\"",
+                        "\"InputBinding.png\"",
                         "\"InputIconMouseLeftClick.png\"",
-                        "\"Common/InputBoxHovered.png\"",
-                        "\"Common/Buttons/Primary_Hovered.png\""
+                        "\"InputIconMouseRightClick.png\"",
+                        "\"Common/Buttons/Primary.png\"",
+                        "\"Common/Buttons/Primary_Square_Pressed.png\"",
+                        "\"Common/Buttons/Primary_Pressed.png\""
                     ]
                 },
                 "VerticalBorder": {
@@ -1684,9 +1684,9 @@
                 },
                 "Border": {
                     "ExampleValues": [
+                        "16",
                         "@ButtonBorder",
-                        "6",
-                        "16"
+                        "6"
                     ]
                 },
                 "(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder), LabelStyle": {
@@ -1696,9 +1696,9 @@
                 },
                 "LabelStyle": {
                     "ExampleValues": [
-                        "@SecondaryButtonLabelStyle)",
+                        "@DefaultButtonLabelStyle),\n  Sounds: @ButtonsCancel,",
                         "@SmallSecondaryButtonLabelStyle)",
-                        "@DefaultButtonLabelStyle),\n  Sounds: @ButtonsCancel,"
+                        "@SecondaryButtonLabelStyle)"
                     ]
                 },
                 "(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder), LabelStyle": {
@@ -1713,9 +1713,9 @@
                 },
                 "(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle": {
                     "ExampleValues": [
-                        "@SecondaryButtonLabelStyle)",
+                        "@DefaultButtonLabelStyle),\n  Sounds: @ButtonsCancel,",
                         "@SmallSecondaryButtonLabelStyle)",
-                        "@DefaultButtonLabelStyle),\n  Sounds: @ButtonsCancel,"
+                        "@SecondaryButtonLabelStyle)"
                     ]
                 },
                 "(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder)),  Hovered: (Background": {
@@ -1810,26 +1810,26 @@
             "Fields": {
                 "FontSize": {
                     "ExampleValues": [
+                        "10",
                         "18),\n  HorizontalPadding: 14,\n  PanelAlign: Bottom,\n  PanelOffset: 7,\n  Sounds: $Sounds.@DropdownBox",
-                        "15",
-                        "38",
+                        "25",
+                        "13",
+                        "16",
                         "32",
                         "17",
-                        "25",
-                        "10",
-                        "16",
                         "18",
-                        "13"
+                        "38",
+                        "15"
                     ]
                 },
                 "TextColor": {
                     "ExampleValues": [
-                        "#dee2ef",
-                        "#b4c8c9",
-                        "#96a9be",
                         "#ffffff",
+                        "#b4c8c9",
+                        "#dee2ef",
+                        "#778292",
                         "#bfcdd5",
-                        "#778292"
+                        "#96a9be"
                     ]
                 },
                 "RenderBold": {
@@ -1844,14 +1844,14 @@
                 },
                 "HorizontalAlignment": {
                     "ExampleValues": [
-                        "Center",
-                        "End"
+                        "End",
+                        "Center"
                     ]
                 },
                 "VerticalAlignment": {
                     "ExampleValues": [
-                        "Center",
-                        "End"
+                        "End",
+                        "Center"
                     ]
                 },
                 "...@DefaultButtonLabelStyle,  TextColor": {
@@ -1898,8 +1898,8 @@
                 "LetterSpacing": {
                     "ExampleValues": [
                         "0.5",
-                        "0",
-                        "2"
+                        "2",
+                        "0"
                     ]
                 },
                 "FontName": {
@@ -1911,11 +1911,6 @@
                     "ExampleValues": [
                         "true"
                     ]
-                },
-                "": {
-                    "ExampleValues": [
-                        ""
-                    ]
                 }
             }
         },
@@ -1926,47 +1921,42 @@
             "Fields": {
                 "Default": {
                     "ExampleValues": [
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary.png\", Border: @ButtonBorder))",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder))",
                         "(Background: @DefaultButtonDefaultBackground)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary.png\", Border: @ButtonBorder))",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder))",
                         "(Background: (TexturePath: \"../Common/InputBoxSelected.png\", Border: 16))",
-                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16))",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder))"
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder))",
+                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16))"
                     ]
                 },
                 "Hovered": {
                     "ExampleValues": [
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder))",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder))",
                         "(Background: @DefaultButtonHoveredBackground)",
-                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16, Color: #ffffff(0.7)))",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Hovered.png\", Border: @ButtonBorder))",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder))"
+                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16, Color: #ffffff(0.7)))"
                     ]
                 },
                 "Pressed": {
                     "ExampleValues": [
-                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16, Color: #ffffff(0.85)))",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Pressed.png\", Border: @ButtonBorder))",
-                        "(Background: @DefaultButtonPressedBackground)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder))",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Pressed.png\", Border: @ButtonBorder))",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder))"
+                        "(Background: @DefaultButtonPressedBackground)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Pressed.png\", Border: @ButtonBorder))",
+                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16, Color: #ffffff(0.85)))"
                     ]
                 },
                 "Disabled": {
                     "ExampleValues": [
+                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16))",
                         "(Background: @DefaultButtonDisabledBackground)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder))",
-                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16))"
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder))"
                     ]
                 },
                 "Sounds": {
                     "ExampleValues": [
                         "@ButtonSounds"
-                    ]
-                },
-                "": {
-                    "ExampleValues": [
-                        ""
                     ]
                 }
             }
@@ -1980,53 +1970,48 @@
                     "ExampleValues": [
                         "(LabelStyle: @HeaderTextButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)",
                         "(Background: (TexturePath: \"Common/ButtonSmall.png\", Border: 6), LabelStyle: @SmallButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
-                        "(Background: @DefaultButtonDefaultBackground, LabelStyle: @DefaultButtonLabelStyle)"
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
+                        "(Background: @DefaultButtonDefaultBackground, LabelStyle: @DefaultButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)"
                     ]
                 },
                 "Hovered": {
                     "ExampleValues": [
                         "(Background: (TexturePath: \"Common/ButtonSmallHovered.png\", Border: 6), LabelStyle: @SmallButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
-                        "(Background: @DefaultButtonHoveredBackground, LabelStyle: @DefaultButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
-                        "(LabelStyle: (...@HeaderTextButtonLabelStyle, TextColor: #eaebee))"
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
+                        "(LabelStyle: (...@HeaderTextButtonLabelStyle, TextColor: #eaebee))",
+                        "(Background: @DefaultButtonHoveredBackground, LabelStyle: @DefaultButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)"
                     ]
                 },
                 "Pressed": {
                     "ExampleValues": [
-                        "(LabelStyle: (...@HeaderTextButtonLabelStyle, TextColor: #b6bbc2))",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
-                        "(Background: (TexturePath: \"Common/ButtonSmallPressed.png\", Border: 6), LabelStyle: @SmallButtonLabelStyle)",
                         "(Background: @DefaultButtonPressedBackground, LabelStyle: @DefaultButtonLabelStyle)",
+                        "(Background: (TexturePath: \"Common/ButtonSmallPressed.png\", Border: 6), LabelStyle: @SmallButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
+                        "(LabelStyle: (...@HeaderTextButtonLabelStyle, TextColor: #b6bbc2))",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Pressed.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Pressed.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)"
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)"
                     ]
                 },
                 "Disabled": {
                     "ExampleValues": [
+                        "(Background: @DefaultButtonDisabledBackground, LabelStyle: @DefaultButtonDisabledLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
                         "(Background: @DefaultButtonDisabledBackground, LabelStyle: @SmallButtonDisabledLabelStyle)",
-                        "(Background: @DefaultButtonDisabledBackground, LabelStyle: @DefaultButtonDisabledLabelStyle)"
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)"
                     ]
                 },
                 "Sounds": {
                     "ExampleValues": [
-                        "@ButtonSounds",
-                        "@ButtonsCancel"
-                    ]
-                },
-                "": {
-                    "ExampleValues": [
-                        ""
+                        "@ButtonsCancel",
+                        "@ButtonSounds"
                     ]
                 }
             }
@@ -2070,8 +2055,8 @@
                 },
                 "ButtonBackground": {
                     "ExampleValues": [
-                        "\"Common/ColorPickerButton.png\"",
-                        "\"Common/ColorPickerButton2.png\""
+                        "\"Common/ColorPickerButton2.png\"",
+                        "\"Common/ColorPickerButton.png\""
                     ]
                 },
                 "ButtonFill": {
@@ -2092,11 +2077,6 @@
                 "TextFieldHeight": {
                     "ExampleValues": [
                         "32"
-                    ]
-                },
-                "": {
-                    "ExampleValues": [
-                        ""
                     ]
                 }
             }
@@ -2155,14 +2135,14 @@
             "Fields": {
                 "Spacing": {
                     "ExampleValues": [
-                        "6",
-                        "12"
+                        "12",
+                        "6"
                     ]
                 },
                 "Size": {
                     "ExampleValues": [
-                        "6",
-                        "10"
+                        "10",
+                        "6"
                     ]
                 },
                 "Background": {
@@ -2263,8 +2243,8 @@
                 },
                 "ArrowWidth": {
                     "ExampleValues": [
-                        "9",
-                        "13"
+                        "13",
+                        "9"
                     ]
                 },
                 "ArrowHeight": {
@@ -2274,8 +2254,8 @@
                 },
                 "LabelStyle": {
                     "ExampleValues": [
-                        "@DefaultDropdownBoxLabelStyle",
-                        "(TextColor: #96a9be, RenderBold: true, VerticalAlignment: Center, FontSize: 18)"
+                        "(TextColor: #96a9be, RenderBold: true, VerticalAlignment: Center, FontSize: 18)",
+                        "@DefaultDropdownBoxLabelStyle"
                     ]
                 },
                 "EntryLabelStyle": {
@@ -2295,8 +2275,8 @@
                 },
                 "HorizontalPadding": {
                     "ExampleValues": [
-                        "14",
-                        "8"
+                        "8",
+                        "14"
                     ]
                 },
                 "PanelScrollbarStyle": {
@@ -2316,8 +2296,8 @@
                 },
                 "PanelAlign": {
                     "ExampleValues": [
-                        "Bottom",
-                        "Right"
+                        "Right",
+                        "Bottom"
                     ]
                 },
                 "PanelOffset": {
@@ -2603,9 +2583,9 @@
             "Fields": {
                 "Full": {
                     "ExampleValues": [
+                        "@FullPaddingValue",
                         "9 + 8",
-                        "@ContentPaddingFull",
-                        "@FullPaddingValue"
+                        "@ContentPaddingFull"
                     ]
                 },
                 "Top": {
@@ -2655,14 +2635,14 @@
             "Fields": {
                 "TabStyle": {
                     "ExampleValues": [
-                        "(\n    Default: @HeaderTabStyle\n  )",
-                        "(\n    Default: @TopTabStyle,\n    Hovered: (...@TopTabStyle, Anchor: (...@TopTabAnchor, Bottom: -5)),\n    Pressed: (...@TopTabStyle, Anchor: (...@TopTabAnchor, Bottom: -8))\n  )"
+                        "(\n    Default: @TopTabStyle,\n    Hovered: (...@TopTabStyle, Anchor: (...@TopTabAnchor, Bottom: -5)),\n    Pressed: (...@TopTabStyle, Anchor: (...@TopTabAnchor, Bottom: -8))\n  )",
+                        "(\n    Default: @HeaderTabStyle\n  )"
                     ]
                 },
                 "SelectedTabStyle": {
                     "ExampleValues": [
-                        "(\n    Default: (\n      ...@HeaderTabStyle,\n      IconOpacity: 1\n    )\n  )",
-                        "(\n    Default: (\n      ...@TopTabStyle,\n      Anchor: (...@TopTabAnchor, Bottom: 4),\n      IconAnchor: (Width: 44, Height: 44),\n      Overlay: \"Common/TabSelectedOverlay.png\"\n    )\n  )"
+                        "(\n    Default: (\n      ...@TopTabStyle,\n      Anchor: (...@TopTabAnchor, Bottom: 4),\n      IconAnchor: (Width: 44, Height: 44),\n      Overlay: \"Common/TabSelectedOverlay.png\"\n    )\n  )",
+                        "(\n    Default: (\n      ...@HeaderTabStyle,\n      IconOpacity: 1\n    )\n  )"
                     ]
                 },
                 "SeparatorAnchor": {

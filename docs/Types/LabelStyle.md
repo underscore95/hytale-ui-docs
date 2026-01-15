@@ -8,29 +8,29 @@
 
 ### FontSize
 
+- `10`
 - `18),
   HorizontalPadding: 14,
   PanelAlign: Bottom,
   PanelOffset: 7,
   Sounds: $Sounds.@DropdownBox`
-- `15`
-- `38`
+- `25`
+- `13`
+- `16`
 - `32`
 - `17`
-- `25`
-- `10`
-- `16`
 - `18`
-- `13`
+- `38`
+- `15`
 
 ### TextColor
 
-- `#dee2ef`
-- `#b4c8c9`
-- `#96a9be`
 - `#ffffff`
-- `#bfcdd5`
+- `#b4c8c9`
+- `#dee2ef`
 - `#778292`
+- `#bfcdd5`
+- `#96a9be`
 
 ### RenderBold
 
@@ -42,13 +42,13 @@
 
 ### HorizontalAlignment
 
-- `Center`
 - `End`
+- `Center`
 
 ### VerticalAlignment
 
-- `Center`
 - `End`
+- `Center`
 
 ### ...@DefaultButtonLabelStyle,  TextColor
 
@@ -92,8 +92,8 @@
 ### LetterSpacing
 
 - `0.5`
-- `0`
 - `2`
+- `0`
 
 ### FontName
 
@@ -102,8 +102,4 @@
 ### Wrap
 
 - `true`
-
-### 
-
-- ``
 

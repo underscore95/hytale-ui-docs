@@ -148,6 +148,8 @@ def parse_types(path: str, lines: list, line_index: int):
             t = foundTypeNames[typeName]
 
         for k, v in get_type_fields(lines, line_index,  indexInLine + 1).items():
+            if len(k) == 0 or k.isspace():
+                continue
             if k not in t["Fields"]:
                 t["Fields"][k] = {"ExampleValues": set()}
 
