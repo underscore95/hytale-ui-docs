@@ -1,6 +1,8 @@
 # hytale-ui-docs
 
-Generate docs for Hytale .ui DSL using the Assets folder.
+This project generates docs for Hytale .ui DSL using the Assets folder.
+
+See generated docs [here](https://github.com/underscore95/hytale-ui-docs/blob/main/docs/Index.md)
 
 ## Running main.py
 
