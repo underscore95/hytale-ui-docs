@@ -8,6 +8,7 @@
 
 ### Default
 
+Example Values:
 - `(LabelStyle: @HeaderTextButtonLabelStyle)`
 - `(Background: PatchStyle(TexturePath: "Common/Buttons/Secondary.png", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)`
 - `(Background: (TexturePath: "Common/ButtonSmall.png", Border: 6), LabelStyle: @SmallButtonLabelStyle)`
@@ -18,6 +19,7 @@
 
 ### Hovered
 
+Example Values:
 - `(Background: (TexturePath: "Common/ButtonSmallHovered.png", Border: 6), LabelStyle: @SmallButtonLabelStyle)`
 - `(Background: PatchStyle(TexturePath: "Common/Buttons/Secondary_Hovered.png", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)`
 - `(Background: PatchStyle(TexturePath: "Common/Buttons/Secondary_Hovered.png", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)`
@@ -28,6 +30,7 @@
 
 ### Pressed
 
+Example Values:
 - `(Background: @DefaultButtonPressedBackground, LabelStyle: @DefaultButtonLabelStyle)`
 - `(Background: (TexturePath: "Common/ButtonSmallPressed.png", Border: 6), LabelStyle: @SmallButtonLabelStyle)`
 - `(Background: PatchStyle(TexturePath: "Common/Buttons/Secondary_Pressed.png", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)`
@@ -38,6 +41,7 @@
 
 ### Disabled
 
+Example Values:
 - `(Background: @DefaultButtonDisabledBackground, LabelStyle: @DefaultButtonDisabledLabelStyle)`
 - `(Background: PatchStyle(TexturePath: "Common/Buttons/Disabled.png", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)`
 - `(Background: PatchStyle(TexturePath: "Common/Buttons/Disabled.png", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)`
@@ -46,6 +50,7 @@
 
 ### Sounds
 
+Example Values:
 - `[ButtonsCancel](Variables/ButtonsCancel.md)`
 - `[ButtonSounds](Variables/ButtonSounds.md)`
 

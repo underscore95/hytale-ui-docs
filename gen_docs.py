@@ -67,7 +67,8 @@ def write_types():
             if item["Fields"]:
                 f.write("## Fields\n\n")
                 for field, info in item["Fields"].items():
-                    f.write(f"### {field}\n\n")
+                    f.write(f"### {field}\n")
+                    f.write("Example Values:\n\n")
                     for v in info["ExampleValues"]:
                         ref = v
                         if isinstance(v, str) and v.startswith("@"):

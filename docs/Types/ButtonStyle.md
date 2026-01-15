@@ -8,6 +8,7 @@
 
 ### Default
 
+Example Values:
 - `(Background: @DefaultButtonDefaultBackground)`
 - `(Background: PatchStyle(TexturePath: "Common/Buttons/Tertiary.png", Border: @ButtonBorder))`
 - `(Background: PatchStyle(TexturePath: "Common/Buttons/Destructive.png", Border: @ButtonBorder))`
@@ -17,6 +18,7 @@
 
 ### Hovered
 
+Example Values:
 - `(Background: PatchStyle(TexturePath: "Common/Buttons/Secondary_Hovered.png", Border: @ButtonBorder))`
 - `(Background: PatchStyle(TexturePath: "Common/Buttons/Destructive_Hovered.png", Border: @ButtonBorder))`
 - `(Background: @DefaultButtonHoveredBackground)`
@@ -25,6 +27,7 @@
 
 ### Pressed
 
+Example Values:
 - `(Background: PatchStyle(TexturePath: "Common/Buttons/Secondary_Pressed.png", Border: @ButtonBorder))`
 - `(Background: PatchStyle(TexturePath: "Common/Buttons/Tertiary_Pressed.png", Border: @ButtonBorder))`
 - `(Background: @DefaultButtonPressedBackground)`
@@ -33,11 +36,13 @@
 
 ### Disabled
 
+Example Values:
 - `(Background: (TexturePath: "../Common/OptionBackgroundPatch.png", Border: 16))`
 - `(Background: @DefaultButtonDisabledBackground)`
 - `(Background: PatchStyle(TexturePath: "Common/Buttons/Disabled.png", Border: @ButtonBorder))`
 
 ### Sounds
 
+Example Values:
 - `[ButtonSounds](Variables/ButtonSounds.md)`
 

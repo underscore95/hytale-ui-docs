@@ -8,17 +8,21 @@
 
 ### Width
 
+Example Values:
 - `82`
 
 ### Height
 
+Example Values:
 - `62`
 
 ### Right
 
+Example Values:
 - `5`
 
 ### Bottom
 
+Example Values:
 - `-14`
 

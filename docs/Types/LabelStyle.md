@@ -8,6 +8,7 @@
 
 ### FontSize
 
+Example Values:
 - `10`
 - `18),
   HorizontalPadding: 14,
@@ -25,6 +26,7 @@
 
 ### TextColor
 
+Example Values:
 - `#ffffff`
 - `#b4c8c9`
 - `#dee2ef`
@@ -34,53 +36,65 @@
 
 ### RenderBold
 
+Example Values:
 - `true`
 
 ### RenderUppercase
 
+Example Values:
 - `true`
 
 ### HorizontalAlignment
 
+Example Values:
 - `End`
 - `Center`
 
 ### VerticalAlignment
 
+Example Values:
 - `End`
 - `Center`
 
 ### ...@DefaultButtonLabelStyle,  TextColor
 
+Example Values:
 - `[DisabledColor](Variables/DisabledColor.md)`
 - `#bdcbd3`
 
 ### ...@SecondaryButtonLabelStyle,  TextColor
 
+Example Values:
 - `[DisabledColor](Variables/DisabledColor.md)`
 
 ### ...@DefaultButtonLabelStyle,  FontSize
 
+Example Values:
 - `14`
 
 ### ...@SmallButtonLabelStyle,  TextColor
 
+Example Values:
 - `[DisabledColor](Variables/DisabledColor.md)`
 
 ### ...@SecondaryButtonLabelStyle,  FontSize
 
+Example Values:
 - `14`
 
 ### ...@SmallSecondaryButtonLabelStyle,  TextColor
 
+Example Values:
 - `[DisabledColor](Variables/DisabledColor.md)`
 
 ### ...@DefaultDropdownBoxLabelStyle, TextColor
 
+Example Values:
 - `#b7cedd`
 
 ### Border
 
+Example Values:
 - `16),
   DefaultArrowTexturePath: "Common/DropdownCaret.png",
   HoveredArrowTexturePath: "Common/DropdownCaret.png",
@@ -91,15 +105,18 @@
 
 ### LetterSpacing
 
+Example Values:
 - `0.5`
 - `2`
 - `0`
 
 ### FontName
 
+Example Values:
 - `"Secondary"`
 
 ### Wrap
 
+Example Values:
 - `true`
 
