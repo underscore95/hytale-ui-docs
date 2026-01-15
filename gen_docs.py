@@ -93,6 +93,7 @@ def write_main_index():
     with open(path, "w", encoding="utf-8") as f:
         f.write(f"[← Back]({ROOT_BACK_URL})\n\n")
         f.write("# UI Documentation\n\n")
+        f.write("This documentation was generated using a Python script that parses all the .ui files that come with the Hytale server jar.\n\n")
         f.write("- [Imported Files](ImportedFiles.md)\n")
         f.write("- [Variables](Variables.md)\n")
         f.write("- [Types](Types.md)\n")
