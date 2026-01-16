@@ -2,6 +2,8 @@
 
 # DropdownBoxStyle
 
+This type has been found in Server ui files, you should be able to use it in mods.
+
 **First used at:** `Common.ui:447`
 
 ## Fields
@@ -15,30 +17,39 @@ Example Values:
 Example Values:
 
 - `(TexturePath: "Common/DropdownHovered.png", Border: 16)`
+- `(TexturePath: "Common/DropdownAltHovered.png", Border: 16)`
 
 ### PressedBackground
 Example Values:
 
+- `(TexturePath: "Common/DropdownAltHovered.png", Border: 16)`
 - `(TexturePath: "Common/DropdownPressed.png", Border: 16)`
 
 ### DefaultArrowTexturePath
 Example Values:
 
+- `"Common/DefaultDropdownCaret.png"`
+- `"Common/AltDropdownCaretDown.png"`
 - `"Common/DropdownCaret.png"`
 
 ### HoveredArrowTexturePath
 Example Values:
 
+- `"Common/DefaultDropdownCaret.png"`
+- `"Common/AltDropdownCaretDown.png"`
 - `"Common/DropdownCaret.png"`
 
 ### PressedArrowTexturePath
 Example Values:
 
+- `"Common/AltDropdownCaretUp.png"`
+- `"Common/PressedDropdownCaret.png"`
 - `"Common/DropdownPressedCaret.png"`
 
 ### ArrowWidth
 Example Values:
 
+- `12`
 - `13`
 - `9`
 
@@ -46,17 +57,25 @@ Example Values:
 Example Values:
 
 - `18`
+- `7`
 
 ### LabelStyle
 Example Values:
 
 - `(TextColor: #96a9be, RenderBold: true, VerticalAlignment: Center, FontSize: 18)`
+- `(
+          ...$Common.@DefaultDropdownBoxLabelStyle,
+          FontSize: 16,
+          RenderBold: true,
+          RenderUppercase: false
+        )`
 - `[DefaultDropdownBoxLabelStyle](Variables/DefaultDropdownBoxLabelStyle.md)`
 
 ### EntryLabelStyle
 Example Values:
 
 - `[DefaultDropdownBoxEntryLabelStyle](Variables/DefaultDropdownBoxEntryLabelStyle.md)`
+- `(RenderUppercase: false)`
 
 ### NoItemsLabelStyle
 Example Values:
@@ -83,11 +102,13 @@ Example Values:
 Example Values:
 
 - `(TexturePath: "Common/DropdownBox.png", Border: 16)`
+- `(TexturePath: "Common/TitledDropdownBox.png", Border: 57)`
 
 ### PanelPadding
 Example Values:
 
 - `6`
+- `29`
 
 ### PanelAlign
 Example Values:
@@ -119,11 +140,13 @@ Example Values:
 Example Values:
 
 - `(Color: #0a0f17)`
+- `(Color: #252e48)`
 
 ### PressedEntryBackground
 Example Values:
 
 - `(Color: #0f1621)`
+- `(Color: #232b44)`
 
 ### Sounds
 Example Values:
@@ -223,4 +246,58 @@ Example Values:
 
 @DefaultFileDropdownBoxStyle = FileDropdownBoxStyle(
   DefaultBackground: (TexturePath: "Common/Dropdown.png", Border: 16)`
+
+### ...@DefaultDropdownBoxStyle,  DefaultBackground
+Example Values:
+
+- `(TexturePath: "Common/DropdownAlt.png", Border: 16)`
+
+### PanelTitleLabelStyle
+Example Values:
+
+- `LabelStyle(TextColor: #96a9be, RenderBold: true, RenderUppercase: true, VerticalAlignment: Center, FontSize: 13)`
+
+### ...$Common.@DefaultDropdownBoxStyle,        SelectedEntryLabelStyle
+Example Values:
+
+- `(RenderUppercase: false, RenderBold: true, FontSize: 16)`
+
+### PanelWidth
+Example Values:
+
+- `200`
+- `100`
+- `256`
+
+### ...$Common.@DefaultDropdownBoxStyle,        LabelStyle
+Example Values:
+
+- `(
+          ...$Common.@DefaultDropdownBoxLabelStyle,
+          FontSize: 12,
+          RenderBold: true
+        )`
+- `(
+          ...$Common.@DefaultDropdownBoxLabelStyle,
+          FontSize: 15,
+          RenderBold: true
+        )`
+
+### ...$Common.@DefaultDropdownBoxStyle,            LabelStyle
+Example Values:
+
+- `(
+              ...$Common.@DefaultDropdownBoxLabelStyle,
+              FontSize: 15,
+              RenderBold: true
+            )`
+
+### ...$Common.@DefaultDropdownBoxStyle,      LabelStyle
+Example Values:
+
+- `(
+        ...$Common.@DefaultDropdownBoxLabelStyle,
+        FontSize: 15,
+        RenderBold: true
+      )`
 

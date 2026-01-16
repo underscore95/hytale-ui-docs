@@ -2,6 +2,8 @@
 
 # CompactTextField
 
+This UI element has been found in Server ui files, you should be able to use it in mods.
+
 **First used at:** `Common.ui:667`
 
 ## Fields
@@ -25,6 +27,7 @@ Example Values:
 Example Values:
 
 - `%server.customUI.searchPlaceholder`
+- `%client.general.searchField.placeholder`
 
 ### Style
 Example Values:
@@ -45,4 +48,15 @@ Example Values:
 Example Values:
 
 - `(Default:(Icon:(Texture:"Common/SearchIcon.png",Width:16,Height:16,Offset:9),ClearButtonStyle:@ClearButtonStyle))`
+- `(Default:(Icon:(Texture:"SearchIcon.png",Width:16,Height:16,Offset:9),ClearButtonStyle:@ClearButtonStyle))`
+
+### ExpandSound
+Example Values:
+
+- `(SoundPath:"../Sounds/SearchFieldExpand.ogg",Volume:6)`
+
+### CollapseSound
+Example Values:
+
+- `(SoundPath:"../Sounds/SearchFieldCollapse.ogg",Volume:5)`
 

@@ -1,8 +1,10 @@
 [← Back](../Variables.md)
 
-# PanelSeparatorFancy
+# PanelSeparatorFancy ⚠️
 
-**Defined at:** `Common.ui:725`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Common\Container.ui:226`
 
 ## Value
 
@@ -15,17 +17,17 @@ Group {
 
   Group {
     FlexWeight: 1;
-    Background: "Common/ContainerPanelSeparatorFancyLine.png";
+    Background: "ContainerPanelSeparatorFancyLine.png";
   }
 
   Group {
     Anchor: (Width: 11);
-    Background: "Common/ContainerPanelSeparatorFancyDecoration.png";
+    Background: "ContainerPanelSeparatorFancyDecoration.png";
   }
 
   Group {
     FlexWeight: 1;
-    Background: "Common/ContainerPanelSeparatorFancyLine.png";
+    Background: "ContainerPanelSeparatorFancyLine.png";
   }
 }
 ```

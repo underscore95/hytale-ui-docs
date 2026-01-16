@@ -1,14 +1,23 @@
 [← Back](../Variables.md)
 
-# HeaderTextButton
+# HeaderTextButton ⚠️
 
-**Defined at:** `Common.ui:692`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Common\Container.ui:177`
 
 ## Value
 
 ```ui
 TextButton = TextButton {
-  Style: @HeaderTextButtonStyle;
-  Padding: (Right: 22, Left: 15, Bottom: 1);
+  @Sounds = ();
+  Style: (
+    ...@HeaderTextButtonStyle,
+    Sounds: (
+      Activate: (SoundPath: $Sounds.@Tick, Volume: 6),
+      MouseHover: (SoundPath: $Sounds.@ButtonsLightHover, Volume: 6)
+    )
+  );
+  Padding: (Horizontal: 12, Bottom: 1);
 }
 ```

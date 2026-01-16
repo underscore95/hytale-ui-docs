@@ -2,6 +2,8 @@
 
 # @MultilineTextField
 
+This UI element has been found in Server ui files, you should be able to use it in mods.
+
 **First used at:** `Pages\PrefabEditorSaveSettings.ui:62`
 
 ## Fields
@@ -20,6 +22,6 @@ Example Values:
 ### PlaceholderText
 Example Values:
 
-- `%server.customUI.prefabEditorSaveSettings.prefabsToSavePlaceholder`
 - `%server.customUI.prefabEditorSettings.browser.noItemsSelected`
+- `%server.customUI.prefabEditorSaveSettings.prefabsToSavePlaceholder`
 

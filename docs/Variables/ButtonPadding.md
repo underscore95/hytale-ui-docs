@@ -1,11 +1,13 @@
 [← Back](../Variables.md)
 
-# ButtonPadding
+# ButtonPadding ⚠️
 
-**Defined at:** `Common.ui:23`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/MainMenu\TopBar\TopBar.ui:6`
 
 ## Value
 
 ```ui
-24
+Padding(Horizontal: 23, Top: 6)
 ```

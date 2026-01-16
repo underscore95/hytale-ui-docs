@@ -1,7 +1,9 @@
 [← Back](../ImportedFiles.md)
 
-# Common
+# Common ⚠️
 
-**ImportedFile:** `Pages\Memories\Common.ui"`
+⚠️ This imported file has only been found in Client ui files, you may or may not be able to use it in mods.
 
-**First seen at:** `Pages\Memories\ChestMarker.ui:1`
+**ImportedFile:** `Client\Data\Game\Interface\Services\"..\Common.ui"`
+
+**First seen at:** `Client/Data/Game/Interface/Services\QueueStatus.ui:1`

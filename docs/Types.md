@@ -2,7 +2,12 @@
 
 # Types
 
+⚠️ Items marked with a warning sign were only found in the client.
+
+- ["](Types/-.md) ⚠️
+- [$InGame.@DefaultItemSlotSize-](Types/-InGame--DefaultItemSlotSize-.md) ⚠️
 - [Anchor](Types/Anchor.md)
+- [BlockSelectorStyle](Types/BlockSelectorStyle.md) ⚠️
 - [ButtonStyle](Types/ButtonStyle.md)
 - [CheckBoxStyle](Types/CheckBoxStyle.md)
 - [ColorPickerDropdownBoxStyle](Types/ColorPickerDropdownBoxStyle.md)
@@ -11,13 +16,16 @@
 - [DropdownBoxStyle](Types/DropdownBoxStyle.md)
 - [FileDropdownBoxStyle](Types/FileDropdownBoxStyle.md)
 - [InputFieldStyle](Types/InputFieldStyle.md)
+- [ItemGridStyle](Types/ItemGridStyle.md) ⚠️
 - [LabelStyle](Types/LabelStyle.md)
 - [Padding](Types/Padding.md)
 - [PatchStyle](Types/PatchStyle.md)
 - [PopupMenuLayerStyle](Types/PopupMenuLayerStyle.md)
 - [ScrollbarStyle](Types/ScrollbarStyle.md)
 - [SliderStyle](Types/SliderStyle.md)
+- [Style:](Types/Style-.md) ⚠️
 - [TabNavigationStyle](Types/TabNavigationStyle.md)
 - [TabStateStyle](Types/TabStateStyle.md)
+- [TabStyleState](Types/TabStyleState.md) ⚠️
 - [TextButtonStyle](Types/TextButtonStyle.md)
 - [TextTooltipStyle](Types/TextTooltipStyle.md)

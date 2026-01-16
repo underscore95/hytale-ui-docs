@@ -1,11 +1,20 @@
 [← Back](../Variables.md)
 
-# PrimaryButtonLabelStyle
+# PrimaryButtonLabelStyle ⚠️
 
-**Defined at:** `Common.ui:57`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/MainMenu\Servers\ServersPage.ui:11`
 
 ## Value
 
 ```ui
-@DefaultButtonLabelStyle
+LabelStyle(
+  FontSize: 13,
+  TextColor: #bfcdd5,
+  RenderBold: true,
+  RenderUppercase: true,
+  HorizontalAlignment: Center,
+  VerticalAlignment: Center
+)
 ```

@@ -18,6 +18,9 @@ def link(name, category):
 def back_button(target="Index.md"):
     return f"[← Back]({target})\n\n"
 
+def client_marker(item):
+    return " ⚠️" if item.get("IsClient") else ""
+
 def ensure_dirs():
     if os.path.exists(OUT_DIR):
         shutil.rmtree(OUT_DIR)
@@ -29,9 +32,10 @@ def write_index(category, items):
     with open(path, "w", encoding="utf-8") as f:
         f.write(back_button())
         f.write(f"# {category}\n\n")
+        f.write("⚠️ Items marked with a warning sign were only found in the client.\n\n")
         for item in sorted(items, key=lambda x: x.get("Name", "")):
             name = item.get("Name", item.get("Alias", ""))
-            f.write(f"- {link(name, category)}\n")
+            f.write(f"- {link(name, category)}{client_marker(item)}\n")
 
 def write_imported_files():
     for item in data["ImportedFiles"]:
@@ -39,9 +43,14 @@ def write_imported_files():
         path = os.path.join(OUT_DIR, "ImportedFiles", f"{slug(name)}.md")
         with open(path, "w", encoding="utf-8") as f:
             f.write(back_button("../ImportedFiles.md"))
-            f.write(f"# {name}\n\n")
+            f.write(f"# {name}{client_marker(item)}\n\n")
+            if item.get("IsClient"):
+                f.write("⚠️ This imported file has only been found in Client ui files, you may or may not be able to use it in mods.\n\n")
+            else:
+                f.write("This imported file has been found in Server ui files, you should be able to use it in mods.\n\n")
             f.write(f"**ImportedFile:** `{item['ImportedFile']}`\n\n")
             f.write(f"**First seen at:** `{item['File']}:{item['LineNumber']}`\n")
+
 
 def write_variables():
     for item in data["Variables"]:
@@ -49,12 +58,17 @@ def write_variables():
         path = os.path.join(OUT_DIR, "Variables", f"{slug(name)}.md")
         with open(path, "w", encoding="utf-8") as f:
             f.write(back_button("../Variables.md"))
-            f.write(f"# {name}\n\n")
+            f.write(f"# {name}{client_marker(item)}\n\n")
+            if item.get("IsClient"):
+                f.write("⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.\n\n")
+            else:
+                f.write("This variable has been found in Server ui files, you should be able to use it in mods.\n\n")
             f.write(f"**Defined at:** `{item['File']}:{item['LineNumber']}`\n\n")
             f.write("## Value\n\n")
             f.write("```ui\n")
             f.write(item["Value"])
             f.write("\n```\n")
+
 
 def write_types():
     for item in data["Types"]:
@@ -62,9 +76,13 @@ def write_types():
         path = os.path.join(OUT_DIR, "Types", f"{slug(name)}.md")
         with open(path, "w", encoding="utf-8") as f:
             f.write(back_button("../Types.md"))
-            f.write(f"# {name}\n\n")
+            f.write(f"# {name}{client_marker(item)}\n\n")
+            if item.get("IsClient"):
+                f.write("⚠️ This type has only been found in Client ui files, you may or may not be able to use it in mods.\n\n")
+            else:
+                f.write("This type has been found in Server ui files, you should be able to use it in mods.\n\n")
             f.write(f"**First used at:** `{item['File']}:{item['LineNumber']}`\n\n")
-            if item["Fields"]:
+            if item.get("Fields"):
                 f.write("## Fields\n\n")
                 for field, info in item["Fields"].items():
                     f.write(f"### {field}\n")
@@ -76,13 +94,18 @@ def write_types():
                         f.write(f"- `{ref}`\n")
                     f.write("\n")
 
+
 def write_ui_elements():
     for item in data["UIElements"]:
         name = item["Name"]
         path = os.path.join(OUT_DIR, "UIElements", f"{slug(name)}.md")
         with open(path, "w", encoding="utf-8") as f:
             f.write(back_button("../UIElements.md"))
-            f.write(f"# {name}\n\n")
+            f.write(f"# {name}{client_marker(item)}\n\n")
+            if item.get("IsClient"):
+                f.write("⚠️ This UI element has only been found in Client ui files, you may or may not be able to use it in mods.\n\n")
+            else:
+                f.write("This UI element has been found in Server ui files, you should be able to use it in mods.\n\n")
             f.write(f"**First used at:** `{item['File']}:{item['LineNumber']}`\n\n")
 
             if item.get("Fields"):
@@ -97,11 +120,10 @@ def write_ui_elements():
                         f.write(f"- `{ref}`\n")
                     f.write("\n")
 
-            if "Types" in item and item["Types"]:
+            if item.get("Types"):
                 f.write("## Uses Types\n\n")
                 for t in item["Types"]:
                     f.write(f"- {link(t, 'Types')}\n")
-
 
 def write_main_index():
     path = os.path.join(OUT_DIR, "Index.md")

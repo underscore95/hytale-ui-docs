@@ -1,16 +1,15 @@
 [← Back](../Variables.md)
 
-# Lock
+# Lock ⚠️
 
-**Defined at:** `Sounds.ui:99`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Sounds.ui:127`
 
 ## Value
 
 ```ui
 (
-  Activate: (
-    SoundPath: "Sounds/LockActivate.ogg",
-    Volume: 6
-  )
+  Activate: (SoundPath: "Sounds/LockActivate.ogg", Volume: 6)
 )
 ```

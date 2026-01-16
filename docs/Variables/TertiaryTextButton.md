@@ -1,8 +1,10 @@
 [← Back](../Variables.md)
 
-# TertiaryTextButton
+# TertiaryTextButton ⚠️
 
-**Defined at:** `Common.ui:284`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Common.ui:283`
 
 ## Value
 
@@ -17,8 +19,8 @@ TextButton = TextButton {
       ...@Sounds
     )
   );
-  Anchor: (...@Anchor, Height: @DefaultButtonHeight);
-  Padding: (Horizontal: @DefaultButtonPadding);
+  Anchor: (...@Anchor, Height: @PrimaryButtonHeight);
+  Padding: (Horizontal: @ButtonPadding);
   Text: @Text;
 }
 ```

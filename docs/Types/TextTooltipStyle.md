@@ -2,6 +2,8 @@
 
 # TextTooltipStyle
 
+This type has been found in Server ui files, you should be able to use it in mods.
+
 **First used at:** `Common.ui:839`
 
 ## Fields
@@ -10,6 +12,7 @@
 Example Values:
 
 - `(TexturePath: "Common/TooltipDefaultBackground.png", Border: 24)`
+- `[DefaultTooltipBackground](Variables/DefaultTooltipBackground.md)`
 
 ### MaxWidth
 Example Values:

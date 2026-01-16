@@ -1,8 +1,10 @@
 [← Back](../Variables.md)
 
-# DefaultDropdownBoxStyle
+# DefaultDropdownBoxStyle ⚠️
 
-**Defined at:** `Common.ui:447`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Common.ui:345`
 
 ## Value
 
@@ -11,9 +13,9 @@ DropdownBoxStyle(
   DefaultBackground: (TexturePath: "Common/Dropdown.png", Border: 16),
   HoveredBackground: (TexturePath: "Common/DropdownHovered.png", Border: 16),
   PressedBackground: (TexturePath: "Common/DropdownPressed.png", Border: 16),
-  DefaultArrowTexturePath: "Common/DropdownCaret.png",
-  HoveredArrowTexturePath: "Common/DropdownCaret.png",
-  PressedArrowTexturePath: "Common/DropdownPressedCaret.png",
+  DefaultArrowTexturePath: "Common/DefaultDropdownCaret.png",
+  HoveredArrowTexturePath: "Common/DefaultDropdownCaret.png",
+  PressedArrowTexturePath: "Common/PressedDropdownCaret.png",
   ArrowWidth: 13,
   ArrowHeight: 18,
   LabelStyle: @DefaultDropdownBoxLabelStyle,

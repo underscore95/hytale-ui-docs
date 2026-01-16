@@ -1,0 +1,18 @@
+[← Back](../Variables.md)
+
+# Style ⚠️
+
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/InGame\Pages\Inventory\RecipeCatalogueRecipeButton.ui:13`
+
+## Value
+
+```ui
+(
+  Default: (
+    Background: (TexturePath: "RecipeCatalogueItemPatch.png", Border: 22)
+  ),
+  Sounds: $Sounds.@ButtonsLight
+)
+```

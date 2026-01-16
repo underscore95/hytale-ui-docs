@@ -1,8 +1,10 @@
 [← Back](../Variables.md)
 
-# DropdownBox
+# DropdownBox ⚠️
 
-**Defined at:** `Sounds.ui:63`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Sounds.ui:91`
 
 ## Value
 
@@ -17,7 +19,7 @@ DropdownBoxSounds(
     Volume: 6
   ),
   Close: (
-    SoundPath: @ButtonsCancelActivate,
+    SoundPath: @Untick,
     Volume: 6
   )
 )

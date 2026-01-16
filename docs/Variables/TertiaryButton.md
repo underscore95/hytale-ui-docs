@@ -1,8 +1,10 @@
 [← Back](../Variables.md)
 
-# TertiaryButton
+# TertiaryButton ⚠️
 
-**Defined at:** `Common.ui:299`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Common.ui:298`
 
 ## Value
 
@@ -10,7 +12,7 @@
 Button = Button {
   @Anchor = Anchor();
   @Sounds = ();
-  @Width = @DefaultButtonHeight;
+  @Width = @PrimaryButtonHeight;
   Style: (
     ...@TertiaryButtonStyle,
     Sounds: (
@@ -18,6 +20,6 @@ Button = Button {
       ...@Sounds
     )
   );
-  Anchor: (...@Anchor, Height: @DefaultButtonHeight, Width: @Width);
+  Anchor: (...@Anchor, Height: @PrimaryButtonHeight, Width: @Width);
 }
 ```

@@ -1,23 +1,25 @@
 [← Back](../Variables.md)
 
-# SecondaryButton
+# SecondaryButton ⚠️
 
-**Defined at:** `Common.ui:270`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/MainMenu\HomePage.ui:49`
 
 ## Value
 
 ```ui
-Button = Button {
-  @Anchor = Anchor();
+TextButton {
   @Sounds = ();
-  @Width = @DefaultButtonHeight;
+  Anchor: (Height: 45);
   Style: (
     ...@SecondaryButtonStyle,
     Sounds: (
-      ...$Sounds.@ButtonsLight,
+      ...$Sounds.@ButtonsMain,
       ...@Sounds
     )
   );
-  Anchor: (...@Anchor, Height: @DefaultButtonHeight, Width: @Width);
+  Text: @Text;
+  Padding: (Left: 80, Bottom: 10);
 }
 ```

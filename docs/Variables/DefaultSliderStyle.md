@@ -1,8 +1,10 @@
 [← Back](../Variables.md)
 
-# DefaultSliderStyle
+# DefaultSliderStyle ⚠️
 
-**Defined at:** `Common.ui:822`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Common.ui:315`
 
 ## Value
 
@@ -13,6 +15,7 @@ SliderStyle(
   HandleWidth: 16,
   HandleHeight: 16,
   Sounds: (
+    Activate: $Sounds.@SliderRelease,
     MouseHover: (SoundPath: $Sounds.@ButtonsLightHover, Volume: 6)
   )
 )

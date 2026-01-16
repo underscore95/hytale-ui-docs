@@ -1,8 +1,10 @@
 [← Back](../Variables.md)
 
-# ButtonsLight
+# ButtonsLight ⚠️
 
-**Defined at:** `Sounds.ui:20`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Sounds.ui:33`
 
 ## Value
 
@@ -10,9 +12,9 @@
 (
   Activate: (
     SoundPath: @ButtonsLightActivate,
-    MinPitch: -0.4,
-    MaxPitch: 0.4,
-    Volume: 4
+    MinPitch: -0.2,
+    MaxPitch: 0.2,
+    Volume: 2
   ),
   MouseHover: (
     SoundPath: @ButtonsLightHover,

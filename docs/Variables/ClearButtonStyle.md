@@ -1,16 +1,18 @@
 [← Back](../Variables.md)
 
-# ClearButtonStyle
+# ClearButtonStyle ⚠️
 
-**Defined at:** `Common.ui:652`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Common\FileSelector.ui:58`
 
 ## Value
 
 ```ui
 (
-  Texture: (TexturePath: "Common/ClearInputIcon.png", Color: #ffffff(0.3)),
-  HoveredTexture: (TexturePath: "Common/ClearInputIcon.png", Color: #ffffff(0.5)),
-  PressedTexture: (TexturePath: "Common/ClearInputIcon.png", Color: #ffffff(0.4)),
+  Texture: (TexturePath: "../AssetEditor/ClearInputIcon.png", Color: #ffffff(0.3)),
+  HoveredTexture: (TexturePath: "../AssetEditor/ClearInputIcon.png", Color: #ffffff(0.5)),
+  PressedTexture: (TexturePath: "../AssetEditor/ClearInputIcon.png", Color: #ffffff(0.4)),
   Width: 16,
   Height: 16,
   Side: Right,

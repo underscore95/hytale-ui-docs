@@ -1,15 +1,13 @@
 [← Back](../Variables.md)
 
-# LabelStyle
+# LabelStyle ⚠️
 
-**Defined at:** `Pages\PluginListButton.ui:3`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/InGame\Pages\Inventory\RecipeCatalogueNavigationButton.ui:3`
 
 ## Value
 
 ```ui
-(
-  Hovered: (
-    Background: #000000(0.2),
-  )
-)
+(VerticalAlignment: Center, FontSize: 15, TextColor: #94979d)
 ```

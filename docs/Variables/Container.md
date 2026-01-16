@@ -1,38 +1,50 @@
 [← Back](../Variables.md)
 
-# Container
+# Container ⚠️
 
-**Defined at:** `Common.ui:750`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/InGame\Hud\Abilities\InputBinding.ui:4`
 
 ## Value
 
 ```ui
 Group {
-  @ContentPadding = Padding(Full: @FullPaddingValue);
-  @CloseButton = false;
+  @LabelPosition = -40;
+  @MouseIconPosition = -40;
 
-  Group #Title {
-    Anchor: (Height: @TitleHeight, Top: 0);
-    Padding: (Top: 7);
-    Background: (TexturePath: "Common/ContainerHeaderNoRunes.png", HorizontalBorder: 35, VerticalBorder: 0);
+  Group #MouseLeft {
+    LayoutMode: Middle;
+    Anchor: (Width: @IconSize, Height: @IconSize, Bottom: @MouseIconPosition);
+    Background: "Assets/Icons/IconLeftClick.png";
+    Visible: false;
   }
 
-  Group #Content {
-    LayoutMode: Top;
-    Padding: @ContentPadding;
-    Anchor: (Top: @TitleHeight);
-    Background: (TexturePath: "Common/ContainerPatch.png", Border: 23);
+  Group #MouseRight {
+    LayoutMode: Middle;
+    Anchor: (Width: @IconSize, Height: @IconSize, Bottom: @MouseIconPosition);
+    Background: "Assets/Icons/IconRightClick.png";
+    Visible: false;
   }
 
-  Button #CloseButton {
-    Anchor: (Width: 32, Height: 32, Top: -8, Right: -8);
-    Style: (
-      Default: (Background: "Common/ContainerCloseButton.png"),
-      Hovered: (Background: "Common/ContainerCloseButtonHovered.png"),
-      Pressed: (Background: "Common/ContainerCloseButtonPressed.png"),
-      Sounds: @ButtonsCancel
-    );
-    Visible: @CloseButton;
+  Group #MouseMiddle {
+    LayoutMode: Middle;
+    Anchor: (Width: @IconSize, Height: @IconSize, Bottom: @MouseIconPosition);
+    Background: "Assets/Icons/IconMiddleClick.png";
+    Visible: false;
+  }
+
+  Group {
+    Anchor: (Height: @IconSize, Bottom: @LabelPosition);
+    LayoutMode: Center;
+
+    Label #InputBinding {
+      Background: (TexturePath: "../../Pages/Inventory/SlotInputBindingBackground.png", Border: 6);
+      Anchor: (MinWidth: 32);
+      Padding: (Top: 1, Horizontal: 4);
+      Style: (RenderBold: true, Alignment: Center, TextColor: #ffffe6, FontName: "Secondary", FontSize: 12, Wrap: true);
+      Visible: false;
+    }
   }
 }
 ```

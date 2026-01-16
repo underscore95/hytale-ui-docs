@@ -1,8 +1,9 @@
 import os, json
 
 ASSETS_DIR = "Assets/Common/UI/Custom/"
+CLIENT_ASSETS_DIR = "Interface/"
 
-# Every element contains File (path to parsed file, relative to ASSETS_DIR) and LineNumber (1-indexed)
+# Every element contains File (path to parsed file, relative to ASSETS_DIR) and LineNumber (1-indexed) and IsClient (this is a boolean, if true the only usages found were in the client)
 # For Types and UIElements, these are where it was first used, since they are not declared in .ui files
 
 # ImportedFiles
@@ -71,9 +72,10 @@ def extract_value(lines, start_index, first_line_offset):
         joined = joined.rstrip()[:-1]
     return joined.strip()
 
-def add_common(d: dict, path: str, line_index: int):
+def add_common(d: dict, path: str, line_index: int, is_client: bool):
     d["File"] = path
     d["LineNumber"] = line_index + 1
+    d["IsClient"] = is_client
 
 def get_type_fields(lines: list, line_index: int, typeEndIndex: int):
     line = lines[line_index][typeEndIndex:] # cut off everything before the type on the first line
@@ -130,7 +132,7 @@ def get_type_fields(lines: list, line_index: int, typeEndIndex: int):
 
     return cleanedFields
 
-def parse_types(path: str, lines: list, line_index: int):
+def parse_types(path: str, lines: list, line_index: int, is_client: bool):
     types = lines[line_index].split("(")
     indexInLine = 0
     for i in range(len(types) - 1): # last type doesn't have a ( after so probably not a type
@@ -144,7 +146,7 @@ def parse_types(path: str, lines: list, line_index: int):
         t = {}
         if typeName not in foundTypeNames:
             foundTypeNames[typeName] = t
-            add_common(t, path, line_index)
+            add_common(t, path, line_index, is_client)
             t["Name"] = typeName
             t["Fields"] = {}
             data["Types"].append(t)
@@ -303,7 +305,7 @@ def get_all_fields_of_element(lines: list, line_index: int, bracketIndex: int):
 
     return fields
 
-def parse_ui_elements(path: str, lines: list, line_index: int):
+def parse_ui_elements(path: str, lines: list, line_index: int, is_client: bool):
     line = lines[line_index]
     indexOfBracket = line.rfind("{")
     if indexOfBracket < 1:
@@ -336,7 +338,7 @@ def parse_ui_elements(path: str, lines: list, line_index: int):
     
     elem = {}
     if uiElementName not in foundUIElements:
-        add_common(elem, path, line_index)
+        add_common(elem, path, line_index, is_client)
         elem["Name"] = uiElementName
         elem["Fields"] = {}
         data["UIElements"].append(elem)
@@ -349,14 +351,14 @@ def parse_ui_elements(path: str, lines: list, line_index: int):
             elem["Fields"][key] = {"ExampleValues": set()}
         elem["Fields"][key]["ExampleValues"].add(value)
 
-def parse_imports(path: str, lines: list, tokens: list, line_index: int):
+def parse_imports(path: str, lines: list, tokens: list, line_index: int, is_client: bool):
     line = lines[line_index]
     if len(tokens) < 3:
         return False
     if not line.startswith("$"):
         return False
     i = {}
-    add_common(i, path, line_index)
+    add_common(i, path, line_index, is_client)
     i["Alias"] = tokens[0][1:]
     importedPath = tokens[2][:tokens[2].find(";")]
     i["ImportedFile"] = resolve_import(path, importedPath)
@@ -364,29 +366,31 @@ def parse_imports(path: str, lines: list, tokens: list, line_index: int):
     return True
     
 
-def parse_var(path: str, lines: list, tokens: list, line_index: int):
+def parse_var(path: str, lines: list, tokens: list, line_index: int, is_client: bool):
     if len(tokens) < 3 or not tokens[0].startswith("@") or tokens[1] != "=":
         return
     var = {}
     var["Name"] = tokens[0][1:]
     var["Value"] = extract_value(lines, line_index, lines[line_index].find(tokens[2]))
-    add_common(var, path, line_index)
+    add_common(var, path, line_index, is_client)
     data["Variables"].append(var)
 
-def parse_file(path: str):
-    with open(ASSETS_DIR + path, "r") as file:
+def parse_file(path: str, asset_dir: str, is_client: bool):
+    with open(asset_dir + path, "r") as file:
+        if is_client:
+            path = "Client/Data/Game/" + asset_dir + path
         lines = file.readlines()
         for line_index in range(len(lines)):
             tokens = lines[line_index].split(" ")
 
-            if parse_imports(path, lines, tokens, line_index):
+            if parse_imports(path, lines, tokens, line_index, is_client):
                 continue
 
-            parse_types(path, lines, line_index)
+            parse_types(path, lines, line_index, is_client)
 
-            parse_ui_elements(path, lines, line_index)
+            parse_ui_elements(path, lines, line_index, is_client)
 
-            parse_var(path, lines, tokens, line_index)
+            parse_var(path, lines, tokens, line_index, is_client)
 
 def parse_all_ui_files():
     for root, _, files in os.walk(ASSETS_DIR):
@@ -397,7 +401,18 @@ def parse_all_ui_files():
             rel_path = os.path.relpath(full_path, ASSETS_DIR)
             if rel_path == "Test.ui":
                 continue
-            parse_file(rel_path)
+            parse_file(rel_path, ASSETS_DIR, False)
+
+    # parse server first so anything on the server is marked as IsClient=False
+    for root, _, files in os.walk(CLIENT_ASSETS_DIR):
+        for file in files:
+            if not file.endswith(".ui"):
+                continue
+            full_path = os.path.join(root, file)
+            rel_path = os.path.relpath(full_path, CLIENT_ASSETS_DIR)
+            if rel_path == "Test.ui":
+                continue
+            parse_file(rel_path, CLIENT_ASSETS_DIR, True)
 
 #parse_file("Test.ui")
 

@@ -2,6 +2,8 @@
 
 # FloatSlider
 
+This UI element has been found in Server ui files, you should be able to use it in mods.
+
 **First used at:** `Pages\ChangeModelPage.ui:57`
 
 ## Fields
@@ -26,8 +28,8 @@ Example Values:
 ### Max
 Example Values:
 
-- `5.0`
 - `10`
+- `5.0`
 
 ### Step
 Example Values:
@@ -37,6 +39,6 @@ Example Values:
 ### Value
 Example Values:
 
-- `1`
 - `1.0`
+- `1`
 

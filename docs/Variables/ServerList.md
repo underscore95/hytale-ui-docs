@@ -1,15 +1,17 @@
 [← Back](../Variables.md)
 
-# ServerList
+# ServerList ⚠️
 
-**Defined at:** `Sounds.ui:135`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Sounds.ui:148`
 
 ## Value
 
 ```ui
 (
   Activate: (
-    SoundPath: @EnterWorldActivate,
+    SoundPath: "Sounds/ButtonsLightActivate.ogg",
     Volume: 6
   ),
   MouseHover: (

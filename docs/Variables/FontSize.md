@@ -1,8 +1,10 @@
 [← Back](../Variables.md)
 
-# FontSize
+# FontSize ⚠️
 
-**Defined at:** `Pages\Portals\BulletPoint.ui:1`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/InGame\Hud\ObjectiveCommon.ui:1`
 
 ## Value
 

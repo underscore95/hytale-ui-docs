@@ -2,6 +2,8 @@
 
 # DropdownBoxSounds
 
+This type has been found in Server ui files, you should be able to use it in mods.
+
 **First used at:** `Sounds.ui:63`
 
 ## Fields
@@ -25,6 +27,10 @@ Example Values:
 ### Close
 Example Values:
 
+- `(
+    SoundPath: @Untick,
+    Volume: 6
+  )`
 - `(
     SoundPath: @ButtonsCancelActivate,
     Volume: 6

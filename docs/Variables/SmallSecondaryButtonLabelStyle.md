@@ -1,8 +1,10 @@
 [← Back](../Variables.md)
 
-# SmallSecondaryButtonLabelStyle
+# SmallSecondaryButtonLabelStyle ⚠️
 
-**Defined at:** `Common.ui:80`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Common.ui:82`
 
 ## Value
 

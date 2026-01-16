@@ -2,6 +2,8 @@
 
 # SliderStyle
 
+This type has been found in Server ui files, you should be able to use it in mods.
+
 **First used at:** `Common.ui:822`
 
 ## Fields
@@ -29,6 +31,10 @@ Example Values:
 ### Sounds
 Example Values:
 
+- `(
+    Activate: $Sounds.@SliderRelease,
+    MouseHover: (SoundPath: $Sounds.@ButtonsLightHover, Volume: 6)
+  )`
 - `(
     MouseHover: (SoundPath: $Sounds.@ButtonsLightHover, Volume: 6)
   )`

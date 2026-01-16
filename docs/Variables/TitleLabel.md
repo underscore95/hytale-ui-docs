@@ -1,13 +1,21 @@
 [← Back](../Variables.md)
 
-# TitleLabel
+# TitleLabel ⚠️
 
-**Defined at:** `Common.ui:8`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/MainMenu\Common.ui:21`
 
 ## Value
 
 ```ui
-Label = Label {
-  Style: (FontSize: 40, Alignment: Center);
+Group {
+  LayoutMode: Left;
+
+  Label {
+    Style: (...@TitleLabelStyle, TextColor: #ffffff);
+    MaskTexturePath: "../Common/TextGradient.png";
+    Text: @Text;
+  }
 }
 ```

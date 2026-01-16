@@ -2,6 +2,8 @@
 
 # $C.@TextField
 
+This UI element has been found in Server ui files, you should be able to use it in mods.
+
 **First used at:** `Pages\ConfigureInstanceBlockPage.ui:67`
 
 ## Fields
@@ -14,23 +16,23 @@ Example Values:
 ### MaxLength
 Example Values:
 
-- `512`
 - `1024`
+- `512`
 
 ### PlaceholderText
 Example Values:
 
-- `%server.customUI.prefabEditorSaveSettings.browser.searchPlaceholder`
-- `%server.customUI.prefabSavePage.namePlaceholder`
+- `%server.customUI.tintChunkPage.hexColor`
+- `"imports/models/model.obj"`
 - `%server.customUI.prefabTeleportPage.searchPlaceholder`
 - `%server.customUI.objImport.searchPlaceholder`
-- `%server.customUI.tintChunkPage.hexColor`
+- `%server.customUI.prefabEditorSaveSettings.browser.searchPlaceholder`
 - `"imports/images/image.png"`
-- `%server.customUI.teleporter.warpName`
-- `"Rock_Stoneor50%Rock_Stone,50%Rock_Basalt"`
-- `%server.customUI.imageImport.searchPlaceholder`
+- `%server.customUI.prefabSavePage.namePlaceholder`
 - `%server.customUI.prefabBrowser.searchPlaceholder`
-- `"imports/models/model.obj"`
+- `%server.customUI.imageImport.searchPlaceholder`
+- `"Rock_Stoneor50%Rock_Stone,50%Rock_Basalt"`
+- `%server.customUI.teleporter.warpName`
 
 ### Anchor
 Example Values:

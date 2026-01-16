@@ -1,8 +1,10 @@
 [← Back](../Variables.md)
 
-# DefaultPopupMenuLayerStyle
+# DefaultPopupMenuLayerStyle ⚠️
 
-**Defined at:** `Common.ui:522`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Common.ui:410`
 
 ## Value
 

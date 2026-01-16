@@ -1,14 +1,16 @@
 [← Back](../Variables.md)
 
-# VerticalSeparator
+# VerticalSeparator ⚠️
 
-**Defined at:** `Common.ui:720`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Common\Container.ui:221`
 
 ## Value
 
 ```ui
 Group {
-  Background: (TexturePath: "Common/ContainerVerticalSeparator.png");
+  Background: (TexturePath: "ContainerVerticalSeparator.png");
   Anchor: (Width: 6, Top: -2);
 }
 ```

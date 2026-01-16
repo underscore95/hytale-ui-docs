@@ -1,7 +1,9 @@
 [← Back](../ImportedFiles.md)
 
-# Sounds
+# Sounds ⚠️
 
-**ImportedFile:** `Pages\Memories\Sounds.ui"`
+⚠️ This imported file has only been found in Client ui files, you may or may not be able to use it in mods.
 
-**First seen at:** `Pages\Memories\Memory.ui:2`
+**ImportedFile:** `Client\Data\Game\Interface\MainMenu\TopBar\Sounds.ui"`
+
+**First seen at:** `Client/Data/Game/Interface/MainMenu\TopBar\TopBar.ui:1`

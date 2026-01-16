@@ -1,8 +1,10 @@
 [← Back](../Variables.md)
 
-# PrimaryButtonHeight
+# PrimaryButtonHeight ⚠️
 
-**Defined at:** `Common.ui:20`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Common.ui:4`
 
 ## Value
 

@@ -7,3 +7,4 @@ See generated docs [here](https://github.com/underscore95/hytale-ui-docs/blob/ma
 ## Running main.py
 
 You must copy Assets.zip to the root directory and extract it
+You must copy Interface from Client/Data/Game

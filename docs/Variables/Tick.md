@@ -1,8 +1,10 @@
 [← Back](../Variables.md)
 
-# Tick
+# Tick ⚠️
 
-**Defined at:** `Sounds.ui:157`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Sounds.ui:180`
 
 ## Value
 

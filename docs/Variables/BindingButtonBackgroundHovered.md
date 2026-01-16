@@ -1,11 +1,13 @@
 [← Back](../Variables.md)
 
-# BindingButtonBackgroundHovered
+# BindingButtonBackgroundHovered ⚠️
 
-**Defined at:** `Common\ActionButton.ui:16`
+⚠️ This variable has only been found in Client ui files, you may or may not be able to use it in mods.
+
+**Defined at:** `Client/Data/Game/Interface/Common\AltActionButton.ui:12`
 
 ## Value
 
 ```ui
-PatchStyle(TexturePath: "InputBinding.png", Border: 6)
+PatchStyle(TexturePath: "SecondaryButtonHovered.png", Border: 4)
 ```
