@@ -9,8 +9,8 @@
 ### Anchor
 Example Values:
 
-- `(Full:0)`
 - `(Full:0,Height:64,Width:64)`
+- `(Full:0)`
 
 ### ShowQualityBackground
 Example Values:

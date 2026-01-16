@@ -20,17 +20,17 @@ Example Values:
 ### PlaceholderText
 Example Values:
 
-- `%server.customUI.prefabBrowser.searchPlaceholder`
-- `"Rock_Stoneor50%Rock_Stone,50%Rock_Basalt"`
-- `%server.customUI.objImport.searchPlaceholder`
 - `%server.customUI.prefabEditorSaveSettings.browser.searchPlaceholder`
 - `%server.customUI.prefabSavePage.namePlaceholder`
 - `%server.customUI.prefabTeleportPage.searchPlaceholder`
-- `%server.customUI.imageImport.searchPlaceholder`
-- `"imports/models/model.obj"`
+- `%server.customUI.objImport.searchPlaceholder`
 - `%server.customUI.tintChunkPage.hexColor`
-- `%server.customUI.teleporter.warpName`
 - `"imports/images/image.png"`
+- `%server.customUI.teleporter.warpName`
+- `"Rock_Stoneor50%Rock_Stone,50%Rock_Basalt"`
+- `%server.customUI.imageImport.searchPlaceholder`
+- `%server.customUI.prefabBrowser.searchPlaceholder`
+- `"imports/models/model.obj"`
 
 ### Anchor
 Example Values:

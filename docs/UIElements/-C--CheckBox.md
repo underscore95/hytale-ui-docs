@@ -9,8 +9,8 @@
 ### Value
 Example Values:
 
-- `true`
 - `false`
+- `true`
 
 ### Anchor
 Example Values:

@@ -395,9 +395,11 @@ def parse_all_ui_files():
                 continue
             full_path = os.path.join(root, file)
             rel_path = os.path.relpath(full_path, ASSETS_DIR)
+            if rel_path == "Test.ui":
+                continue
             parse_file(rel_path)
 
-parse_file("Test.ui")
+#parse_file("Test.ui")
 
 parse_all_ui_files()
 

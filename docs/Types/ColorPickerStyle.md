@@ -2,7 +2,7 @@
 
 # ColorPickerStyle
 
-**First used at:** `Test.ui:19`
+**First used at:** `Common.ui:314`
 
 ## Fields
 
@@ -14,7 +14,6 @@ Example Values:
 ### ButtonBackground
 Example Values:
 
-- `"Common/ColorPickerButton2.png"`
 - `"Common/ColorPickerButton.png"`
 
 ### ButtonFill

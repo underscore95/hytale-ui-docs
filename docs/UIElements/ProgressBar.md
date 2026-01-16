@@ -16,20 +16,20 @@ Example Values:
 ### EffectTexturePath
 Example Values:
 
-- `"../Common/ProgressBarEffect.png"`
 - `"MemoriesProgress/MemoriesBarTipOfTheBar.png"`
+- `"../Common/ProgressBarEffect.png"`
 
 ### EffectWidth
 Example Values:
 
-- `114`
 - `102`
+- `114`
 
 ### EffectHeight
 Example Values:
 
-- `32`
 - `58`
+- `32`
 
 ### EffectOffset
 Example Values:

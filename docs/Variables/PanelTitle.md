@@ -2,7 +2,7 @@
 
 # PanelTitle
 
-**Defined at:** `Test.ui:37`
+**Defined at:** `Common.ui:702`
 
 ## Value
 

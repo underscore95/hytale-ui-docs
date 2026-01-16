@@ -10,12 +10,12 @@
 Example Values:
 
 - `(
+    Default: @HeaderTabStyle
+  )`
+- `(
     Default: @TopTabStyle,
     Hovered: (...@TopTabStyle, Anchor: (...@TopTabAnchor, Bottom: -5)),
     Pressed: (...@TopTabStyle, Anchor: (...@TopTabAnchor, Bottom: -8))
-  )`
-- `(
-    Default: @HeaderTabStyle
   )`
 
 ### SelectedTabStyle

@@ -2,7 +2,7 @@
 
 # TitleLabel
 
-**Defined at:** `Test.ui:8`
+**Defined at:** `Common.ui:8`
 
 ## Value
 

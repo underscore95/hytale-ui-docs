@@ -2,7 +2,7 @@
 
 # ButtonSounds
 
-**Defined at:** `Test.ui:15`
+**Defined at:** `Common.ui:15`
 
 ## Value
 

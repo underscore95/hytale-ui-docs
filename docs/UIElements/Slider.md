@@ -20,16 +20,16 @@ Example Values:
 ### Min
 Example Values:
 
+- `-100`
 - `-12`
 - `-180`
-- `-100`
 
 ### Max
 Example Values:
 
+- `10`
 - `180`
 - `12`
-- `10`
 
 ### Step
 Example Values:

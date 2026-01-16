@@ -10,8 +10,8 @@
 Example Values:
 
 - `9 + 8`
-- `[ContentPaddingFull](Variables/ContentPaddingFull.md)`
 - `[FullPaddingValue](Variables/FullPaddingValue.md)`
+- `[ContentPaddingFull](Variables/ContentPaddingFull.md)`
 
 ### Top
 Example Values:

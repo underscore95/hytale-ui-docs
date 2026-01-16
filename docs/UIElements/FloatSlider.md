@@ -20,8 +20,8 @@ Example Values:
 ### Min
 Example Values:
 
-- `0`
 - `0.1`
+- `0`
 
 ### Max
 Example Values:
@@ -37,6 +37,6 @@ Example Values:
 ### Value
 Example Values:
 
-- `1.0`
 - `1`
+- `1.0`
 

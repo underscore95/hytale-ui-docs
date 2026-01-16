@@ -2,10 +2,21 @@
 
 # ButtonsCancel
 
-**Defined at:** `Test.ui:16`
+**Defined at:** `Sounds.ui:35`
 
 ## Value
 
 ```ui
-$Sounds.@ButtonsCancel
+(
+  Activate: (
+    SoundPath: @ButtonsCancelActivate,
+    MinPitch: -0.4,
+    MaxPitch: 0.4,
+    Volume: 6
+  ),
+  MouseHover: (
+    SoundPath: @ButtonsLightHover,
+    Volume: 6
+  )
+)
 ```

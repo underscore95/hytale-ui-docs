@@ -9,21 +9,21 @@
 ### TexturePath
 Example Values:
 
-- `"Common/Buttons/Primary_Hovered.png"`
-- `"Common/InputBoxHovered.png"`
-- `"Common/Buttons/Primary.png"`
-- `"InputIconMouseRightClick.png"`
 - `"Common/Buttons/Primary_Pressed.png"`
-- `"Common/Buttons/Primary_Square_Hovered.png"`
-- `"Common/InputBoxPressed.png"`
-- `"Common/Buttons/Primary_Square.png"`
-- `"Common/InputBoxSelected.png"`
 - `"InputBinding.png"`
-- `"Common/Buttons/Primary_Square_Pressed.png"`
-- `"Common/InputBox.png"`
-- `"InputIconMouseLeftClick.png"`
-- `"Common/Buttons/Disabled.png"`
 - `"InputIconMouseMiddleClick.png"`
+- `"Common/InputBoxSelected.png"`
+- `"Common/Buttons/Disabled.png"`
+- `"Common/Buttons/Primary_Square.png"`
+- `"Common/InputBoxPressed.png"`
+- `"Common/Buttons/Primary_Square_Hovered.png"`
+- `"Common/Buttons/Primary_Square_Pressed.png"`
+- `"InputIconMouseRightClick.png"`
+- `"Common/InputBox.png"`
+- `"Common/Buttons/Primary.png"`
+- `"Common/Buttons/Primary_Hovered.png"`
+- `"InputIconMouseLeftClick.png"`
+- `"Common/InputBoxHovered.png"`
 
 ### VerticalBorder
 Example Values:
@@ -38,9 +38,9 @@ Example Values:
 ### Border
 Example Values:
 
-- `16`
-- `6`
 - `[ButtonBorder](Variables/ButtonBorder.md)`
+- `6`
+- `16`
 
 ### (TexturePath: "Common/Buttons/Destructive.png", Border: @ButtonBorder), LabelStyle
 Example Values:
@@ -51,10 +51,10 @@ Example Values:
 ### LabelStyle
 Example Values:
 
-- `[SecondaryButtonLabelStyle)](Variables/SecondaryButtonLabelStyle-.md)`
 - `[DefaultButtonLabelStyle),
   Sounds: @ButtonsCancel,](Variables/DefaultButtonLabelStyle-----Sounds---ButtonsCancel-.md)`
 - `[SmallSecondaryButtonLabelStyle)](Variables/SmallSecondaryButtonLabelStyle-.md)`
+- `[SecondaryButtonLabelStyle)](Variables/SecondaryButtonLabelStyle-.md)`
 
 ### (TexturePath: "Common/Buttons/Destructive_Hovered.png", Border: @ButtonBorder), LabelStyle
 Example Values:
@@ -71,10 +71,10 @@ Example Values:
 ### (TexturePath: "Common/Buttons/Disabled.png", Border: @ButtonBorder), LabelStyle
 Example Values:
 
-- `[SecondaryButtonLabelStyle)](Variables/SecondaryButtonLabelStyle-.md)`
 - `[DefaultButtonLabelStyle),
   Sounds: @ButtonsCancel,](Variables/DefaultButtonLabelStyle-----Sounds---ButtonsCancel-.md)`
 - `[SmallSecondaryButtonLabelStyle)](Variables/SmallSecondaryButtonLabelStyle-.md)`
+- `[SecondaryButtonLabelStyle)](Variables/SecondaryButtonLabelStyle-.md)`
 
 ### (TexturePath: "Common/Buttons/Destructive.png", Border: @ButtonBorder)),  Hovered: (Background
 Example Values:
@@ -134,10 +134,10 @@ Example Values:
 ### (TexturePath: "Common/Buttons/Secondary_Hovered.png", Border: @ButtonBorder), LabelStyle
 Example Values:
 
-- `[SmallSecondaryButtonLabelStyle),
-  Pressed: (Background: PatchStyle(TexturePath: "Common/Buttons/Secondary_Pressed.png", Border: @ButtonBorder)](Variables/SmallSecondaryButtonLabelStyle-----Pressed---Background--PatchStyle-TexturePath---Common-Buttons-Secondary_Pressed-png---Border---ButtonBorder-.md)`
 - `[SecondaryButtonLabelStyle),
   Pressed: (Background: PatchStyle(TexturePath: "Common/Buttons/Secondary_Pressed.png", Border: @ButtonBorder)](Variables/SecondaryButtonLabelStyle-----Pressed---Background--PatchStyle-TexturePath---Common-Buttons-Secondary_Pressed-png---Border---ButtonBorder-.md)`
+- `[SmallSecondaryButtonLabelStyle),
+  Pressed: (Background: PatchStyle(TexturePath: "Common/Buttons/Secondary_Pressed.png", Border: @ButtonBorder)](Variables/SmallSecondaryButtonLabelStyle-----Pressed---Background--PatchStyle-TexturePath---Common-Buttons-Secondary_Pressed-png---Border---ButtonBorder-.md)`
 
 ### (TexturePath: "Common/Buttons/Secondary_Pressed.png", Border: @ButtonBorder), LabelStyle
 Example Values:

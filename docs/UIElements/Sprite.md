@@ -9,14 +9,14 @@
 ### Anchor
 Example Values:
 
-- `(Width:40,Height:40,Left:7)`
 - `(...@Anchor,Width:32,Height:32)`
+- `(Width:40,Height:40,Left:7)`
 
 ### TexturePath
 Example Values:
 
-- `"RespawnPointArrow.png"`
 - `"Common/Spinner.png"`
+- `"RespawnPointArrow.png"`
 
 ### Frame
 Example Values:

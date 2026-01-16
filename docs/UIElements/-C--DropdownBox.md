@@ -9,8 +9,8 @@
 ### Anchor
 Example Values:
 
-- `(Width:120,Right:10,Height:$C.@DropdownBoxHeight)`
 - `(Width:160,Height:$C.@DropdownBoxHeight)`
+- `(Width:120,Right:10,Height:$C.@DropdownBoxHeight)`
 
 ### NoItemsText
 Example Values:

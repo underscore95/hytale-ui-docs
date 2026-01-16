@@ -50,8 +50,8 @@ Example Values:
 ### LabelStyle
 Example Values:
 
-- `[DefaultDropdownBoxLabelStyle](Variables/DefaultDropdownBoxLabelStyle.md)`
 - `(TextColor: #96a9be, RenderBold: true, VerticalAlignment: Center, FontSize: 18)`
+- `[DefaultDropdownBoxLabelStyle](Variables/DefaultDropdownBoxLabelStyle.md)`
 
 ### EntryLabelStyle
 Example Values:
@@ -92,8 +92,8 @@ Example Values:
 ### PanelAlign
 Example Values:
 
-- `Right`
 - `Bottom`
+- `Right`
 
 ### PanelOffset
 Example Values:

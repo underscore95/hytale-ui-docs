@@ -9,30 +9,30 @@
 ### FontSize
 Example Values:
 
-- `13`
-- `15`
-- `25`
+- `10`
+- `16`
 - `32`
+- `25`
+- `18`
+- `13`
 - `18),
   HorizontalPadding: 14,
   PanelAlign: Bottom,
   PanelOffset: 7,
   Sounds: $Sounds.@DropdownBox`
-- `17`
-- `10`
 - `38`
-- `18`
-- `16`
+- `15`
+- `17`
 
 ### TextColor
 Example Values:
 
-- `#b4c8c9`
-- `#bfcdd5`
 - `#778292`
+- `#b4c8c9`
 - `#dee2ef`
-- `#96a9be`
+- `#bfcdd5`
 - `#ffffff`
+- `#96a9be`
 
 ### RenderBold
 Example Values:
@@ -47,14 +47,14 @@ Example Values:
 ### HorizontalAlignment
 Example Values:
 
-- `End`
 - `Center`
+- `End`
 
 ### VerticalAlignment
 Example Values:
 
-- `End`
 - `Center`
+- `End`
 
 ### ...@DefaultButtonLabelStyle,  TextColor
 Example Values:
