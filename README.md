@@ -8,3 +8,7 @@ See generated docs [here](https://github.com/underscore95/hytale-ui-docs/blob/ma
 
 You must copy Assets.zip to the root directory and extract it
 You must copy Interface from Client/Data/Game
+
+## Disclaimer
+
+I made ChatGPT generate the .md files since it is a pain, main.py is like 90% written by myself.
