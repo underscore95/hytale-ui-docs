@@ -7,14 +7,14 @@
 ## Fields
 
 ### Full
-
 Example Values:
-- `[FullPaddingValue](Variables/FullPaddingValue.md)`
+
 - `9 + 8`
 - `[ContentPaddingFull](Variables/ContentPaddingFull.md)`
+- `[FullPaddingValue](Variables/FullPaddingValue.md)`
 
 ### Top
-
 Example Values:
+
 - `8`
 

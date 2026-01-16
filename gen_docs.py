@@ -84,10 +84,24 @@ def write_ui_elements():
             f.write(back_button("../UIElements.md"))
             f.write(f"# {name}\n\n")
             f.write(f"**First used at:** `{item['File']}:{item['LineNumber']}`\n\n")
-            if "Types" in item:
+
+            if item.get("Fields"):
+                f.write("## Fields\n\n")
+                for field, info in item["Fields"].items():
+                    f.write(f"### {field}\n")
+                    f.write("Example Values:\n\n")
+                    for v in info["ExampleValues"]:
+                        ref = v
+                        if isinstance(v, str) and v.startswith("@"):
+                            ref = link(v[1:], "Variables")
+                        f.write(f"- `{ref}`\n")
+                    f.write("\n")
+
+            if "Types" in item and item["Types"]:
                 f.write("## Uses Types\n\n")
                 for t in item["Types"]:
                     f.write(f"- {link(t, 'Types')}\n")
+
 
 def write_main_index():
     path = os.path.join(OUT_DIR, "Index.md")

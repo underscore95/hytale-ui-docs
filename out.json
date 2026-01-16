@@ -1,6 +1,12 @@
 {
     "ImportedFiles": [
         {
+            "File": "Test.ui",
+            "LineNumber": 1,
+            "Alias": "Sounds",
+            "ImportedFile": "\"Sounds.ui\""
+        },
+        {
             "File": "Common.ui",
             "LineNumber": 1,
             "Alias": "Sounds",
@@ -446,6 +452,60 @@
         }
     ],
     "Variables": [
+        {
+            "Name": "Panel",
+            "Value": "Group {\n  Background: (TexturePath: \"Common/ContainerFullPatch.png\", Border: 20);\n}",
+            "File": "Test.ui",
+            "LineNumber": 4
+        },
+        {
+            "Name": "TitleLabel",
+            "Value": "Label = Label {\n  Style: (FontSize: 40, Alignment: Center);\n}",
+            "File": "Test.ui",
+            "LineNumber": 8
+        },
+        {
+            "Name": "DefaultLabelStyle",
+            "Value": "(FontSize: 16, TextColor: #96a9be)",
+            "File": "Test.ui",
+            "LineNumber": 12
+        },
+        {
+            "Name": "ButtonSounds",
+            "Value": "$Sounds.@ButtonsLight",
+            "File": "Test.ui",
+            "LineNumber": 15
+        },
+        {
+            "Name": "ButtonsCancel",
+            "Value": "$Sounds.@ButtonsCancel",
+            "File": "Test.ui",
+            "LineNumber": 16
+        },
+        {
+            "Name": "ButtonDestructiveSounds",
+            "Value": "$Sounds.@ButtonsDestructive",
+            "File": "Test.ui",
+            "LineNumber": 17
+        },
+        {
+            "Name": "DefaultColorPickerStyle",
+            "Value": "ColorPickerStyle(\n  OpacitySelectorBackground: \"Common/ColorPickerOpacitySelectorBackground.png\",\n  ButtonBackground: \"Common/ColorPickerButton.png\",\n  ButtonFill: \"Common/ColorPickerFill.png\",\n  TextFieldDecoration: (\n    Default: (\n      Background: #000000(0.5)\n    )\n  ),\n  TextFieldPadding: (Left: 7),\n  TextFieldHeight: 32\n)",
+            "File": "Test.ui",
+            "LineNumber": 19
+        },
+        {
+            "Name": "DefaultColorPickerStyle2",
+            "Value": "ColorPickerStyle(\n  OpacitySelectorBackground: \"Common/ColorPickerOpacitySelectorBackground.png\",\n  ButtonBackground: \"Common/ColorPickerButton2.png\",\n)",
+            "File": "Test.ui",
+            "LineNumber": 32
+        },
+        {
+            "Name": "PanelTitle",
+            "Value": "Group {\n  @Alignment = Start;\n  @Text = \"\";\n\n  LayoutMode: Top;\n\n  Label #PanelTitle {\n    Style: (RenderBold: true, VerticalAlignment: Center, FontSize: 15, TextColor: #afc2c3, HorizontalAlignment: @Alignment);\n    Anchor: (Height: 35, Horizontal: 8);\n    Text: @Text;\n  }\n\n  Group {\n    Background: #393426(0.5);\n    Anchor: (Height: 1);\n  }\n}",
+            "File": "Test.ui",
+            "LineNumber": 37
+        },
         {
             "Name": "Panel",
             "Value": "Group {\n  Background: (TexturePath: \"Common/ContainerFullPatch.png\", Border: 20);\n}",
@@ -1347,6 +1407,12 @@
             "LineNumber": 32
         },
         {
+            "Name": "PanelTitle",
+            "Value": "Group {\n  @Alignment = Start;\n  @Text = \"\";\n\n  LayoutMode: Top;\n\n  Label #PanelTitle {\n    Style: (RenderBold: true, VerticalAlignment: Center, FontSize: 15, TextColor: #afc2c3, HorizontalAlignment: @Alignment);\n    Anchor: (Height: 35, Horizontal: 8);\n    Text: @Text;\n  }\n\n  Group {\n    Background: #393426(0.5);\n    Anchor: (Height: 1);\n  }\n}",
+            "File": "Test.ui",
+            "LineNumber": 37
+        },
+        {
             "Name": "LabelStyle",
             "Value": "(\n  Alignment: Center,\n  FontSize: 15,\n  RenderBold: true,\n  TextColor: #ffffff(0.8),\n  OutlineColor: #000000(0.2)\n)",
             "File": "Common\\ActionButton.ui",
@@ -1649,27 +1715,65 @@
     ],
     "Types": [
         {
+            "File": "Test.ui",
+            "LineNumber": 19,
+            "Name": "ColorPickerStyle",
+            "Fields": {
+                "OpacitySelectorBackground": {
+                    "ExampleValues": [
+                        "\"Common/ColorPickerOpacitySelectorBackground.png\""
+                    ]
+                },
+                "ButtonBackground": {
+                    "ExampleValues": [
+                        "\"Common/ColorPickerButton2.png\"",
+                        "\"Common/ColorPickerButton.png\""
+                    ]
+                },
+                "ButtonFill": {
+                    "ExampleValues": [
+                        "\"Common/ColorPickerFill.png\""
+                    ]
+                },
+                "TextFieldDecoration": {
+                    "ExampleValues": [
+                        "(\n    Default: (\n      Background: #000000(0.5)\n    )\n  )"
+                    ]
+                },
+                "TextFieldPadding": {
+                    "ExampleValues": [
+                        "(Left: 7)"
+                    ]
+                },
+                "TextFieldHeight": {
+                    "ExampleValues": [
+                        "32"
+                    ]
+                }
+            }
+        },
+        {
             "File": "Common.ui",
             "LineNumber": 30,
             "Name": "PatchStyle",
             "Fields": {
                 "TexturePath": {
                     "ExampleValues": [
-                        "\"InputIconMouseMiddleClick.png\"",
-                        "\"Common/InputBoxHovered.png\"",
-                        "\"Common/InputBoxSelected.png\"",
-                        "\"Common/Buttons/Primary_Square.png\"",
-                        "\"Common/Buttons/Primary_Square_Hovered.png\"",
-                        "\"Common/InputBox.png\"",
-                        "\"Common/Buttons/Disabled.png\"",
                         "\"Common/Buttons/Primary_Hovered.png\"",
-                        "\"Common/InputBoxPressed.png\"",
-                        "\"InputBinding.png\"",
-                        "\"InputIconMouseLeftClick.png\"",
-                        "\"InputIconMouseRightClick.png\"",
+                        "\"Common/InputBoxHovered.png\"",
                         "\"Common/Buttons/Primary.png\"",
+                        "\"InputIconMouseRightClick.png\"",
+                        "\"Common/Buttons/Primary_Pressed.png\"",
+                        "\"Common/Buttons/Primary_Square_Hovered.png\"",
+                        "\"Common/InputBoxPressed.png\"",
+                        "\"Common/Buttons/Primary_Square.png\"",
+                        "\"Common/InputBoxSelected.png\"",
+                        "\"InputBinding.png\"",
                         "\"Common/Buttons/Primary_Square_Pressed.png\"",
-                        "\"Common/Buttons/Primary_Pressed.png\""
+                        "\"Common/InputBox.png\"",
+                        "\"InputIconMouseLeftClick.png\"",
+                        "\"Common/Buttons/Disabled.png\"",
+                        "\"InputIconMouseMiddleClick.png\""
                     ]
                 },
                 "VerticalBorder": {
@@ -1685,8 +1789,8 @@
                 "Border": {
                     "ExampleValues": [
                         "16",
-                        "@ButtonBorder",
-                        "6"
+                        "6",
+                        "@ButtonBorder"
                     ]
                 },
                 "(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder), LabelStyle": {
@@ -1696,9 +1800,9 @@
                 },
                 "LabelStyle": {
                     "ExampleValues": [
+                        "@SecondaryButtonLabelStyle)",
                         "@DefaultButtonLabelStyle),\n  Sounds: @ButtonsCancel,",
-                        "@SmallSecondaryButtonLabelStyle)",
-                        "@SecondaryButtonLabelStyle)"
+                        "@SmallSecondaryButtonLabelStyle)"
                     ]
                 },
                 "(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder), LabelStyle": {
@@ -1713,9 +1817,9 @@
                 },
                 "(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle": {
                     "ExampleValues": [
+                        "@SecondaryButtonLabelStyle)",
                         "@DefaultButtonLabelStyle),\n  Sounds: @ButtonsCancel,",
-                        "@SmallSecondaryButtonLabelStyle)",
-                        "@SecondaryButtonLabelStyle)"
+                        "@SmallSecondaryButtonLabelStyle)"
                     ]
                 },
                 "(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder)),  Hovered: (Background": {
@@ -1761,14 +1865,14 @@
                 },
                 "(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder), LabelStyle": {
                     "ExampleValues": [
-                        "@SecondaryButtonLabelStyle),\n  Pressed: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder)",
-                        "@SmallSecondaryButtonLabelStyle),\n  Pressed: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder)"
+                        "@SmallSecondaryButtonLabelStyle),\n  Pressed: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder)",
+                        "@SecondaryButtonLabelStyle),\n  Pressed: (Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder)"
                     ]
                 },
                 "(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder), LabelStyle": {
                     "ExampleValues": [
-                        "@SmallSecondaryButtonLabelStyle),\n  Disabled: (Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder)",
-                        "@SecondaryButtonLabelStyle),\n  Disabled: (Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder)"
+                        "@SecondaryButtonLabelStyle),\n  Disabled: (Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder)",
+                        "@SmallSecondaryButtonLabelStyle),\n  Disabled: (Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder)"
                     ]
                 },
                 "(TexturePath: \"Common/Buttons/Tertiary.png\", Border: @ButtonBorder)),  Hovered: (Background": {
@@ -1810,26 +1914,26 @@
             "Fields": {
                 "FontSize": {
                     "ExampleValues": [
-                        "10",
-                        "18),\n  HorizontalPadding: 14,\n  PanelAlign: Bottom,\n  PanelOffset: 7,\n  Sounds: $Sounds.@DropdownBox",
-                        "25",
                         "13",
-                        "16",
+                        "15",
+                        "25",
                         "32",
+                        "18),\n  HorizontalPadding: 14,\n  PanelAlign: Bottom,\n  PanelOffset: 7,\n  Sounds: $Sounds.@DropdownBox",
                         "17",
-                        "18",
+                        "10",
                         "38",
-                        "15"
+                        "18",
+                        "16"
                     ]
                 },
                 "TextColor": {
                     "ExampleValues": [
-                        "#ffffff",
                         "#b4c8c9",
-                        "#dee2ef",
-                        "#778292",
                         "#bfcdd5",
-                        "#96a9be"
+                        "#778292",
+                        "#dee2ef",
+                        "#96a9be",
+                        "#ffffff"
                     ]
                 },
                 "RenderBold": {
@@ -1856,8 +1960,8 @@
                 },
                 "...@DefaultButtonLabelStyle,  TextColor": {
                     "ExampleValues": [
-                        "@DisabledColor",
-                        "#bdcbd3"
+                        "#bdcbd3",
+                        "@DisabledColor"
                     ]
                 },
                 "...@SecondaryButtonLabelStyle,  TextColor": {
@@ -1897,8 +2001,8 @@
                 },
                 "LetterSpacing": {
                     "ExampleValues": [
-                        "0.5",
                         "2",
+                        "0.5",
                         "0"
                     ]
                 },
@@ -1921,37 +2025,37 @@
             "Fields": {
                 "Default": {
                     "ExampleValues": [
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder))",
                         "(Background: @DefaultButtonDefaultBackground)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary.png\", Border: @ButtonBorder))",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder))",
+                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16))",
                         "(Background: (TexturePath: \"../Common/InputBoxSelected.png\", Border: 16))",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder))",
-                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16))"
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder))"
                     ]
                 },
                 "Hovered": {
                     "ExampleValues": [
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder))",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder))",
+                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16, Color: #ffffff(0.7)))",
                         "(Background: @DefaultButtonHoveredBackground)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder))",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Hovered.png\", Border: @ButtonBorder))",
-                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16, Color: #ffffff(0.7)))"
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder))"
                     ]
                 },
                 "Pressed": {
                     "ExampleValues": [
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder))",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Pressed.png\", Border: @ButtonBorder))",
                         "(Background: @DefaultButtonPressedBackground)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Pressed.png\", Border: @ButtonBorder))",
-                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16, Color: #ffffff(0.85)))"
+                        "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16, Color: #ffffff(0.85)))",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Pressed.png\", Border: @ButtonBorder))",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Pressed.png\", Border: @ButtonBorder))"
                     ]
                 },
                 "Disabled": {
                     "ExampleValues": [
                         "(Background: (TexturePath: \"../Common/OptionBackgroundPatch.png\", Border: 16))",
-                        "(Background: @DefaultButtonDisabledBackground)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder))"
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder))",
+                        "(Background: @DefaultButtonDisabledBackground)"
                     ]
                 },
                 "Sounds": {
@@ -1968,50 +2072,50 @@
             "Fields": {
                 "Default": {
                     "ExampleValues": [
-                        "(LabelStyle: @HeaderTextButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)",
+                        "(LabelStyle: @HeaderTextButtonLabelStyle)",
                         "(Background: (TexturePath: \"Common/ButtonSmall.png\", Border: 6), LabelStyle: @SmallButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
-                        "(Background: @DefaultButtonDefaultBackground, LabelStyle: @DefaultButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)"
+                        "(Background: @DefaultButtonDefaultBackground, LabelStyle: @DefaultButtonLabelStyle)"
                     ]
                 },
                 "Hovered": {
                     "ExampleValues": [
-                        "(Background: (TexturePath: \"Common/ButtonSmallHovered.png\", Border: 6), LabelStyle: @SmallButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
-                        "(LabelStyle: (...@HeaderTextButtonLabelStyle, TextColor: #eaebee))",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
+                        "(Background: (TexturePath: \"Common/ButtonSmallHovered.png\", Border: 6), LabelStyle: @SmallButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Hovered.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
                         "(Background: @DefaultButtonHoveredBackground, LabelStyle: @DefaultButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Hovered.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)"
+                        "(LabelStyle: (...@HeaderTextButtonLabelStyle, TextColor: #eaebee))"
                     ]
                 },
                 "Pressed": {
                     "ExampleValues": [
                         "(Background: @DefaultButtonPressedBackground, LabelStyle: @DefaultButtonLabelStyle)",
+                        "(LabelStyle: (...@HeaderTextButtonLabelStyle, TextColor: #b6bbc2))",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
                         "(Background: (TexturePath: \"Common/ButtonSmallPressed.png\", Border: 6), LabelStyle: @SmallButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)",
-                        "(LabelStyle: (...@HeaderTextButtonLabelStyle, TextColor: #b6bbc2))",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Pressed.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Secondary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Tertiary_Pressed.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)"
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Destructive_Pressed.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)"
                     ]
                 },
                 "Disabled": {
                     "ExampleValues": [
                         "(Background: @DefaultButtonDisabledBackground, LabelStyle: @DefaultButtonDisabledLabelStyle)",
-                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @SmallSecondaryButtonLabelStyle)",
+                        "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @DefaultButtonLabelStyle)",
                         "(Background: @DefaultButtonDisabledBackground, LabelStyle: @SmallButtonDisabledLabelStyle)",
                         "(Background: PatchStyle(TexturePath: \"Common/Buttons/Disabled.png\", Border: @ButtonBorder), LabelStyle: @SecondaryButtonLabelStyle)"
                     ]
                 },
                 "Sounds": {
                     "ExampleValues": [
-                        "@ButtonsCancel",
-                        "@ButtonSounds"
+                        "@ButtonSounds",
+                        "@ButtonsCancel"
                     ]
                 }
             }
@@ -2039,44 +2143,6 @@
                 "Bottom": {
                     "ExampleValues": [
                         "-14"
-                    ]
-                }
-            }
-        },
-        {
-            "File": "Common.ui",
-            "LineNumber": 314,
-            "Name": "ColorPickerStyle",
-            "Fields": {
-                "OpacitySelectorBackground": {
-                    "ExampleValues": [
-                        "\"Common/ColorPickerOpacitySelectorBackground.png\""
-                    ]
-                },
-                "ButtonBackground": {
-                    "ExampleValues": [
-                        "\"Common/ColorPickerButton2.png\"",
-                        "\"Common/ColorPickerButton.png\""
-                    ]
-                },
-                "ButtonFill": {
-                    "ExampleValues": [
-                        "\"Common/ColorPickerFill.png\""
-                    ]
-                },
-                "TextFieldDecoration": {
-                    "ExampleValues": [
-                        "(\n    Default: (\n      Background: #000000(0.5)\n    )\n  )"
-                    ]
-                },
-                "TextFieldPadding": {
-                    "ExampleValues": [
-                        "(Left: 7)"
-                    ]
-                },
-                "TextFieldHeight": {
-                    "ExampleValues": [
-                        "32"
                     ]
                 }
             }
@@ -2135,14 +2201,14 @@
             "Fields": {
                 "Spacing": {
                     "ExampleValues": [
-                        "12",
-                        "6"
+                        "6",
+                        "12"
                     ]
                 },
                 "Size": {
                     "ExampleValues": [
-                        "10",
-                        "6"
+                        "6",
+                        "10"
                     ]
                 },
                 "Background": {
@@ -2254,8 +2320,8 @@
                 },
                 "LabelStyle": {
                     "ExampleValues": [
-                        "(TextColor: #96a9be, RenderBold: true, VerticalAlignment: Center, FontSize: 18)",
-                        "@DefaultDropdownBoxLabelStyle"
+                        "@DefaultDropdownBoxLabelStyle",
+                        "(TextColor: #96a9be, RenderBold: true, VerticalAlignment: Center, FontSize: 18)"
                     ]
                 },
                 "EntryLabelStyle": {
@@ -2583,9 +2649,9 @@
             "Fields": {
                 "Full": {
                     "ExampleValues": [
-                        "@FullPaddingValue",
                         "9 + 8",
-                        "@ContentPaddingFull"
+                        "@ContentPaddingFull",
+                        "@FullPaddingValue"
                     ]
                 },
                 "Top": {
@@ -2617,8 +2683,8 @@
                 },
                 "Anchor": {
                     "ExampleValues": [
-                        "(Width: 34, Height: 34)",
-                        "(Width: 82, Height: 62, Right: 5, Bottom: -14)"
+                        "(Width: 82, Height: 62, Right: 5, Bottom: -14)",
+                        "(Width: 34, Height: 34)"
                     ]
                 },
                 "IconOpacity": {
@@ -2741,79 +2807,1544 @@
     ],
     "UIElements": [
         {
-            "File": "Common.ui",
+            "File": "Test.ui",
             "LineNumber": 4,
-            "Name": "Group"
+            "Name": "Group",
+            "Fields": {
+                "Background": {
+                    "ExampleValues": [
+                        "#000000(0.45)",
+                        "#19252F",
+                        "(TexturePath:\"Tiles/TileEmpty.png\",Border:8)",
+                        "\"Common/ContainerDecorationTop.png\"",
+                        "(TexturePath:\"RespawnPageSkull.png\")",
+                        "#393426(0.5)",
+                        "(TexturePath:\"ContainerBackgroundSecondary.png\",Border:23)",
+                        "(TexturePath:\"../Common/ContainerPanelPatch.png\",Border:4)",
+                        "#2a5a3a",
+                        "#5e512c",
+                        "\"../Common/ProgressBar.png\"",
+                        "(TexturePath:\"Portals/PortalTopDivider.png\")",
+                        "\"MemoriesProgress/MemoriesBarArrow.png\"",
+                        "(TexturePath:\"Portals/PortalHighlight.png\")",
+                        "#252F3A",
+                        "(Color:#2b3542)",
+                        "#ffffff(0.6)",
+                        "\"../Common/BlockSelectorSlotDropIcon.png\"",
+                        "#1a2530",
+                        "#292b2a",
+                        "#1c2835",
+                        "(Color:#5e512c)",
+                        "#212b37",
+                        "#5e512c(0.4)",
+                        "(TexturePath:\"IconBullet.png\")",
+                        "(TexturePath:\"FrameBottom.png\")",
+                        "#0a0e12(0.75)",
+                        "(TexturePath:\"MemoriesRunes.png\",Border:15)",
+                        "\"Checkmark.png\"",
+                        "(TexturePath:\"FrameRight.png\")",
+                        "(TexturePath:\"Common/ContainerPatch.png\",Border:23)",
+                        "\"Common/ContainerPanelSeparatorFancyLine.png\"",
+                        "@BindingButtonBackground",
+                        "(Color:#0a1119(0.8))",
+                        "#000000(0.2)",
+                        "(TexturePath:\"Portals/IconBullet.png\")",
+                        "(TexturePath:\"FrameTop.png\")",
+                        "\"Common/ContainerDecorationBottom.png\"",
+                        "(TexturePath:\"FrameLeft.png\")",
+                        "(TexturePath:\"../Common/WIPIcon.png\")",
+                        "\"MemoriesProgress/IconChestDisabled.png\"",
+                        "(Color:#be1717)",
+                        "(TexturePath:\"Portals/PortalCursebreakerLogo.png\")",
+                        "\"Common/HeaderTabSeparator.png\"",
+                        "(TexturePath:\"Portals/DefaultArtwork.png\")",
+                        "(TexturePath:\"Common/ContainerFullPatch.png\",Border:20)",
+                        "\"Clock.png\"",
+                        "\"MemoriesProgress/MemoriesBarBg.png\"",
+                        "(TexturePath:\"Tiles/TileComplete.png\",Border:8)",
+                        "(TexturePath:\"Tiles/NewMemoryIndicator.png\")",
+                        "\"Common/ContainerPanelSeparatorFancyDecoration.png\"",
+                        "\"MemoriesProgress/IconChestActive.png\"",
+                        "(TexturePath:\"Portals/RunicBorder.png\")",
+                        "(TexturePath:\"Common/ContainerHeaderNoRunes.png\",HorizontalBorder:35,VerticalBorder:0)",
+                        "\"RespawnPageSkull.png\"",
+                        "(TexturePath:\"Common/ContainerVerticalSeparator.png\")",
+                        "(TexturePath:\"Common/ContainerHeader.png\",HorizontalBorder:50,VerticalBorder:0)"
+                    ]
+                },
+                "LayoutMode": {
+                    "ExampleValues": [
+                        "Right",
+                        "Center",
+                        "CenterMiddle",
+                        "LeftCenterWrap",
+                        "Middle",
+                        "TopScrolling",
+                        "Bottom",
+                        "Top",
+                        "Left",
+                        "Full",
+                        "MiddleCenter"
+                    ]
+                },
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Height:24)",
+                        "(Height:16)",
+                        "(Right:50,Bottom:50,Height:27)",
+                        "(Height:2)",
+                        "(Height:@TitleHeight,Top:0)",
+                        "(Width:140,Height:1)",
+                        "(Width:8,Height:8,Top:6,Right:6)",
+                        "(Top:20)",
+                        "(Height:300,Width:300)",
+                        "(Height:20)",
+                        "(Top:4,Bottom:8)",
+                        "(Left:20)",
+                        "(Width:24,Height:24,Horizontal:0,Vertical:0)",
+                        "(Left:0,Top:6)",
+                        "(Bottom:-15,Left:-14)",
+                        "(Height:35)",
+                        "(Height:150,Bottom:20)",
+                        "(Bottom:15)",
+                        "(Height:2,Vertical:6)",
+                        "(Width:24,Height:24)",
+                        "(Width:52,Height:52)",
+                        "(Top:24)",
+                        "(Width:68,Height:68)",
+                        "(Width:850,Top:20)",
+                        "(...@Anchor,Height:1)",
+                        "(Width:431,Height:716+30,Left:15,Right:15)",
+                        "(Top:8,Bottom:16)",
+                        "(Top:6)",
+                        "(Height:1)",
+                        "(Width:600)",
+                        "(Height:64,Width:64,Top:8)",
+                        "(Width:345,Height:629)",
+                        "(Left:@Left,Top:6)",
+                        "(Top:15)",
+                        "(Height:12,Bottom:16,Horizontal:16)",
+                        "(Left:@FrameShort,Bottom:0,Width:@BoxWidth-@FrameShort*2,Height:@FrameShort)",
+                        "(Top:0,Left:0)",
+                        "(Width:@MaterialSlotSize,Height:@MaterialSlotSize)",
+                        "(Top:8,Bottom:8,Height:35)",
+                        "(Right:16)",
+                        "(Top:4,Left:28)",
+                        "(Width:5)",
+                        "(Height:24,Right:7)",
+                        "(Left:50,Bottom:50,Width:110,Height:27)",
+                        "(Left:@FrameShort,Top:0,Width:@BoxWidth-@FrameShort*2,Height:@FrameShort)",
+                        "(Width:5,Height:34)",
+                        "(Width:431,Height:716)",
+                        "(Top:12)",
+                        "(Width:350)",
+                        "(Height:8)",
+                        "(Top:12,Bottom:8)",
+                        "(Bottom:10,Height:$C.@DropdownBoxHeight)",
+                        "(Height:22,Width:@progressBarWidth,Bottom:30)",
+                        "(Width:40,Height:40,Right:10)",
+                        "(Right:0,Top:0,Width:@FrameShort,Height:@BoxHeight)",
+                        "(Width:@RightPaneWidth/2)",
+                        "(Width:22,Height:22,Bottom:10)",
+                        "(Width:250)",
+                        "(Width:236,Height:11,Bottom:-6)",
+                        "(Top:20,Bottom:16)",
+                        "(Top:4,Bottom:8,Height:35)",
+                        "(Width:236,Height:11,Top:-12)",
+                        "(Left:14,Width:10,Height:8,Bottom:0)",
+                        "(...@Anchor,Height:8)",
+                        "(Bottom:16,Height:1)",
+                        "(Height:1,Bottom:0)",
+                        "(Width:8,Height:8,Top:6,Right:6,Left:4)",
+                        "(Width:35)",
+                        "(Bottom:16)",
+                        "(Width:200,Right:0)",
+                        "(Top:8)",
+                        "(Left:0,Bottom:0,Width:40,Height:40)",
+                        "(Top:10,Bottom:10)",
+                        "(Height:175)",
+                        "(Top:10,Bottom:20)",
+                        "(Width:8,Height:8,Top:6,Right:8,Left:8)",
+                        "(Width:48,Height:48,Right:12,Top:-2)",
+                        "(Top:@TitleHeight)",
+                        "(Vertical:16)",
+                        "(Height:@MaterialSlotSize)",
+                        "(Width:16,Height:16,Right:5,Top:0)",
+                        "(Width:369,Height:7)",
+                        "(Bottom:8,Height:35)",
+                        "(Vertical:8,Height:1)",
+                        "(Top:10)",
+                        "(Left:0,Top:0,Width:@FrameShort,Height:@BoxHeight)",
+                        "(Left:8)",
+                        "(Top:8,Horizontal:32)",
+                        "(Height:34,Bottom:8)",
+                        "(Width:104,Height:97,Left:36)",
+                        "(Vertical:16,Height:1)",
+                        "(Height:64)",
+                        "(Width:59,Height:59,Top:32)",
+                        "(Bottom:8)",
+                        "(Width:11)",
+                        "(Bottom:10)",
+                        "(Bottom:14,Height:1)",
+                        "(Bottom:12)",
+                        "(Width:64,Height:64,Left:0)",
+                        "(Height:40)",
+                        "(Top:4,Height:35)",
+                        "(Top:8,Bottom:10)",
+                        "(Height:126)",
+                        "(Width:6,Top:-2)",
+                        "(Height:80)",
+                        "(Full:0)"
+                    ]
+                },
+                "FlexWeight": {
+                    "ExampleValues": [
+                        "1"
+                    ]
+                },
+                "Padding": {
+                    "ExampleValues": [
+                        "2",
+                        "(Top:16,Bottom:16)",
+                        "@ContentPadding",
+                        "(Top:7)",
+                        "(Right:15,Bottom:5)",
+                        "(Left:24,Right:20,Top:4,Bottom:4)",
+                        "(Top:10,Left:8,Right:8)",
+                        "(Horizontal:6)",
+                        "(Full:5)",
+                        "(Left:10)",
+                        "(Top:60,Bottom:30)",
+                        "(Bottom:6)",
+                        "(Horizontal:13,Top:5,Bottom:10)",
+                        "(Horizontal:30,Top:15,Bottom:10)",
+                        "(Horizontal:0,Bottom:10)",
+                        "(Horizontal:12)",
+                        "(Right:8,Top:2)",
+                        "(Horizontal:8,Vertical:5)",
+                        "(Horizontal:20,Vertical:10)",
+                        "(Horizontal:0,Top:5)",
+                        "(Left:20,Right:5,Vertical:16)",
+                        "(Horizontal:15)",
+                        "(Vertical:32)",
+                        "(Full:6)",
+                        "(Horizontal:-2)",
+                        "(Top:35)",
+                        "(Horizontal:0)",
+                        "(Top:12)",
+                        "(Vertical:35)"
+                    ]
+                },
+                "Visible": {
+                    "ExampleValues": [
+                        "@Visible",
+                        "true",
+                        "false"
+                    ]
+                },
+                "ScrollbarStyle": {
+                    "ExampleValues": [
+                        "$C.@DefaultScrollbarStyle"
+                    ]
+                },
+                "HitTestVisible": {
+                    "ExampleValues": [
+                        "false"
+                    ]
+                },
+                "TextTooltipShowDelay": {
+                    "ExampleValues": [
+                        "0.1"
+                    ]
+                },
+                "TextTooltipStyle": {
+                    "ExampleValues": [
+                        "$C.@DefaultTextTooltipStyle",
+                        "$Common.@DefaultTextTooltipStyle"
+                    ]
+                },
+                "TooltipText": {
+                    "ExampleValues": [
+                        "%server.memories.general.undiscovered.tooltipText"
+                    ]
+                }
+            }
         },
         {
-            "File": "Common.ui",
+            "File": "Test.ui",
             "LineNumber": 8,
-            "Name": "Label"
+            "Name": "Label",
+            "Fields": {
+                "Style": {
+                    "ExampleValues": [
+                        "(...@TitleStyle,TextColor:#565a68,HorizontalAlignment:Center,Wrap:true,RenderUppercase:false)",
+                        "(FontSize:15,TextColor:#ffffff,HorizontalAlignment:End,VerticalAlignment:End,RenderBold:true,)",
+                        "(FontSize:13,RenderBold:true,RenderUppercase:true,TextColor:#878e9c)",
+                        "(RenderUppercase:true,RenderBold:true,FontSize:17)",
+                        "(FontSize:12,TextColor:#ffffff,HorizontalAlignment:End,VerticalAlignment:End,RenderBold:true,)",
+                        "(FontSize:12,TextColor:#afafafff,RenderItalics:true,HorizontalAlignment:Center)",
+                        "(FontSize:38,LetterSpacing:1.8,FontName:\"Secondary\",RenderBold:true,HorizontalAlignment:Center,RenderUppercase:true)",
+                        "@SubtitleStyle",
+                        "(VerticalAlignment:Center,HorizontalAlignment:End,TextColor:#8698ad,FontSize:14)",
+                        "@PillStyle",
+                        "(...@TitleStyle,TextColor:#89899f)",
+                        "(RenderBold:true,VerticalAlignment:Center,TextColor:#90a2b7)",
+                        "(FontSize:14,TextColor:#cc4444,HorizontalAlignment:Center,VerticalAlignment:Center,RenderBold:true,)",
+                        "(...@MemoryTitleStyle,HorizontalAlignment:Center,Wrap:true)",
+                        "(FontSize:14,TextColor:#727b8b,Wrap:true)",
+                        "(...$C.@DefaultLabelStyle,HorizontalAlignment:Center,VerticalAlignment:Center)",
+                        "(...@DefaultLabelStyle,VerticalAlignment:Center)",
+                        "(...$C.@DefaultLabelStyle,HorizontalAlignment:Center,VerticalAlignment:Center,TextColor:#ff6b6b)",
+                        "(FontSize:13,RenderBold:true,RenderUppercase:true,TextColor:#7a9cc6)",
+                        "(HorizontalAlignment:Center,VerticalAlignment:Center)",
+                        "(HorizontalAlignment:Start,VerticalAlignment:Center,RenderBold:true,RenderUppercase:true,TextColor:#878e9c,FontSize:13)",
+                        "(...@TitleStyle,FontName:\"Default\",RenderBold:true,TextColor:#b4c8c9,LetterSpacing:0.5,VerticalAlignment:End)",
+                        "(...@TitleStyle,FontName:\"Default\",RenderBold:true,TextColor:#b4c8c9,LetterSpacing:0.5)",
+                        "(RenderBold:true,VerticalAlignment:Center,FontSize:15,TextColor:#afc2c3,HorizontalAlignment:@Alignment)",
+                        "(FontSize:24,TextColor:#dee2ef,FontName:\"Secondary\",RenderUppercase:true,HorizontalAlignment:Center)",
+                        "(HorizontalAlignment:Center)",
+                        "(FontSize:13,TextColor:#7a9cc6)",
+                        "(FontSize:40,Alignment:Center)",
+                        "(FontSize:20,HorizontalAlignment:Center)",
+                        "(FontSize:20,HorizontalAlignment:Center,Wrap:true)",
+                        "(FontSize:11,TextColor:#ffffff(0.8))",
+                        "(...$C.@DefaultLabelStyle,FontSize:12,TextColor:#6a7d8f)",
+                        "@MemoryCounterStyle",
+                        "LabelStyle(FontSize:15,TextColor:#dee2ef)",
+                        "(FontSize:18,TextColor:#919191)",
+                        "(FontSize:16,TextColor:#96a9be,HorizontalAlignment:Center)",
+                        "(FontSize:16,RenderBold:true,HorizontalAlignment:Center,VerticalAlignment:Center,TextColor:#dee2ee)",
+                        "(FontSize:18,RenderBold:true,HorizontalAlignment:Center,VerticalAlignment:Center,TextColor:#dee2ee)",
+                        "(FontSize:12,RenderBold:true,TextColor:#878e9c,VerticalAlignment:Center)",
+                        "(...$C.@DefaultLabelStyle,VerticalAlignment:Center,HorizontalAlignment:End)",
+                        "(TextColor:#ffffff(0.6))",
+                        "(FontSize:11,TextColor:#ffffff(0.7))",
+                        "(...$C.@DefaultLabelStyle,HorizontalAlignment:Center)",
+                        "(...@MemoryCounterStyle,TextColor:#39f493)",
+                        "(FontSize:18,Wrap:true,HorizontalAlignment:Center,TextColor:#949ba8)",
+                        "(FontSize:13,TextColor:#ffffff(0.85))",
+                        "(...$C.@DefaultLabelStyle,FontSize:12,TextColor:#96a9be)",
+                        "(RenderBold:true,RenderUppercase:true,TextColor:#94a7bb)",
+                        "(...$C.@DefaultLabelStyle,VerticalAlignment:Center)",
+                        "(FontSize:16,TextColor:#e2d8d8,HorizontalAlignment:End,VerticalAlignment:End,RenderBold:true,)",
+                        "(FontSize:12,TextColor:#7a8a9a,HorizontalAlignment:End,VerticalAlignment:Center,)",
+                        "(...$C.@DefaultLabelStyle,Wrap:true,FontSize:14,TextColor:#94969a)",
+                        "(...$C.@DefaultLabelStyle,VerticalAlignment:Center,Wrap:true)",
+                        "(FontSize:12,TextColor:#7a9cc6,VerticalAlignment:Center)",
+                        "(RenderBold:true,TextColor:#bb3333)",
+                        "(...$C.@DefaultLabelStyle,HorizontalAlignment:Center,FontSize:32,TextColor:#ffcc00)",
+                        "(FontSize:14,TextColor:#8a9aaa,HorizontalAlignment:End,VerticalAlignment:Center,)",
+                        "(FontSize:13,TextColor:#3d913f,HorizontalAlignment:Center,VerticalAlignment:Center,)",
+                        "(...$C.@DefaultLabelStyle,HorizontalAlignment:Center,Wrap:true,FontSize:16)",
+                        "(FontSize:18,TextColor:#bb3333,RenderBold:true)",
+                        "(...@TitleStyle,HorizontalAlignment:@Alignment)",
+                        "(FontSize:13,RenderBold:true,TextColor:#ffffff)",
+                        "@LabelStyle",
+                        "(...$C.@DefaultLabelStyle,RenderBold:true)",
+                        "(FontSize:11,TextColor:#7a9cc6)",
+                        "(FontSize:18,RenderBold:true,RenderUppercase:true,TextColor:#d13b57,HorizontalAlignment:Center)",
+                        "$C.@DefaultLabelStyle",
+                        "(FontSize:12,TextColor:#ffffff(0.8))",
+                        "(FontSize:15,TextColor:#919191)",
+                        "(FontSize:14,RenderBold:true,TextColor:#ffffff)",
+                        "(...$C.@DefaultLabelStyle,Wrap:true,TextColor:#cfd8e3,FontSize:14)",
+                        "(...$C.@DefaultLabelStyle,Wrap:true,HorizontalAlignment:Center)",
+                        "(FontName:\"Secondary\",FontSize:24,TextColor:#d13b57,RenderUppercase:true,HorizontalAlignment:Center)",
+                        "(FontSize:14,TextColor:#7caacc,HorizontalAlignment:Center,VerticalAlignment:Center,)",
+                        "(FontSize:12,TextColor:#ffffff(0.9))",
+                        "(FontSize:11,TextColor:#878e9c)",
+                        "(RenderBold:true)",
+                        "(TextColor:#ffffff(0.2),RenderItalics:true)",
+                        "(FontSize:18,RenderUppercase:true,RenderBold:true,HorizontalAlignment:Center,TextColor:#94969a)",
+                        "(FontSize:22,RenderUppercase:true,RenderBold:true)",
+                        "@BindingLabelStyle",
+                        "(...@TitleStyle,FontName:\"Default\",LetterSpacing:0.5)",
+                        "(...$C.@TitleStyle,HorizontalAlignment:Center,)",
+                        "(FontSize:18,TextColor:#dee2ee,FontName:\"Secondary\",RenderUppercase:true,HorizontalAlignment:Center)",
+                        "@SectionTitleStyle",
+                        "@SectionValueStyle",
+                        "(FontSize:16,TextColor:#7c899f,VerticalAlignment:Center,Wrap:true)"
+                    ]
+                },
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Left:10,Width:50)",
+                        "(Right:8,Bottom:5)",
+                        "(Top:6,Left:6,Right:16)",
+                        "(Left:6,Right:16,Width:180)",
+                        "(Bottom:5)",
+                        "(Bottom:3)",
+                        "(Height:35,Horizontal:8)",
+                        "(Top:30)",
+                        "(Height:18)",
+                        "(Left:28,Top:-1,Width:46,Height:48)",
+                        "(Height:48,Left:36,Top:45)",
+                        "(Left:25)",
+                        "(Bottom:16,Horizontal:8)",
+                        "(Top:14,Bottom:9)",
+                        "(Top:12,Bottom:6)",
+                        "(Bottom:35)",
+                        "(Left:10)",
+                        "(Top:6,Left:0)",
+                        "(Bottom:8)",
+                        "(Bottom:10)",
+                        "(Right:0,Bottom:0,Height:14)",
+                        "(Bottom:12)",
+                        "(Bottom:7)",
+                        "(Left:6,Right:16,Width:250)",
+                        "(Height:32,Left:36,Top:98)",
+                        "(Right:10)",
+                        "(Right:30,Left:11)",
+                        "(Bottom:16)",
+                        "(Top:8)",
+                        "(Right:6,Bottom:4)",
+                        "(Width:120)",
+                        "(Left:10,Width:40)",
+                        "(Bottom:8,Horizontal:4)",
+                        "(Right:8)",
+                        "(Bottom:12,Horizontal:8)",
+                        "(Right:5)",
+                        "(Vertical:8)",
+                        "(Width:50)",
+                        "(Bottom:4)",
+                        "(Height:33,Top:0,Left:10)",
+                        "(Left:6,Right:16,Width:200)",
+                        "(Bottom:2)",
+                        "(Right:5,Bottom:0)",
+                        "(Top:35)",
+                        "(Width:80)"
+                    ]
+                },
+                "Text": {
+                    "ExampleValues": [
+                        "%server.customUI.configureInstanceBlockPage.positionOffset",
+                        "%server.customUI.respawnPage.title",
+                        "%server.customUI.objImport.description",
+                        "%server.customUI.overrideNearbyRespawnPoint.label",
+                        "%server.customUI.particleSpawnPage.systemLifespan",
+                        "%server.customUI.teleporter.location",
+                        "%server.customUI.particleSpawnPage.particleGroupLifespan",
+                        "%server.customUI.prefabEditorSettings.loading.initializing",
+                        "%server.customUI.imageImport.maxSize",
+                        "%server.customUI.teleporter.rotation",
+                        "%server.customUI.objImport.scale",
+                        "\"Pill\"",
+                        "%server.customUI.prefabSpawnerSettingsPage.prefabWeights",
+                        "%server.memories.general.title",
+                        "%server.customUI.prefabSpawnerSettingsPage.defaultWeight",
+                        "@Label",
+                        "%server.customUI.teleporter.world",
+                        "\"1.0\"",
+                        "\"Z\"",
+                        "\"Yaw\"",
+                        "%server.customUI.commandListPage.argumentTypes",
+                        "\"Y\"",
+                        "%server.memories.general.totalCollected+\"\"",
+                        "%server.customUI.generic.count",
+                        "%server.customUI.teleporter.warpName",
+                        "%server.customUI.prefabEditorSaveSettings.browser.hint",
+                        "%server.customUI.respawnName",
+                        "%server.customUI.imageImport.orientation",
+                        "%server.customUI.objImport.height",
+                        "%server.customUI.prefabSpawnerSettingsPage.prefabPath",
+                        "%server.customUI.prefabSpawnerSettingsPage.placementProperties",
+                        "%server.customUI.configureInstanceBlockPage.instanceKey",
+                        "\"\"",
+                        "%server.customUI.objImport.filePath",
+                        "%server.customUI.portalDevice.forsaken",
+                        "%server.customUI.objImport.upAxis",
+                        "%server.customUI.objImport.blockPattern",
+                        "\"BulletPoint\"",
+                        "%server.customUI.prefabEditorExitConfirm.modifiedPrefabs",
+                        "%server.customUI.imageImport.filePath",
+                        "\"/\"",
+                        "%server.customUI.imageImport.origin",
+                        "\"Aliases:\"",
+                        "\"0\"",
+                        "%server.customUI.itemRepairPage.durability",
+                        "%server.customUI.tintChunkPage.sigma",
+                        "%server.customUI.prefabEditorExitConfirm.warningMessage",
+                        "%server.customUI.commandListPage.parameters",
+                        "%server.customUI.portalDevice.wipText",
+                        "\"0/0\"",
+                        "%server.customUI.teleporter.targetWarp",
+                        "\"OUTOFSTOCK\"",
+                        "%server.customUI.prefabEditorSaveSettings.saving.initializing",
+                        "\"Therebealotoflineshere.\"",
+                        "%server.customUI.portalDevice.portalIsOpen",
+                        "%server.customUI.commandListPage.variants",
+                        "%server.customUI.portalDevice.tipsTitle",
+                        "%server.customUI.portalDevice.error",
+                        "%server.customUI.changeModelPage.scale",
+                        "%server.customUI.entitySpawnPage.scale",
+                        "%server.customUI.objImport.origin",
+                        "%server.customUI.portalDevice.objectivesTitle",
+                        "%server.customUI.tintChunkPage.radius",
+                        "%server.customUI.itemRepairPage.item",
+                        "\"Roll\"",
+                        "\"Permission:\"",
+                        "%server.customUI.portalDevice.consumesKey",
+                        "%server.customUI.configureInstanceBlockPage.closeOnBlockRemove",
+                        "\"X\"",
+                        "\"Pitch\"",
+                        "%server.customUI.prefabEditorExitConfirm.warningTitle",
+                        "\"Pitch(st)\"",
+                        "\"Cost:\"",
+                        "%server.customUI.configureInstanceBlockPage.personalReturnPoint",
+                        "%server.customUI.prefabEditorSettings.browser.selectedItems",
+                        "\"Thisisanerror\"",
+                        "%server.customUI.configureInstanceBlockPage.instances",
+                        "@Text",
+                        "%server.customUI.prefabEditorSettings.saveName",
+                        "%server.customUI.prefabSavePage.name",
+                        "\"???mins\"",
+                        "\"Have:0\"",
+                        "%server.customUI.portalDevice.timeLimitLabel",
+                        "%server.customUI.configureInstanceBlockPage.rotation",
+                        "%server.customUI.portalDevice.forsakenExplanation",
+                        "%server.customUI.launchPadSettingsPage.velocity",
+                        "\"???\"",
+                        "%server.customUI.generic.rotate",
+                        "%teleporter.error",
+                        "%server.customUI.objImport.sizeMode",
+                        "%server.customUI.commandListPage.subcommands",
+                        "\"Volume(dB)\"",
+                        "%server.customUI.imageImport.description",
+                        "%server.customUI.entitySpawnPage.material"
+                    ]
+                },
+                "Padding": {
+                    "ExampleValues": [
+                        "(Left:14)",
+                        "(Horizontal:32)",
+                        "(Top:12,Bottom:8)",
+                        "(Top:12,Bottom:12,Horizontal:32)",
+                        "(Horizontal:10,Vertical:5)",
+                        "(Horizontal:15)",
+                        "32",
+                        "(Bottom:8)",
+                        "(Top:4)",
+                        "(Left:2,Right:2)",
+                        "8",
+                        "(Vertical:14)",
+                        "(Horizontal:19)",
+                        "(Top:4,Bottom:12)"
+                    ]
+                },
+                "Visible": {
+                    "ExampleValues": [
+                        "false"
+                    ]
+                },
+                "FlexWeight": {
+                    "ExampleValues": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "TextSpans": {
+                    "ExampleValues": [
+                        "@Text"
+                    ]
+                },
+                "MaskTexturePath": {
+                    "ExampleValues": [
+                        "\"RespawnPageLabelGradient.png\""
+                    ]
+                }
+            }
         },
         {
             "File": "Common.ui",
             "LineNumber": 167,
-            "Name": "TextButton"
+            "Name": "TextButton",
+            "Fields": {
+                "Style": {
+                    "ExampleValues": [
+                        "(...@CancelTextButtonStyle,Sounds:(...$Sounds.@ButtonsCancel,...@Sounds))",
+                        "(...@DefaultTextButtonStyle,Sounds:(...$Sounds.@ButtonsLight,...@Sounds))",
+                        "(Sounds:$Sounds.@ButtonsLight,Default:(LabelStyle:(Wrap:true,HorizontalAlignment:Center,VerticalAlignment:Center,),Background:(TexturePath:\"Tiles/TileSelected.png\",Border:8),))",
+                        "(...@SmallSecondaryTextButtonStyle,Sounds:(...$Sounds.@ButtonsLight,...@Sounds))",
+                        "(...$Common.@DefaultTextButtonStyle,Sounds:(...$Common.@ButtonSounds,...$Sounds.@RespawnActivate))",
+                        "(Sounds:$Sounds.@ButtonsLight,Default:(LabelStyle:(...@CategoryButtonLabelStyle),Background:(TexturePath:\"Tiles/TileDefault.png\",Border:8),),Hovered:(LabelStyle:(...@CategoryButtonLabelStyle),Background:(TexturePath:\"Tiles/TileHovered.png\",Border:8),))",
+                        "(...@TertiaryTextButtonStyle,Sounds:(...$Sounds.@ButtonsLight,...@Sounds))",
+                        "@HeaderTextButtonStyle",
+                        "(Sounds:$Sounds.@ButtonsLight,Default:(LabelStyle:(Wrap:true,HorizontalAlignment:Center,VerticalAlignment:Center,),Background:(TexturePath:\"Tiles/TileDefault.png\",Border:8),),Hovered:(LabelStyle:(Wrap:true,HorizontalAlignment:Center,VerticalAlignment:Center,),Background:(TexturePath:\"Tiles/TileHovered.png\",Border:8),))",
+                        "@LabelStyle",
+                        "(...@SecondaryTextButtonStyle,Sounds:(...$Sounds.@ButtonsLight,...@Sounds))"
+                    ]
+                },
+                "Anchor": {
+                    "ExampleValues": [
+                        "(...@Anchor,Height:@SmallButtonHeight)",
+                        "(Width:220,Height:40,Left:36,Bottom:40)",
+                        "(...@Anchor,Height:@DefaultButtonHeight)"
+                    ]
+                },
+                "Padding": {
+                    "ExampleValues": [
+                        "(Horizontal:16)",
+                        "(Horizontal:@DefaultButtonPadding)",
+                        "(Bottom:10)",
+                        "(Full:6)",
+                        "(Right:22,Left:15,Bottom:1)"
+                    ]
+                },
+                "Text": {
+                    "ExampleValues": [
+                        "%server.customUI.respawnPage.respawn",
+                        "@Text"
+                    ]
+                },
+                "FlexWeight": {
+                    "ExampleValues": [
+                        "1"
+                    ]
+                },
+                "Visible": {
+                    "ExampleValues": [
+                        "false"
+                    ]
+                },
+                "TextTooltipStyle": {
+                    "ExampleValues": [
+                        "$C.@DefaultTextTooltipStyle"
+                    ]
+                }
+            }
         },
         {
             "File": "Common.ui",
             "LineNumber": 182,
-            "Name": "Button"
+            "Name": "Button",
+            "Fields": {
+                "Style": {
+                    "ExampleValues": [
+                        "(Default:(Background:\"Common/ContainerCloseButton.png\"),Hovered:(Background:\"Common/ContainerCloseButtonHovered.png\"),Pressed:(Background:\"Common/ContainerCloseButtonPressed.png\"),)",
+                        "(...@SecondaryButtonStyle,Sounds:(...$Sounds.@ButtonsLight,...@Sounds))",
+                        "(...@CancelButtonStyle,Sounds:(...$Sounds.@ButtonsLight,...@Sounds))",
+                        "(Hovered:(Background:#000000(0.2),))",
+                        "(Default:(Background:\"Common/ContainerCloseButton.png\"),Hovered:(Background:\"Common/ContainerCloseButtonHovered.png\"),Pressed:(Background:\"Common/ContainerCloseButtonPressed.png\"),Sounds:@ButtonsCancel)",
+                        "(...@DefaultSquareButtonStyle,Sounds:(...$Sounds.@ButtonsLight,...@Sounds))",
+                        "(...@TertiaryButtonStyle,Sounds:(...$Sounds.@ButtonsLight,...@Sounds))"
+                    ]
+                },
+                "Anchor": {
+                    "ExampleValues": [
+                        "(...@Anchor,Height:@DefaultButtonHeight,Width:@Width)",
+                        "(Top:-16,Right:-16,Width:32,Height:32)",
+                        "(...@Anchor,Height:@DefaultButtonHeight,Width:@DefaultButtonHeight)",
+                        "(Height:50,Bottom:4)",
+                        "(Width:32,Height:32,Top:-8,Right:-8)"
+                    ]
+                },
+                "Padding": {
+                    "ExampleValues": [
+                        "(Horizontal:@DefaultButtonPadding)",
+                        "(Full:6)"
+                    ]
+                },
+                "Visible": {
+                    "ExampleValues": [
+                        "@CloseButton"
+                    ]
+                },
+                "LayoutMode": {
+                    "ExampleValues": [
+                        "Left"
+                    ]
+                }
+            }
         },
         {
             "File": "Common.ui",
             "LineNumber": 390,
-            "Name": "CheckBox"
+            "Name": "CheckBox",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Width:22,Height:22)"
+                    ]
+                },
+                "Background": {
+                    "ExampleValues": [
+                        "(TexturePath:\"Common/CheckBoxFrame.png\",Border:7)"
+                    ]
+                },
+                "Padding": {
+                    "ExampleValues": [
+                        "(Full:4)"
+                    ]
+                },
+                "Style": {
+                    "ExampleValues": [
+                        "@DefaultCheckBoxStyle"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 402,
+            "Name": "@CheckBox",
+            "Fields": {
+                "Value": {
+                    "ExampleValues": [
+                        "@Checked"
+                    ]
+                }
+            }
         },
         {
             "File": "Common.ui",
             "LineNumber": 424,
-            "Name": "TextField"
+            "Name": "TextField",
+            "Fields": {
+                "Style": {
+                    "ExampleValues": [
+                        "@DefaultInputFieldStyle"
+                    ]
+                },
+                "PlaceholderStyle": {
+                    "ExampleValues": [
+                        "@DefaultInputFieldPlaceholderStyle"
+                    ]
+                },
+                "Background": {
+                    "ExampleValues": [
+                        "@InputBoxBackground"
+                    ]
+                },
+                "Anchor": {
+                    "ExampleValues": [
+                        "(...@Anchor,Height:38)"
+                    ]
+                },
+                "Padding": {
+                    "ExampleValues": [
+                        "(Horizontal:10)"
+                    ]
+                }
+            }
         },
         {
             "File": "Common.ui",
             "LineNumber": 434,
-            "Name": "NumberField"
+            "Name": "NumberField",
+            "Fields": {
+                "Style": {
+                    "ExampleValues": [
+                        "@DefaultInputFieldStyle"
+                    ]
+                },
+                "PlaceholderStyle": {
+                    "ExampleValues": [
+                        "@DefaultInputFieldPlaceholderStyle"
+                    ]
+                },
+                "Background": {
+                    "ExampleValues": [
+                        "@InputBoxBackground"
+                    ]
+                },
+                "Anchor": {
+                    "ExampleValues": [
+                        "(...@Anchor,Height:38)"
+                    ]
+                },
+                "Padding": {
+                    "ExampleValues": [
+                        "(Horizontal:10)"
+                    ]
+                }
+            }
         },
         {
             "File": "Common.ui",
             "LineNumber": 479,
-            "Name": "DropdownBox"
+            "Name": "DropdownBox",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(...@Anchor,Width:330,Height:@DropdownBoxHeight)"
+                    ]
+                },
+                "Style": {
+                    "ExampleValues": [
+                        "@DefaultDropdownBoxStyle"
+                    ]
+                }
+            }
         },
         {
             "File": "Common.ui",
             "LineNumber": 555,
-            "Name": "Sprite"
+            "Name": "Sprite",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Width:40,Height:40,Left:7)",
+                        "(...@Anchor,Width:32,Height:32)"
+                    ]
+                },
+                "TexturePath": {
+                    "ExampleValues": [
+                        "\"RespawnPointArrow.png\"",
+                        "\"Common/Spinner.png\""
+                    ]
+                },
+                "Frame": {
+                    "ExampleValues": [
+                        "(Width:32,Height:32,PerRow:8,Count:72)",
+                        "(Width:32,Height:32,PerRow:1,Count:1)"
+                    ]
+                },
+                "FramesPerSecond": {
+                    "ExampleValues": [
+                        "30"
+                    ]
+                },
+                "Padding": {
+                    "ExampleValues": [
+                        "(Full:5)"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Common.ui",
+            "LineNumber": 667,
+            "Name": "CompactTextField",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Height:30,Right:@MarginRight)"
+                    ]
+                },
+                "CollapsedWidth": {
+                    "ExampleValues": [
+                        "34"
+                    ]
+                },
+                "ExpandedWidth": {
+                    "ExampleValues": [
+                        "200"
+                    ]
+                },
+                "PlaceholderText": {
+                    "ExampleValues": [
+                        "%server.customUI.searchPlaceholder"
+                    ]
+                },
+                "Style": {
+                    "ExampleValues": [
+                        "(FontSize:16)"
+                    ]
+                },
+                "PlaceholderStyle": {
+                    "ExampleValues": [
+                        "(TextColor:#3d5a85,RenderUppercase:true,FontSize:14)"
+                    ]
+                },
+                "Padding": {
+                    "ExampleValues": [
+                        "(Horizontal:12,Left:34)"
+                    ]
+                },
+                "Decoration": {
+                    "ExampleValues": [
+                        "(Default:(Icon:(Texture:\"Common/SearchIcon.png\",Width:16,Height:16,Offset:9),ClearButtonStyle:@ClearButtonStyle))"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Hud\\TimeLeft.ui",
+            "LineNumber": 16,
+            "Name": "TimerLabel",
+            "Fields": {
+                "Style": {
+                    "ExampleValues": [
+                        "(FontSize:32,Alignment:Center)"
+                    ]
+                },
+                "Seconds": {
+                    "ExampleValues": [
+                        "15*60"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\BarterTradeRow.ui",
+            "LineNumber": 9,
+            "Name": "ItemSlotButton",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Full:0)"
+                    ]
+                },
+                "LayoutMode": {
+                    "ExampleValues": [
+                        "Full"
+                    ]
+                },
+                "Padding": {
+                    "ExampleValues": [
+                        "2"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\BarterTradeRow.ui",
+            "LineNumber": 51,
+            "Name": "ItemSlot",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Full:0)",
+                        "(Full:0,Height:64,Width:64)"
+                    ]
+                },
+                "ShowQualityBackground": {
+                    "ExampleValues": [
+                        "true"
+                    ]
+                },
+                "ShowQuantity": {
+                    "ExampleValues": [
+                        "false"
+                    ]
+                }
+            }
         },
         {
             "File": "Pages\\ChangeModelPage.ui",
             "LineNumber": 12,
-            "Name": "$C.@Title"
+            "Name": "$C.@Title",
+            "Fields": {}
+        },
+        {
+            "File": "Pages\\ChangeModelPage.ui",
+            "LineNumber": 57,
+            "Name": "FloatSlider",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Left:10,Width:150,Height:5)",
+                        "(Left:25,Width:180,Height:5,Right:0)"
+                    ]
+                },
+                "Style": {
+                    "ExampleValues": [
+                        "$C.@DefaultSliderStyle"
+                    ]
+                },
+                "Min": {
+                    "ExampleValues": [
+                        "0",
+                        "0.1"
+                    ]
+                },
+                "Max": {
+                    "ExampleValues": [
+                        "5.0",
+                        "10"
+                    ]
+                },
+                "Step": {
+                    "ExampleValues": [
+                        "0.1"
+                    ]
+                },
+                "Value": {
+                    "ExampleValues": [
+                        "1.0",
+                        "1"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\ChangeModelPage.ui",
+            "LineNumber": 72,
+            "Name": "$C.@TextButton",
+            "Fields": {
+                "Text": {
+                    "ExampleValues": [
+                        "%server.customUI.particleSpawnPage.spawn",
+                        "%server.customUI.changeModelPage.button.changeModel",
+                        "%server.customUI.prefabEditorSaveSettings.save",
+                        "%server.customUI.imageImport.importButton",
+                        "%server.customUI.prefabEditorSaveSettings.browser.confirm",
+                        "%server.customUI.instanceListPage.button.load",
+                        "%server.customUI.prefabEditorSettings.saveProperties",
+                        "%server.customUI.prefabEditorSettings.browser.confirm",
+                        "%server.memories.general.noMemories",
+                        "%server.customUI.prefabEditorExitConfirm.saveAndExit",
+                        "%server.customUI.tintChunkPage.applyTint",
+                        "%server.customUI.objImport.importButton",
+                        "%server.customUI.instanceListPage.button.spawn",
+                        "%server.customUI.entitySpawnPage.spawn",
+                        "%server.customUI.select",
+                        "%server.customUI.prefabSavePage.save",
+                        "%server.customUI.playSoundPage.play",
+                        "%server.customUI.saveChanges",
+                        "%server.customUI.portalDevice.summonPortal",
+                        "%server.customUI.prefabEditorSettings.load",
+                        "%server.customUI.confirm"
+                    ]
+                },
+                "FlexWeight": {
+                    "ExampleValues": [
+                        "1"
+                    ]
+                },
+                "Disabled": {
+                    "ExampleValues": [
+                        "true"
+                    ]
+                },
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Width:330,Height:42)"
+                    ]
+                },
+                "Visible": {
+                    "ExampleValues": [
+                        "false"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\ChangeModelPage.ui",
+            "LineNumber": 81,
+            "Name": "$C.@SecondaryTextButton",
+            "Fields": {
+                "Text": {
+                    "ExampleValues": [
+                        "%server.customUI.prefabEditorSaveSettings.browse",
+                        "%server.customUI.prefabEditorSettings.browse",
+                        "%server.customUI.prefabEditorSaveSettings.selectEdited",
+                        "%server.customUI.entitySpawnPage.tab.items",
+                        "%server.customUI.entitySpawnPage.clear",
+                        "%server.customUI.prefabEditorSettings.saveProperties",
+                        "%server.customUI.commandListPage.sendToChat",
+                        "%client.general.button.back",
+                        "%server.customUI.prefabEditorSettings.browser.addToList",
+                        "%server.customUI.browse",
+                        "%server.customUI.cancel",
+                        "%server.customUI.prefabEditorExitConfirm.confirmExit",
+                        "%server.customUI.prefabEditorExitConfirm.cancel",
+                        "%server.customUI.back",
+                        "%server.customUI.changeModelPage.button.resetModel",
+                        "%server.customUI.entitySpawnPage.tab.model",
+                        "%server.customUI.prefabEditorSaveSettings.selectAll",
+                        "%server.customUI.entitySpawnPage.tab.npc"
+                    ]
+                },
+                "FlexWeight": {
+                    "ExampleValues": [
+                        "1"
+                    ]
+                },
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Width:150,Height:42)",
+                        "(Width:190,Height:28)",
+                        "(Top:10)"
+                    ]
+                },
+                "Visible": {
+                    "ExampleValues": [
+                        "false"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\CommandListPage.ui",
+            "LineNumber": 112,
+            "Name": "$C.@TertiaryTextButton",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Width:100,Height:28,Right:8)"
+                    ]
+                },
+                "Visible": {
+                    "ExampleValues": [
+                        "false"
+                    ]
+                },
+                "Text": {
+                    "ExampleValues": [
+                        "%server.customUI.general.backButton"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\ConfigureInstanceBlockPage.ui",
+            "LineNumber": 16,
+            "Name": "$C.@NumberField",
+            "Fields": {
+                "Format": {
+                    "ExampleValues": [
+                        "(MaxDecimalPlaces:0,Step:8,MinValue:1,MaxValue:512)",
+                        "(MaxDecimalPlaces:0,Step:1,MinValue:1,MaxValue:256)",
+                        "(MaxDecimalPlaces:3,Step:0.1)",
+                        "(MaxDecimalPlaces:2,Step:0.5)",
+                        "(MinValue:0)",
+                        "(MaxDecimalPlaces:2,Step:0.1,MinValue:0.01,MaxValue:100)",
+                        "(MaxDecimalPlaces:0,Step:1)",
+                        "(MaxDecimalPlaces:3,Step:0.5)",
+                        "(MaxDecimalPlaces:0,Step:1,MinValue:1,MaxValue:100)"
+                    ]
+                },
+                "Value": {
+                    "ExampleValues": [
+                        "1",
+                        "10",
+                        "5"
+                    ]
+                }
+            }
         },
         {
             "File": "Pages\\ConfigureInstanceBlockPage.ui",
             "LineNumber": 29,
-            "Name": "$C.@DecoratedContainer"
+            "Name": "$C.@DecoratedContainer",
+            "Fields": {}
+        },
+        {
+            "File": "Pages\\ConfigureInstanceBlockPage.ui",
+            "LineNumber": 52,
+            "Name": "$C.@DropdownBox",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Width:120,Right:10,Height:$C.@DropdownBoxHeight)",
+                        "(Width:160,Height:$C.@DropdownBoxHeight)"
+                    ]
+                },
+                "NoItemsText": {
+                    "ExampleValues": [
+                        "%server.customUI.dropdown.noItems"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\ConfigureInstanceBlockPage.ui",
+            "LineNumber": 67,
+            "Name": "$C.@TextField",
+            "Fields": {
+                "FlexWeight": {
+                    "ExampleValues": [
+                        "1"
+                    ]
+                },
+                "MaxLength": {
+                    "ExampleValues": [
+                        "512",
+                        "1024"
+                    ]
+                },
+                "PlaceholderText": {
+                    "ExampleValues": [
+                        "%server.customUI.prefabBrowser.searchPlaceholder",
+                        "\"Rock_Stoneor50%Rock_Stone,50%Rock_Basalt\"",
+                        "%server.customUI.objImport.searchPlaceholder",
+                        "%server.customUI.prefabEditorSaveSettings.browser.searchPlaceholder",
+                        "%server.customUI.prefabSavePage.namePlaceholder",
+                        "%server.customUI.prefabTeleportPage.searchPlaceholder",
+                        "%server.customUI.imageImport.searchPlaceholder",
+                        "\"imports/models/model.obj\"",
+                        "%server.customUI.tintChunkPage.hexColor",
+                        "%server.customUI.teleporter.warpName",
+                        "\"imports/images/image.png\""
+                    ]
+                },
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Top:10,Height:44)"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\ConfigureInstanceBlockPage.ui",
+            "LineNumber": 89,
+            "Name": "@NumberInput",
+            "Fields": {}
+        },
+        {
+            "File": "Pages\\EntitySpawnPage.ui",
+            "LineNumber": 86,
+            "Name": "ItemGrid",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Width:@MaterialSlotSize,Height:@MaterialSlotSize,Horizontal:0,Vertical:0)"
+                    ]
+                },
+                "SlotsPerRow": {
+                    "ExampleValues": [
+                        "1"
+                    ]
+                },
+                "Style": {
+                    "ExampleValues": [
+                        "(SlotSize:@MaterialSlotSize,SlotIconSize:@MaterialSlotSize,SlotSpacing:0,SlotBackground:\"../Common/BlockSelectorSlotBackground.png\")"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\EntitySpawnPage.ui",
+            "LineNumber": 155,
+            "Name": "Slider",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Left:25,Width:150,Height:5)",
+                        "(Left:25,Width:180,Height:5,Right:0)"
+                    ]
+                },
+                "Style": {
+                    "ExampleValues": [
+                        "$C.@DefaultSliderStyle"
+                    ]
+                },
+                "Min": {
+                    "ExampleValues": [
+                        "-12",
+                        "-180",
+                        "-100"
+                    ]
+                },
+                "Max": {
+                    "ExampleValues": [
+                        "180",
+                        "12",
+                        "10"
+                    ]
+                },
+                "Step": {
+                    "ExampleValues": [
+                        "1",
+                        "0.5"
+                    ]
+                },
+                "Value": {
+                    "ExampleValues": [
+                        "0"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\ItemRepairElement.ui",
+            "LineNumber": 10,
+            "Name": "ItemIcon",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Width:32,Height:32)"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\LaunchPadSettingsPage.ui",
+            "LineNumber": 89,
+            "Name": "$C.@CheckBoxWithLabel",
+            "Fields": {
+                "TooltipText": {
+                    "ExampleValues": [
+                        "%server.customUI.teleporter.relative.tooltip",
+                        "%server.customUI.teleporter.blockRelative.tooltip"
+                    ]
+                }
+            }
         },
         {
             "File": "Pages\\PrefabEditorSaveSettings.ui",
             "LineNumber": 9,
-            "Name": "MultilineTextField"
+            "Name": "MultilineTextField",
+            "Fields": {
+                "Style": {
+                    "ExampleValues": [
+                        "$C.@DefaultInputFieldStyle"
+                    ]
+                },
+                "PlaceholderStyle": {
+                    "ExampleValues": [
+                        "$C.@DefaultInputFieldPlaceholderStyle"
+                    ]
+                },
+                "Background": {
+                    "ExampleValues": [
+                        "$C.@InputBoxBackground"
+                    ]
+                },
+                "AutoGrow": {
+                    "ExampleValues": [
+                        "false"
+                    ]
+                },
+                "Padding": {
+                    "ExampleValues": [
+                        "(Horizontal:10,Vertical:8)"
+                    ]
+                },
+                "ScrollbarStyle": {
+                    "ExampleValues": [
+                        "$C.@DefaultScrollbarStyle"
+                    ]
+                }
+            }
         },
         {
             "File": "Pages\\PrefabEditorSaveSettings.ui",
             "LineNumber": 42,
-            "Name": "@InputLabel"
+            "Name": "@InputLabel",
+            "Fields": {
+                "Text": {
+                    "ExampleValues": [
+                        "%server.customUI.prefabEditorSettings.recursiveSearch",
+                        "%server.customUI.prefabEditorSettings.worldGenType",
+                        "%server.customUI.prefabEditorSettings.grassTint",
+                        "%server.customUI.prefabEditorSettings.loadEntities",
+                        "%server.customUI.prefabEditorSettings.enableWorldTicking",
+                        "%server.customUI.prefabSavePage.overwrite",
+                        "%server.customUI.prefabEditorSettings.rowSplitMode",
+                        "%server.customUI.prefabSavePage.fromClipboard",
+                        "%server.customUI.prefabEditorSettings.environment",
+                        "%server.customUI.prefabEditorSettings.rootDir",
+                        "%server.customUI.prefabEditorSaveSettings.overwriteExisting",
+                        "%server.customUI.prefabEditorSettings.loadChildren",
+                        "%server.customUI.prefabEditorSettings.alignmentMethod",
+                        "%server.customUI.prefabEditorSaveSettings.includeEmptyBlocks",
+                        "%server.customUI.prefabEditorSettings.savedConfigs",
+                        "%server.customUI.prefabEditorSaveSettings.saveEntities",
+                        "%server.customUI.prefabEditorSettings.prefabPaths",
+                        "@Label",
+                        "%server.customUI.prefabSavePage.includeEntities",
+                        "%server.customUI.prefabEditorSettings.pasteAxis",
+                        "%server.customUI.prefabEditorSaveSettings.prefabsToSave",
+                        "%server.customUI.prefabSavePage.includeEmpty"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\PrefabEditorSaveSettings.ui",
+            "LineNumber": 62,
+            "Name": "@MultilineTextField",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Height:80)",
+                        "(Height:60)"
+                    ]
+                },
+                "MaxLength": {
+                    "ExampleValues": [
+                        "4096"
+                    ]
+                },
+                "PlaceholderText": {
+                    "ExampleValues": [
+                        "%server.customUI.prefabEditorSaveSettings.prefabsToSavePlaceholder",
+                        "%server.customUI.prefabEditorSettings.browser.noItemsSelected"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\PrefabEditorSaveSettings.ui",
+            "LineNumber": 82,
+            "Name": "$C.@CheckBox",
+            "Fields": {
+                "Value": {
+                    "ExampleValues": [
+                        "true",
+                        "false"
+                    ]
+                },
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Width:26,Height:26)"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\PrefabEditorSaveSettings.ui",
+            "LineNumber": 230,
+            "Name": "ProgressBar",
+            "Fields": {
+                "BarTexturePath": {
+                    "ExampleValues": [
+                        "\"MemoriesProgress/MemoriesBarTexture.png\"",
+                        "\"../Common/ProgressBarFill.png\"",
+                        "\"MemoriesProgress/MemoriesBarFill.png\""
+                    ]
+                },
+                "EffectTexturePath": {
+                    "ExampleValues": [
+                        "\"../Common/ProgressBarEffect.png\"",
+                        "\"MemoriesProgress/MemoriesBarTipOfTheBar.png\""
+                    ]
+                },
+                "EffectWidth": {
+                    "ExampleValues": [
+                        "114",
+                        "102"
+                    ]
+                },
+                "EffectHeight": {
+                    "ExampleValues": [
+                        "32",
+                        "58"
+                    ]
+                },
+                "EffectOffset": {
+                    "ExampleValues": [
+                        "104",
+                        "74"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\PrefabEditorSettings.ui",
+            "LineNumber": 91,
+            "Name": "@TextField",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Height:35,Left:0,Right:8)"
+                    ]
+                },
+                "FlexWeight": {
+                    "ExampleValues": [
+                        "1"
+                    ]
+                },
+                "MaxLength": {
+                    "ExampleValues": [
+                        "4096"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\PrefabEditorSettings.ui",
+            "LineNumber": 203,
+            "Name": "ColorPickerDropdownBox",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Width:50,Height:32,Left:0,Right:16)"
+                    ]
+                },
+                "Format": {
+                    "ExampleValues": [
+                        "Rgb"
+                    ]
+                },
+                "Style": {
+                    "ExampleValues": [
+                        "$C.@DefaultColorPickerDropdownBoxStyle"
+                    ]
+                },
+                "DisplayTextField": {
+                    "ExampleValues": [
+                        "true"
+                    ]
+                }
+            }
         },
         {
             "File": "Pages\\PrefabListPage.ui",
             "LineNumber": 26,
-            "Name": "$Browser.@PrefabBrowserContent"
+            "Name": "$Browser.@PrefabBrowserContent",
+            "Fields": {
+                "FlexWeight": {
+                    "ExampleValues": [
+                        "1"
+                    ]
+                }
+            }
         },
         {
-            "File": "Pages\\Teleporter.ui",
-            "LineNumber": 67,
-            "Name": "$C.@CheckBoxWithLabel"
+            "File": "Pages\\TintChunkPage.ui",
+            "LineNumber": 75,
+            "Name": "ColorPicker",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Width:310,Height:290,Top:12)"
+                    ]
+                },
+                "Format": {
+                    "ExampleValues": [
+                        "Rgb"
+                    ]
+                },
+                "Style": {
+                    "ExampleValues": [
+                        "$C.@DefaultColorPickerStyle"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\Memories\\ChestMarker.ui",
+            "LineNumber": 16,
+            "Name": "@ChestGroup",
+            "Fields": {}
+        },
+        {
+            "File": "Pages\\Memories\\MemoriesCategory.ui",
+            "LineNumber": 108,
+            "Name": "AssetImage",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Width:200,Height:200)",
+                        "(Width:128,Height:128)"
+                    ]
+                }
+            }
+        },
+        {
+            "File": "Pages\\Memories\\MemoriesCategoryPanel.ui",
+            "LineNumber": 133,
+            "Name": "$C.@CancelTextButton",
+            "Fields": {
+                "Anchor": {
+                    "ExampleValues": [
+                        "(Width:330,Height:42)"
+                    ]
+                },
+                "Text": {
+                    "ExampleValues": [
+                        "%client.general.button.back"
+                    ]
+                },
+                "Visible": {
+                    "ExampleValues": [
+                        "false"
+                    ]
+                }
+            }
         }
     ]
 }

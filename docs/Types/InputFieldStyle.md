@@ -7,7 +7,7 @@
 ## Fields
 
 ### TextColor
-
 Example Values:
+
 - `#6e7da1`
 

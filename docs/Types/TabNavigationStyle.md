@@ -7,8 +7,8 @@
 ## Fields
 
 ### TabStyle
-
 Example Values:
+
 - `(
     Default: @TopTabStyle,
     Hovered: (...@TopTabStyle, Anchor: (...@TopTabAnchor, Bottom: -5)),
@@ -19,8 +19,8 @@ Example Values:
   )`
 
 ### SelectedTabStyle
-
 Example Values:
+
 - `(
     Default: (
       ...@TopTabStyle,
@@ -37,12 +37,12 @@ Example Values:
   )`
 
 ### SeparatorAnchor
-
 Example Values:
+
 - `(Width: 5, Height: 34)`
 
 ### SeparatorBackground
-
 Example Values:
+
 - `"Common/HeaderTabSeparator.png"`
 

@@ -7,8 +7,8 @@
 ## Fields
 
 ### Unchecked
-
 Example Values:
+
 - `(
     DefaultBackground: (Color: #00000000),
     HoveredBackground: (Color: #00000000),
@@ -18,8 +18,8 @@ Example Values:
   )`
 
 ### Checked
-
 Example Values:
+
 - `(
     DefaultBackground: (TexturePath: "Common/Checkmark.png"),
     HoveredBackground: (TexturePath: "Common/Checkmark.png"),

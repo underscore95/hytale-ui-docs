@@ -20,6 +20,10 @@ ASSETS_DIR = "Assets/Common/UI/Custom/"
 #      ExampleValues: List of all found values
 
 # UIElements (this is for things like Button, Label)
+# - Name: Element name
+# ExampleFields:
+#   FieldName:
+#      ExampleValues: List of all found values
 
 data = {
     "ImportedFiles": [],
@@ -29,7 +33,7 @@ data = {
 }
 
 foundTypeNames = {}
-foundUIElements = set()
+foundUIElements = {}
 
 # checks for ; which isn't commented
 def is_line_terminated(s):
@@ -160,6 +164,145 @@ def convert_field_sets_to_lists():
         for field in foundType["Fields"].values():
             field["ExampleValues"] = list(field["ExampleValues"])
 
+    for uiElement in data["UIElements"]:
+        for field in uiElement["Fields"].values():
+            field["ExampleValues"] = list(field["ExampleValues"])
+
+def has_equals_before_semicolon(line: str, startIndex: int) -> bool:
+    for i in range(startIndex, len(line)):
+        if line[i] == "=":
+            return True
+        if line[i] == ";":
+            return False
+    return False
+
+def get_all_fields_of_element(lines: list, line_index: int, bracketIndex: int):
+    # cut off everything before the bracket on the first line
+    line = lines[line_index][bracketIndex + 1:]
+    nest = 1
+    params = ""
+    foundBrackets = [] # [open bracket index, close bracket index]
+    bracketStack = [] # indices into foundBrackets
+    isUIID = False # if the current character is part of an id (including the #)
+
+    # extract params into a big string
+    for i in range(line_index, len(lines)):
+        if i != line_index:
+            line = lines[i]
+
+        for c in line:
+            if isUIID and c.isspace():
+                isUIID = False
+            if c == "#":
+                if params[len(params) - 2] == ":":
+                    params += c # False alarm, hex colour code, not an id!
+                    continue
+                isUIID = True
+            if isUIID:
+                continue
+            if c == "{":
+                nest += 1
+                bracketStack.append(len(foundBrackets))
+                foundBrackets.append([len(params), -1])
+            elif c == "}":
+                nest -= 1
+                if len(bracketStack) > 0: # not the final bracket
+                    foundBrackets[bracketStack.pop()][1] = len(params)
+            params += c
+            if nest <= 0:
+                break
+        if nest <= 0:
+            break
+
+    params = params[:params.rfind("}") - 1] # remove final bracket
+    # remove all found nested ui elements
+    params = list(params)
+    for start, end in foundBrackets:
+        # move start backwards from the { until the start of the ui element
+        i = start - 1
+
+        while i >= 0 and params[i].isspace():
+            i -= 1  # ignore whitespace before bracket
+
+        # ok now we found either the ID or ui element name
+        if i >= 0 and params[i] == "#":
+            # it was an id, keep going
+            i -= 1
+            while i >= 0 and params[i].isspace():
+                i -= 1  # ignore whitespace before id
+
+        while i >= 0 and not params[i].isspace():
+            i -= 1
+
+        for j in range(i + 1, end + 1):
+            params[j] = " "
+
+
+    # parse local variables
+    # TODO this is limited because most variables are declared above not inside the ui element
+    variables = {}
+    isVar = False
+    isVarName = False
+    varName = ""
+    varValue = ""
+    for i in range(len(params)):
+        if params[i].isspace():
+            continue
+        if params[i] == "@" and not isVar and not isVarName and has_equals_before_semicolon(params, i + 1):
+            isVar = True
+            isVarName = True
+            params[i] = ""
+            continue
+        if not isVar:
+            continue
+        if isVarName and params[i] == "=":
+            isVarName = False
+            params[i] = ""
+            continue
+        if not isVarName and params[i] == ";":
+            isVar = False
+            variables[varName] = varValue
+            varName = ""
+            varValue = ""
+            params[i] = ""
+            continue
+        if isVarName:
+            varName += params[i]
+        else:
+            varValue += params[i]
+        params[i] = ""
+
+    params = "".join(params)
+
+    # replace variables
+    for k, v in variables.items():
+        continue
+        params = params.replace("@" + k, v)
+
+    # build a dictionary
+    fields = {}
+    currentKey = ""
+    currentVal = ""
+    isKey = True
+    for c in params:
+        if c.isspace():
+            continue
+        if c == ":" and isKey:
+            isKey = False
+            continue
+        if c == ";" and not isKey:
+            isKey = True
+            fields[currentKey] = currentVal
+            currentKey = ""
+            currentVal = ""
+            continue
+        if isKey:
+            currentKey += c
+        else:
+            currentVal += c
+
+    return fields
+
 def parse_ui_elements(path: str, lines: list, line_index: int):
     line = lines[line_index]
     indexOfBracket = line.rfind("{")
@@ -184,23 +327,27 @@ def parse_ui_elements(path: str, lines: list, line_index: int):
     if lastHashtagIndex > lastSpaceIndex:
         # we have an id, need to remove it
         line = line[:-(len(line) - lastHashtagIndex)] # remove the id
-        line.rstrip()
-        lastSpaceIndex = line.rfind(" ")
-        if lastSpaceIndex == -1:
-            return
+        line = line.rstrip()
+        lastSpaceIndex = line.rfind(" ") # this is okay to be -1, it means ui element name is the whole line
     
     uiElementName = line[lastSpaceIndex + 1:]
     if len(uiElementName) == 0 or uiElementName.isspace():
         return
     
-    if uiElementName in foundUIElements:
-        return
-    foundUIElements.add(uiElementName)
-
     elem = {}
-    add_common(elem, path, line_index)
-    elem["Name"] = uiElementName
-    data["UIElements"].append(elem)
+    if uiElementName not in foundUIElements:
+        add_common(elem, path, line_index)
+        elem["Name"] = uiElementName
+        elem["Fields"] = {}
+        data["UIElements"].append(elem)
+        foundUIElements[uiElementName] = elem
+    else:
+        elem = foundUIElements[uiElementName]
+
+    for key, value in get_all_fields_of_element(lines, line_index, indexOfBracket).items():
+        if key not in elem["Fields"]:
+            elem["Fields"][key] = {"ExampleValues": set()}
+        elem["Fields"][key]["ExampleValues"].add(value)
 
 def parse_imports(path: str, lines: list, tokens: list, line_index: int):
     line = lines[line_index]
@@ -250,7 +397,7 @@ def parse_all_ui_files():
             rel_path = os.path.relpath(full_path, ASSETS_DIR)
             parse_file(rel_path)
 
-#parse_file("Common.ui")
+parse_file("Test.ui")
 
 parse_all_ui_files()
 
